@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "platni-poslugy"
+    }
+  },
+  "defaultProject": "platni-poslugy",
+  "cli": {
+    "analytics": false
+  }
 }
