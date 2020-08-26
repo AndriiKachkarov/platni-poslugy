@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable, of} from 'rxjs';
-import {Invoice, Service, ServicePack} from '../shared/interfaces';
+import {Invoice} from '../shared/interfaces';
 import {environment} from '../../environments/environment';
 import {map, mergeMap, switchMap} from 'rxjs/operators';
+import {ServicePack, Service} from '../data/interfaces';
 import {DataHandlerService} from './data-handler.service';
 
 @Injectable({

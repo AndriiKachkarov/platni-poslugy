@@ -1,1 +1,132 @@
-<p>table works!</p>
+<mat-accordion multi>
+  <mat-expansion-panel *ngFor="let category of categories" [(expanded)]="category.extended">
+    <mat-expansion-panel-header >
+      <mat-panel-title >
+        {{category.title}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <ng-container *ngIf="hasSubcategory(category.id); else services">
+      <ng-container *ngFor="let subcategory of subcategories">
+        <mat-expansion-panel *ngIf="subcategory.category === category" [(expanded)]="subcategory.extended">
+          <mat-expansion-panel-header>
+            <mat-panel-title >
+              {{subcategory.title}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <ng-container *ngIf="hasSubSubcategory(subcategory.id); else subServices">
+            <ng-container *ngFor="let subSubcategory of subSubcategories">
+              <mat-expansion-panel *ngIf="subSubcategory.subcategory === subcategory" [(expanded)]="subSubcategory.extended">
+                <mat-expansion-panel-header>
+                  <mat-panel-title >
+                    {{subSubcategory.title}}
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="service"  *ngFor="let service of getServicesBySubSubcat(subSubcategory.id)">
+                  <span class="service__id">{{service.id}}</span>
+                  <span class="service__title">{{service.title}}</span>
+                  <span class="service__price">{{service.mainPrice ? service.mainPrice : service.price}}</span>
+                  <div class="service__counter counter">
+                    <button mat-icon-button class="counter__add" (click)="addService(service)">
+                      <mat-icon>add</mat-icon>
+                    </button>
+
+                    <span class="counter__count">{{countService(service)}}</span>
+
+                    <button mat-icon-button class="counter__remove" (click)="removeService(service)">
+                      <mat-icon>remove</mat-icon>
+                    </button>
+                  </div>
+                </div>
+              </mat-expansion-panel>
+
+            </ng-container>
+
+            <ng-container *ngFor="let service of getServicesBySubcat(subcategory.id)">
+              <div class="service"  *ngIf="!service.subSubcategory">
+                <span class="service__id">{{service.id}}</span>
+                <span class="service__title">{{service.title}}</span>
+                <span class="service__price">{{service.mainPrice ? service.mainPrice : service.price}}</span>
+                <div class="service__counter counter">
+                  <button mat-icon-button class="counter__add" (click)="addService(service)">
+                    <mat-icon>add</mat-icon>
+                  </button>
+
+                  <span class="counter__count">{{countService(service)}}</span>
+
+                  <button mat-icon-button class="counter__remove" (click)="removeService(service)">
+                    <mat-icon>remove</mat-icon>
+                  </button>
+                </div>
+              </div>
+            </ng-container>
+          </ng-container>
+
+          <ng-template #subServices>
+            <div class="service"  *ngFor="let service of getServicesBySubcat(subcategory.id)">
+              <span class="service__id">{{service.id}}</span>
+              <span class="service__title">{{service.title}}</span>
+              <span class="service__price">{{service.mainPrice ? service.mainPrice : service.price}}</span>
+              <div class="service__counter counter">
+                <button mat-icon-button class="counter__add" (click)="addService(service)">
+                  <mat-icon>add</mat-icon>
+                </button>
+
+                <span class="counter__count">{{countService(service)}}</span>
+
+                <button mat-icon-button class="counter__remove" (click)="removeService(service)">
+                  <mat-icon>remove</mat-icon>
+                </button>
+              </div>
+            </div>
+          </ng-template>
+
+          <!--          <div  *ngFor="let subService of getServicesBySubcat(subCategory.id)">{{subService.title}}</div>-->
+        </mat-expansion-panel>
+
+      </ng-container>
+
+      <ng-container *ngFor="let service of getServicesByCat(category.id)">
+        <div class="service"  *ngIf="!service.subcategory">
+          <span class="service__id">{{service.id}}</span>
+          <span class="service__title">{{service.title}}</span>
+          <span class="service__price">{{service.mainPrice ? service.mainPrice : service.price}}</span>
+          <div class="service__counter counter">
+            <button mat-icon-button class="counter__add" (click)="addService(service)">
+              <mat-icon>add</mat-icon>
+            </button>
+
+            <span class="counter__count">{{countService(service)}}</span>
+
+            <button mat-icon-button class="counter__remove" (click)="removeService(service)">
+              <mat-icon>remove</mat-icon>
+            </button>
+          </div>
+        </div>
+      </ng-container>
+
+    </ng-container>
+
+    <ng-template #services>
+      <div class="service"  *ngFor="let service of getServicesByCat(category.id)">
+        <span class="service__id">{{service.id}}</span>
+        <span class="service__title">{{service.title}}</span>
+        <span class="service__price">{{service.mainPrice ? service.mainPrice : service.price}}</span>
+        <div class="service__counter counter">
+          <button mat-icon-button class="counter__add" (click)="addService(service)">
+            <mat-icon>add</mat-icon>
+          </button>
+
+          <span class="counter__count">{{countService(service)}}</span>
+
+          <button mat-icon-button class="counter__remove" (click)="removeService(service)">
+            <mat-icon>remove</mat-icon>
+          </button>
+        </div>
+      </div>
+    </ng-template>
+
+  </mat-expansion-panel>
+</mat-accordion>
+<!--<div *ngFor="let s of totalServices">{{s.title}}</div>-->

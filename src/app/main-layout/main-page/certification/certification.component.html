@@ -1,1 +1,15 @@
-<p>certification works!</p>
+<div class="cert-container">
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Площа обстеження</mat-label>
+      <input type="number" [(ngModel)]="invoice.certificationArea" matInput #input placeholder="Площа обстеження" (ngModelChange)="recalculateAmount()" (focus)="dateChange(dateSelect.value)">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Рік обстеження</mat-label>
+      <mat-select (valueChange)="dateChange($event)" #dateSelect [value]="getInitialTimestamp()">
+        <mat-option *ngFor="let timestamp of certificationsTimestamps" [value]="timestamp">{{getYear(timestamp)}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+mat-expansion-panel-header {
+  height: auto!important;
+  padding: 5px 10px;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: 20px 1fr 50px 50px;
+  gap: 5px;
+  align-items: center;
+  padding: 10px 5px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+:host {
+  z-index: -1;
+}
+
+

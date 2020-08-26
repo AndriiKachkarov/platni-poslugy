@@ -13,7 +13,7 @@ export class AuthService {
   sub1: Subscription;
 
   public error$: Subject<string> = new Subject<string>();
-  refreshFlag = false;
+  refreshflag = false;
 
   constructor(private http: HttpClient) {
   }
@@ -23,8 +23,7 @@ export class AuthService {
   }
 
   login(user): Observable<any> {
-    return this.http.post<FbAuthResponse>(
-      `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.apiKey}`, user)
+    return this.http.post<FbAuthResponse>(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.apiKey}`, user)
       .pipe(
         tap((response) => {
           this.setToken(response);
@@ -43,10 +42,10 @@ export class AuthService {
     if (new Date().getTime() > expDate.getTime() - 60000) {
       if (localStorage.getItem('refresh-token')) {
 
-        if (!this.refreshFlag) {
-          this.refreshFlag = true;
+        if (!this.refreshflag) {
+          this.refreshflag = true;
           this.sub1 = this.refreshToken().subscribe((res) => {
-            this.refreshFlag = false;
+            this.refreshflag = false;
             setTimeout(() => {
               this.sub1.unsubscribe();
             }, 0);

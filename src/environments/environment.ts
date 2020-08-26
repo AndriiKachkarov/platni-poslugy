@@ -6,3 +6,4 @@ export const environment: Environment = {
   fbDbUrl: 'https://platni-poslugy.firebaseio.com',
   fbDbInvoicesCollection: 'test-invoices'
 };
+

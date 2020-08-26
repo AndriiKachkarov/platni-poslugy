@@ -1,0 +1,22 @@
+.service {
+  display: grid;
+  grid-template-columns: 20px 1fr 50px 50px;
+  gap: 5px;
+  align-items: center;
+  padding: 10px 5px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.mat-expansion-panel-header {
+  min-height: 80px;
+
+  &-title {
+    justify-content: space-between;
+    align-items: center;
+
+    .sample__title {
+      line-height: 80px;
+      text-align: center;
+    }
+  }
+}

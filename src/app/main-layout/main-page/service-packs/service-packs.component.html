@@ -1,1 +1,38 @@
-<p>service-packs works!</p>
+
+
+<mat-accordion multi>
+  <mat-expansion-panel hideToggle *ngFor="let sample of totalServicePacks" class="sample">
+    <mat-expansion-panel-header>
+      <mat-panel-title >
+          <span class="sample__title">{{sample.title}}</span>
+          <div class="sample__counter counter">
+            <button mat-icon-button class="counter__add" (click)="$event.stopPropagation(); addSample(sample)">
+              <mat-icon>add</mat-icon>
+            </button>
+
+            <span class="counter__count">{{countSamples(sample)}}</span>
+
+            <button mat-icon-button class="counter__remove" (click)="$event.stopPropagation(); removeSample(sample)">
+              <mat-icon>remove</mat-icon>
+            </button>
+          </div>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="service" *ngFor="let id of sample.servicesIDs">
+      <span class="service__id">{{id}}</span>
+      <span class="service__title">{{getServiceById(id).title}}</span>
+      <span class="service__price">{{getServiceById(id).mainPrice ? getServiceById(id).mainPrice : getServiceById(id).price}}</span>
+      <div class="service__counter counter">
+        <button mat-icon-button class="counter__add" (click)="addService(getServiceById(id), sample)">
+          <mat-icon>add</mat-icon>
+        </button>
+
+        <span class="counter__count">{{countService(getServiceById(id), sample)}}</span>
+
+        <button mat-icon-button class="counter__remove" (click)="removeService(getServiceById(id), sample)">
+          <mat-icon>remove</mat-icon>
+        </button>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

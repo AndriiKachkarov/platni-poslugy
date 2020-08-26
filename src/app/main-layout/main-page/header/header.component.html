@@ -1,1 +1,25 @@
-<p>header works!</p>
+<div class="total-amount">{{amount | number:'1.2-2'}}</div>
+<div class="invoice-idx">{{invoice.idx ? invoice.idx + '/25' : 'Новий рахунок'}}</div>
+<div class="date-picker">
+  <input [(ngModel)]="invoice.date" matInput [matDatepicker]="picker" class="date-picker-input" (ngModelChange)="changeDate()">
+  <mat-datepicker #picker></mat-datepicker>
+  <button mat-icon-button (click)="picker.open()">
+    <mat-icon>today</mat-icon>
+  </button>
+</div>
+<button mat-icon-button class="create"  (click)="createInvoice()">
+  <mat-icon>create</mat-icon>
+</button>
+<button mat-icon-button class="toggle-full-list"  (click)="toggleFullList()">
+  <mat-icon>unfold_less</mat-icon>
+</button>
+<button mat-icon-button class="collapse-all" (click)="collapseAll()">
+  <mat-icon>expand_less</mat-icon>
+</button>
+<button mat-icon-button class="refresh" (click)="refresh()">
+  <mat-icon>refresh</mat-icon>
+</button>
+<button mat-icon-button class="logout" (click)="logout($event)">
+  <mat-icon>exit_to_app</mat-icon>
+</button>
+

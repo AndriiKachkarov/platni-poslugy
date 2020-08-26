@@ -1,4 +1,4 @@
-import {Category, Subcategory, SubSubcategory} from '../shared/interfaces';
+import {Category, ServicePack, Subcategory, SubSubcategory} from './interfaces';
 
 export class Data {
 
