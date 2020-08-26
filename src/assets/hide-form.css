@@ -1,0 +1,10 @@
+.hide-text {
+  opacity: 0;
+}
+
+.table,
+.table__body,
+.table__cell,
+.hide-border {
+  border-color: transparent;
+}

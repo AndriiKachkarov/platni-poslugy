@@ -1,1 +1,147 @@
-<p>invoice works!</p>
+<ng-template #loading><app-loader></app-loader></ng-template>
+
+<div class="invoice-container" *ngIf="invoiceIdx$ | async as invoiceIdx; else loading" @fade>
+  <div id="toPrint">
+    <div class="print-container">
+      <div class="header">
+        <span class="hide-text">Рахунок-фактура № </span>
+        <span class="hide-data">{{invoiceIdx}}/25</span>
+        <br>
+        <span class="hide-text">від « </span>
+        <span class="day" class="hide-data">{{getDay()}}</span>
+        <span class="hide-text">» </span>
+        <span class="month" class="hide-data">{{getMonth()}}</span>
+        <span class="hide-text"> 2020 р.</span>
+        <div class="date-picker hide-button">
+          <input [(ngModel)]="invoice.dateOfCreation" matInput [matDatepicker]="picker" class="date-picker-input">
+          <mat-datepicker #picker></mat-datepicker>
+          <button mat-icon-button (click)="picker.open()">
+            <mat-icon>today</mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <section class="details hide-text">
+        Неприбуткова організація <br>
+        Державна установа "Інститут охорони грунтів України"<br>
+        Рах. № UA298201720313241022201002285 в ДКСУ у м. Києві<br>
+        МФО 820172 м. Київ код 25835792
+      </section>
+      <section class="client">
+        <span class="client__title hide-text">Платник та його адреса: </span>
+        <span
+          contenteditable="true"
+          class="client__input hide-border hide-data"
+          [textContent]="clientName"
+          (input)="clientName = $event.target['textContent']"
+          (focus)="clientNameFocused = true"
+          (focusout)="clientNameFocused = false"
+        >
+      </span>
+        <ng-container>
+          <div class="clients-list" [ngClass]="{'clients-list_hidden': !clientNameFocused}">
+            <div *ngFor="let client of clients | search:clientName" (click)="selectClient(client)">{{client.name}} {{client.id}}</div>
+          </div>
+        </ng-container>
+        <button class="client__add-client-button hide-button" mat-button (click)="addClient()">
+          <mat-icon >add_box</mat-icon>
+        </button>
+      </section>
+      <table class="table">
+        <thead>
+        <tr class="table__row table__head-row">
+          <th class="table__cell table__column-name hide-text">Найменування</th>
+          <th class="table__cell table__column-unit hide-text">Одиниця <br> виміру</th>
+          <th class="table__cell table__column-count hide-text">Кількість</th>
+          <th class="table__cell table__column-price hide-text">Ціна за одиницю, <br> грн</th>
+          <th class="table__cell table__column-amount hide-text">Сума</th>
+        </tr>
+        </thead>
+        <tbody class="table__body">
+        <tr>
+          <td class="table__cell table__column-name hide-data" contenteditable="true" [textContent]="invoice.sampleTypes[0].name" (input)="invoice.sampleTypes[0].name = $event.target['textContent']">{{invoice.sampleTypes[0].name}}</td>
+          <td class="table__cell table__column-unit hide-data" contenteditable="true" [textContent]="invoice.sampleTypes[0].unit" (input)="invoice.sampleTypes[0].unit = $event.target['textContent']">{{invoice.sampleTypes[0].unit}}</td>
+          <td class="table__cell table__column-count hide-data" contenteditable="true" [textContent]="invoice.sampleTypes[0].count" (input)="invoice.sampleTypes[0].count = $event.target['textContent']">{{invoice.sampleTypes[0].count}}</td>
+          <td class="table__cell table__column-price hide-data">{{(invoice.sampleTypes[0].amount && invoice.sampleTypes[0].count) ? (localeToNum(invoice.sampleTypes[0].amount) / toNum(invoice.sampleTypes[0].count)  | number:'1.2-2': 'ru') : ''}}</td>
+          <td class="table__cell table__column-amount hide-data" contenteditable="true" [textContent]="invoice.sampleTypes[0].amount" (input)="invoice.sampleTypes[0].amount = $event.target['textContent']">
+          </td>
+        </tr>
+        <tr>
+          <td class="table__cell table__column-name hide-data" contenteditable="true" [textContent]="invoice.sampleTypes[1].name" (input)="invoice.sampleTypes[1].name = $event.target['textContent']">{{invoice.sampleTypes[1].name}}</td>
+          <td class="table__cell table__column-unit hide-data" contenteditable="true" [textContent]="invoice.sampleTypes[1].unit" (input)="invoice.sampleTypes[1].unit = $event.target['textContent']">{{invoice.sampleTypes[1].unit}}</td>
+          <td class="table__cell table__column-count hide-data" contenteditable="true" [textContent]="invoice.sampleTypes[1].count" (input)="invoice.sampleTypes[1].count = $event.target['textContent']">{{invoice.sampleTypes[1].count}}</td>
+          <td class="table__cell table__column-price hide-data">{{(invoice.sampleTypes[1].amount && invoice.sampleTypes[1].count) ? (toNum(invoice.sampleTypes[1].amount) / toNum(invoice.sampleTypes[1].count)  | number:'1.2-2': 'ru') : ''}}</td>
+          <td class="table__cell table__column-amount hide-data" contenteditable="true" [textContent]="invoice.sampleTypes[1].amount" (input)="invoice.sampleTypes[1].amount = $event.target['textContent']">{{invoice.sampleTypes[1].amount}}</td>
+        </tr>
+        <tr>
+          <td class="table__cell table__column-name hide-data" contenteditable="true" [textContent]="invoice.sampleTypes[2].name" (input)="invoice.sampleTypes[2].name = $event.target['textContent']">{{invoice.sampleTypes[2].name}}</td>
+          <td class="table__cell table__column-unit hide-data" contenteditable="true" [textContent]="invoice.sampleTypes[2].unit" (input)="invoice.sampleTypes[2].unit = $event.target['textContent']">{{invoice.sampleTypes[2].unit}}</td>
+          <td class="table__cell table__column-count hide-data" contenteditable="true" [textContent]="invoice.sampleTypes[2].count" (input)="invoice.sampleTypes[2].count = $event.target['textContent']">{{invoice.sampleTypes[2].count}}</td>
+          <td class="table__cell table__column-price hide-data">{{(invoice.sampleTypes[2].amount && invoice.sampleTypes[2].count) ? (toNum(invoice.sampleTypes[2].amount) / toNum(invoice.sampleTypes[2].count)  | number:'1.2-2': 'ru') : ''}}</td>
+          <td class="table__cell table__column-amount hide-data" contenteditable="true" [textContent]="invoice.sampleTypes[2].amount" (input)="invoice.sampleTypes[2].amount = $event.target['textContent']">{{invoice.sampleTypes[2].amount}}</td>
+        </tr>
+        </tbody>
+      </table>
+      <table class="table table-footer">
+        <tbody class="table__body table-footer__body">
+        <tr>
+          <td class="table__cell table__column-name hide-text">В т.ч. ПДВ 20%</td>
+          <td class="table__cell table__column-unit"></td>
+          <td class="table__cell table__column-count"></td>
+          <td class="table__cell table__column-price"></td>
+          <td class="table__cell table__column-amount hide-data">{{countPDV() | number: '1.2-2'}}</td>
+        </tr>
+        <tr>
+          <td class="table__cell table__column-name invisible">_</td>
+          <td class="table__cell table__column-unit"></td>
+          <td class="table__cell table__column-count"></td>
+          <td class="table__cell table__column-price"></td>
+          <td class="table__cell table__column-amount"></td>
+        </tr>
+        <tr>
+          <td class="table__cell table__total-label hide-text">Сума прописом:</td>
+          <td class="table__cell table__total-amount hide-data">{{countTotalAmount() | sumToString}}</td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="signatures hide-text">
+        <div class="signatures__labels">
+          <span>Генеральний директор</span>
+          <span>Головний бухгалтер</span>
+        </div>
+        <div class="signatures__Names">
+          <span>І.П. Яцук</span>
+          <span>Т.М. Колодяжна</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button mat-button (click)="create()">
+    <mat-icon>save</mat-icon>
+  </button>
+
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>print</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="print('data')">
+      <mat-icon>reorder</mat-icon>
+      Друк даних
+    </button>
+    <button mat-menu-item (click)="print('form')">
+      <mat-icon>payment</mat-icon>
+      Друк форми
+    </button>
+    <button mat-menu-item (click)="print('all')">
+      <mat-icon>print</mat-icon>
+      Друк Даних з формою
+    </button>
+  </mat-menu>
+  <button mat-button (click)="return()">
+    <mat-icon>reply</mat-icon>
+  </button>
+</div>
+
+
+
+

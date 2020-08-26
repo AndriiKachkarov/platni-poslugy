@@ -1,0 +1,15 @@
+:host {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  background-color: #658a9c;
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+}
+.invoice-container {
+  background: #c8d2d9;
+}

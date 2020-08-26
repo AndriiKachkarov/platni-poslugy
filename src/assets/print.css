@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#toPrint {
+  background: #f6f6f6;
+  width: 210mm;
+  font-family: "Times New Roman";
+  font-size: 16px;
+  padding: 5px 13mm 0 34mm;
+  margin: 0;
+}
+
+.print-container {
+  width: 100%;
+  /*width: 170mm;*/
+  /*height: 125mm;*/
+  /*border: 1px solid black;*/
+
+}
+
+.header {
+  position: relative;
+  font-size: 20px;
+  margin-left: 68mm;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 22px;
+  padding-bottom: 22px;
+  padding-top: 5px;
+}
+
+.month {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+}
+.day {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+
+.date-picker {
+  position: absolute;
+  top: 20px;
+  left: 290px;
+}
+
+.date-picker-input {
+  width: 0;
+  height: 0;
+  z-index: -1000;
+  position: absolute;
+}
+
+.details {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-bottom: 24px;
+}
+
+.client {
+  position: relative;
+  padding-left: 5px;
+  padding-bottom: 22px;
+}
+
+.client__input {
+  display: inline-block;
+  width: 600px;
+  border-bottom: 1px solid black;
+}
+
+.clients-list {
+  position: absolute;
+  top: 30px;
+  left: 175px;
+  min-width: 200px;
+  background: rgba(198, 198, 198, 0.93);
+  border-radius: 5px;
+}
+
+.clients-list_hidden {
+  opacity: 0;
+  height: 0;
+  transition: all 0.1ms ease-out;
+}
+
+.client__add-client-button {
+  position: absolute;
+  top: -10px;
+  right: -20px;
+}
+
+.table {
+  border-collapse: collapse;
+  /*border-bottom: 1px solid black;*/
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.table__body {
+  display: block;
+  height: 72px;
+  overflow: hidden;
+
+}
+
+.table__head-row {
+  height: 70px;
+}
+
+.table__column-name {
+  width: 393px;
+}
+
+.table__column-unit,
+.table__column-count,
+.table__column-price,
+.table__column-amount{
+  width: 86px;
+  text-align: center;
+}
+
+
+
+
+.table__cell {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  line-height: 24px;
+
+  vertical-align: baseline;
+  padding: 0 5px;
+}
+
+thead, tbody tr {
+  display:table;
+  table-layout:fixed;
+}
+
+.table__total-label {
+  width: 150px;
+  border-bottom: none;
+}
+
+.table__total-amount {
+  width: 620px;
+  border-bottom: none;
+
+}
+
+.table-footer {
+  margin-bottom: 20px;
+}
+
+.table-footer__body {
+  border-bottom: 1px solid black;
+}
+
+.signatures {
+  display: flex;
+}
+
+.signatures__labels {
+  width: 480px;
+}
+.signatures span {
+  display: block;
+  padding-top: 20px;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+
