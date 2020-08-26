@@ -1,0 +1,37 @@
+<div class="auth-container">
+  <div class="card">
+    <div class="auth-content">
+      <div class="alert alert-danger" *ngIf="message">{{message}}</div>
+      <div class="alert alert-danger" *ngIf="auth.error$ | async as error">{{error}}</div>
+
+      <form [formGroup]="form" (ngSubmit)="submit($event)">
+        <div class="form-group">
+          <h2>Login as administrator</h2>
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input id="email" type="email" formControlName="email">
+            <span *ngIf="form.get('email').touched && form.get('email').invalid" class="form-help-text">
+              <span *ngIf="form.get('email').errors.required">Enter Email</span>
+              <span *ngIf="form.get('email').errors.email">Enter valid Email</span>
+            </span>
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input id="password" type="password" formControlName="password">
+            <span *ngIf="form.get('password').touched && form.get('password').invalid" class="form-help-text">
+              <span *ngIf="form.get('password').errors.required">Enter Password</span>
+              <span *ngIf="form.get('password').errors.minlength">
+                Password must be at least {{form.get('password').errors.minlength["requiredLength"]}} characters.
+                Now it is {{form.get('password').errors.minlength["actualLength"]}} characters long.
+              </span>
+            </span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" [disabled]="form.invalid || submitted">Logon</button>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
