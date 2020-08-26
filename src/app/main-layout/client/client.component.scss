@@ -1,0 +1,44 @@
+.client-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  background-color: #658a9c;
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+
+  .card {
+    background: #f2f8ff;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    max-width: 500px;
+    width: 90%;
+    //height: 450px;
+    .auth-header {
+      border-bottom: 2px solid #389c99;
+
+      .auth-title {
+        h1 {
+          color: #658a9c;
+        }
+      }
+    }
+
+    .auth-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #797979;
+
+      .alert {
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+      }
+    }
+  }
+
+}

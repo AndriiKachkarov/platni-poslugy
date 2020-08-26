@@ -1,1 +1,36 @@
-<p>client works!</p>
+<div class="client-bg">
+  <div class="card">
+    <div class="auth-content">
+      <form [formGroup]="form" (ngSubmit)="submit($event)">
+        <div class="form-group">
+          <h2>Додати клієнта</h2>
+
+          <div class="form-control">
+            <label for="name">Назва</label>
+            <input id="name" type="text" formControlName="name">
+            <span *ngIf="form.get('name').touched && form.get('name').invalid" class="form-help-text">
+              Поле не може бути порожнім!
+            </span>
+          </div>
+          <div class="form-control">
+            <label for="EDRPOU">Код ЄДРПОУ</label>
+            <input id="EDRPOU" type="number" formControlName="EDRPOU">
+            <span class="form-help-text" *ngIf="form.get('EDRPOU').invalid && form.get('EDRPOU').touched">Даний замовник вже внесений в базу!</span>
+          </div>
+          <div class="form-control">
+            <label for="address">Адреса</label>
+            <textarea id="address" formControlName="address" cols="40" rows="5"></textarea>
+          </div>
+          <div class="form-control">
+            <label for="additions">Додаткова інформація</label>
+            <textarea id="additions" formControlName="additions" cols="40" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" [disabled]="form.invalid || submitted">Зберегти</button>
+          <button type="button" class="btn btn-primary btn-block"  (click)="return()">Повернутись</button>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
