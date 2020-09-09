@@ -16,16 +16,19 @@ import { SearchPipe } from './pipes/search.pipe';
 import { LoaderComponent } from './components/loader/loader.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSelectModule} from '@angular/material/select';
+import { SortPipe } from './pipes/sort.pipe';
 
 
 
 @NgModule({
-  declarations: [
-    NotFoundComponent,
-    SumToStringPipe,
-    SearchPipe,
-    LoaderComponent
-  ],
+    declarations: [
+        NotFoundComponent,
+        SumToStringPipe,
+        SearchPipe,
+        LoaderComponent,
+        SortPipe,
+        SortPipe
+    ],
   imports: [
     HttpClientModule,
     ReactiveFormsModule,
@@ -42,24 +45,25 @@ import {MatSelectModule} from '@angular/material/select';
     MatMenuModule,
     MatSelectModule
   ],
-  exports: [
-    HttpClientModule,
-    ReactiveFormsModule,
-    FormsModule,
-    MatIconModule,
-    NotFoundComponent,
-    MatExpansionModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatTabsModule,
-    MatInputModule,
-    SumToStringPipe,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    SearchPipe,
-    LoaderComponent,
-    MatMenuModule,
-    MatSelectModule
-  ]
+    exports: [
+        HttpClientModule,
+        ReactiveFormsModule,
+        FormsModule,
+        MatIconModule,
+        NotFoundComponent,
+        MatExpansionModule,
+        MatButtonModule,
+        MatFormFieldModule,
+        MatTabsModule,
+        MatInputModule,
+        SumToStringPipe,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        SearchPipe,
+        LoaderComponent,
+        MatMenuModule,
+        MatSelectModule,
+        SortPipe
+    ]
 })
 export class SharedModule { }

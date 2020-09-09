@@ -6,7 +6,7 @@ import {fadeStateTrigger} from '../../../shared/animations/fade.animation';
   selector: 'app-table',
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss'],
-  animations: [fadeStateTrigger]
+  // animations: [fadeStateTrigger]
 })
 export class TableComponent implements OnInit{
 
@@ -15,48 +15,49 @@ export class TableComponent implements OnInit{
   @Input() subSubcategories: SubSubcategory[];
   @Input() totalServices: Service[];
   @Input() services: Service[];
-  @Output() onAddService = new EventEmitter<Service>();
-  @Output() onRemoveService = new EventEmitter<Service>();
+  @Input() timestampId: number;
+  @Output() addService = new EventEmitter<Service>();
+  @Output() removeService = new EventEmitter<Service>();
   @Input() showAllServices: boolean;
 
   getServicesByCat(id: number) {
-    return this.showAllServices ? this.totalServices.filter((s) => s.category?.id === id) :
-      this.totalServices.filter((s) => s.category?.id === id && s.mainPrice);
+    return this.showAllServices ? this.totalServices.filter((s) => s.categoryId === id) :
+      this.totalServices.filter((s) => s.categoryId === id && s.prices[this.timestampId]?.mainPrice);
   }
 
   getServicesBySubcat(id: number) {
-    return this.showAllServices ? this.totalServices.filter((s) => s.subcategory?.id === id) :
-      this.totalServices.filter((s) => s.subcategory?.id === id && s.mainPrice);
+    return this.showAllServices ? this.totalServices.filter((s) => s.subcategoryId === id) :
+      this.totalServices.filter((s) => s.subcategoryId === id && s.prices[this.timestampId]?.mainPrice);
   }
 
   getServicesBySubSubcat(id: number) {
-    return this.showAllServices ? this.totalServices.filter((s) => s.subSubcategory?.id === id) :
-      this.totalServices.filter((s) => s.subSubcategory?.id === id && s.mainPrice);
+    return this.showAllServices ? this.totalServices.filter((s) => s.subSubcategoryId === id) :
+      this.totalServices.filter((s) => s.subSubcategoryId === id && s.prices[this.timestampId]?.mainPrice);
   }
 
   hasSubcategory(id: number) {
-    return this.subcategories.find((subcategory) => subcategory.category.id === id) ? true : false;
+    return this.subcategories.find((subcategory) => subcategory.categoryId === id) ? true : false;
   }
 
   hasSubSubcategory(id: number) {
-    return this.subSubcategories.find((subSubcategory) => subSubcategory.subcategory.id === id) ? true : false;
+    return this.subSubcategories.find((subSubcategory) => subSubcategory.subcategoryId === id) ? true : false;
   }
 
   countService(service: Service) {
     let count = 0;
     this.services.forEach((cur) => {
-      if (cur === service) {
+      if (cur.id === service.id) {
         count++;
       }
     });
     return count;
   }
 
-  addService(service: Service) {
-    this.onAddService.emit(service);
+  onAddService(service: Service) {
+    this.addService.emit(service);
   }
-  removeService(service: Service) {
-    this.onRemoveService.emit(service);
+  onRemoveService(service: Service) {
+    this.removeService.emit(service);
   }
 
   ngOnInit(): void {

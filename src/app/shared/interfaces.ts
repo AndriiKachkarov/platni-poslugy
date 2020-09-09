@@ -29,14 +29,20 @@ export interface SampleType {
 //
 // }
 export interface Invoice {
-  services: Service[];
+  // services: Service[];
   sampleTypes?: SampleType[];
   idx?: number;
   dateOfCreation?: Date; // invoice creating date
   date?: Date;
   client: number | string;
-  serviceIds?: any;
-  certificationArea: number;
+  serviceIds?: ServiceIds;
+  monitoringServiceIds?: number[];
+  certificationArea?: number;
+}
+
+export interface ServiceIds {
+  services: number[];
+  servicePacks: any;
 }
 
 export interface Client {

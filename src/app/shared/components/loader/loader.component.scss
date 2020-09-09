@@ -7,6 +7,18 @@
   }
 }
 
+:host {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #59979c;
+  z-index: 999999;
+  display: grid;
+  place-items: center;
+}
+
 .cover {
   position: fixed;
   background: rgba(63, 92, 152, 0.57);

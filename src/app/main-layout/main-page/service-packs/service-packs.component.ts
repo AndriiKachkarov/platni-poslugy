@@ -13,16 +13,8 @@ export class ServicePacksComponent implements OnInit {
   @Input() totalServices: Service[];
   @Input() totalServicePacks: ServicePack[];
   @Input() servicePacks;
-  // @Input('servicePacks') set servicePacks(sps) {
-  //   this.sps = sps;
-  // }
-  //
-  // get servicePacks() {
-  //   return this.sps;
-  // }
-  @Output() onChange = new EventEmitter<any>();
-
-  private sps: ServicePack[];
+  @Output() changeAmount = new EventEmitter<any>();
+  @Input() timestampId: any;
 
   constructor() {
   }
@@ -30,9 +22,9 @@ export class ServicePacksComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addSample(sample) {
+  addSample(sample: ServicePack) {
     const sampleServices = [];
-    for (const id of sample.servicesIDs) {
+    for (const id of sample.serviceIds) {
       const service = this.totalServices.find((s) => s.id === id);
       sampleServices.push(service);
     }
@@ -40,32 +32,33 @@ export class ServicePacksComponent implements OnInit {
     if (samples) {
       samples.services = samples.services.concat(sampleServices);
     } else {
+      console.log(sample);
       this.servicePacks.push({id: sample.id, services: sampleServices});
     }
-    this.changeAmount();
+    this.onChangeAmount();
   }
 
-  removeSample(sample) {
+  removeSample(sample: ServicePack) {
     const samples = this.servicePacks.find((s) => s.id === sample.id);
     if (samples) {
-      for (const id of sample.servicesIDs) {
+      for (const id of sample.serviceIds) {
         const service = samples.services.find((s) => s.id === id);
         if ((service)) {
           samples.services.splice(samples.services.indexOf(service), 1);
         }
       }
-      this.changeAmount();
+      this.onChangeAmount();
       if (!samples.services.length) {
         this.servicePacks.splice(this.servicePacks.indexOf(samples), 1);
       }
     }
   }
 
-  countSamples(sample) {
+  countSamples(currentPack: ServicePack) {
     const counters = [];
-    const samples = this.servicePacks.find((s) => s.id === sample.id);
+    const samples = this.servicePacks.find((s) => s.id === currentPack.id);
     if (samples) {
-      for (const id of sample.servicesIDs) {
+      for (const id of currentPack.serviceIds) {
         let curCounter = 0;
         samples.services.forEach((s) => {
           if (s.id === id) {
@@ -75,11 +68,11 @@ export class ServicePacksComponent implements OnInit {
         counters.push(curCounter);
       }
     }
-    return (counters.length === sample.servicesIDs.length) ? Math.min(...counters) : 0;
+    return (counters.length === currentPack.serviceIds.length) ? Math.min(...counters) : 0;
   }
 
   getServiceById(id: number): Service {
-    return this.totalServices.find((s) => s.id === id);
+    return this.totalServices[id];
   }
 
   addService(service, sample) {
@@ -89,15 +82,21 @@ export class ServicePacksComponent implements OnInit {
     } else {
       this.servicePacks.push({id: sample.id, services: [service]});
     }
-    this.changeAmount();
+    this.onChangeAmount();
   }
 
   removeService(service, sample) {
     const samples = this.servicePacks.find((s) => s.id === sample.id);
+    console.log(samples);
+    console.log(service);
     if (samples) {
-      samples.services.splice(samples.services.indexOf(service), 1);
-      this.changeAmount();
+      const index = samples.services.map((s) => s.id).indexOf(service.id);
+      if (index > -1) {
+        samples.services.splice(index, 1);
+      }
     }
+    this.onChangeAmount();
+
   }
 
   countService(service, sample) {
@@ -105,7 +104,7 @@ export class ServicePacksComponent implements OnInit {
     let counter = 0;
     if (samples) {
       samples.services.forEach((s) => {
-        if (s === service) {
+        if (s.id === service.id) {
           counter++;
         }
       });
@@ -113,7 +112,8 @@ export class ServicePacksComponent implements OnInit {
     return counter;
   }
 
-  changeAmount() {
-    this.onChange.emit(this.servicePacks);
+  onChangeAmount() {
+    console.log(this.servicePacks);
+    this.changeAmount.emit(this.servicePacks);
   }
 }

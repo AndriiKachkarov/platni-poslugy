@@ -1,35 +1,33 @@
-
-
 <mat-accordion multi>
-  <mat-expansion-panel hideToggle *ngFor="let sample of totalServicePacks" class="sample">
+  <mat-expansion-panel hideToggle *ngFor="let servicePack of totalServicePacks" class="sample">
     <mat-expansion-panel-header>
       <mat-panel-title >
-          <span class="sample__title">{{sample.title}}</span>
+          <span class="sample__title">{{servicePack.title}}</span>
           <div class="sample__counter counter">
-            <button mat-icon-button class="counter__add" (click)="$event.stopPropagation(); addSample(sample)">
+            <button mat-icon-button class="counter__add" (click)="$event.stopPropagation(); addSample(servicePack)">
               <mat-icon>add</mat-icon>
             </button>
 
-            <span class="counter__count">{{countSamples(sample)}}</span>
+            <span class="counter__count">{{countSamples(servicePack)}}</span>
 
-            <button mat-icon-button class="counter__remove" (click)="$event.stopPropagation(); removeSample(sample)">
+            <button mat-icon-button class="counter__remove" (click)="$event.stopPropagation(); removeSample(servicePack)">
               <mat-icon>remove</mat-icon>
             </button>
           </div>
       </mat-panel-title>
     </mat-expansion-panel-header>
-    <div class="service" *ngFor="let id of sample.servicesIDs">
+    <div class="service" *ngFor="let id of servicePack.serviceIds">
       <span class="service__id">{{id}}</span>
       <span class="service__title">{{getServiceById(id).title}}</span>
-      <span class="service__price">{{getServiceById(id).mainPrice ? getServiceById(id).mainPrice : getServiceById(id).price}}</span>
+      <span class="service__price">{{getServiceById(id).prices[this.timestampId].mainPrice ? getServiceById(id).prices[this.timestampId].mainPrice : getServiceById(id).prices[this.timestampId].price}}</span>
       <div class="service__counter counter">
-        <button mat-icon-button class="counter__add" (click)="addService(getServiceById(id), sample)">
+        <button mat-icon-button class="counter__add" (click)="addService(getServiceById(id), servicePack)">
           <mat-icon>add</mat-icon>
         </button>
 
-        <span class="counter__count">{{countService(getServiceById(id), sample)}}</span>
+        <span class="counter__count">{{countService(getServiceById(id), servicePack)}}</span>
 
-        <button mat-icon-button class="counter__remove" (click)="removeService(getServiceById(id), sample)">
+        <button mat-icon-button class="counter__remove" (click)="removeService(getServiceById(id), servicePack)">
           <mat-icon>remove</mat-icon>
         </button>
       </div>

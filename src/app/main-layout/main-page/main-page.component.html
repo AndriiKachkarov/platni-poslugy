@@ -1,52 +1,66 @@
-<app-header (onCollapseAll)="collapseAll()"
-            (onToggleFullList)="toggleFullList()"
-            (onCreateInvoice)="createInvoice()"
-            (onChangeDate)="changeDate()"
-            (onRefresh)="refresh()"
-            [amount]="amount"
-            [invoice]="invoice"
-            class="sticky"
-></app-header>
-<mat-tab-group dynamicHeight class="sticky">
-  <mat-tab label="Повний список">
-    <app-table
-      [categories]="categories"
-      [subcategories]="subcategories"
-      [subSubcategories]="subSubcategories"
-      [totalServices]="totalServices"
-      [services]="services"
-      [showAllServices]="showAllServices"
-      (onAddService)="addService($event)"
-      (onRemoveService)="removeService($event)"
-    ></app-table>
-  </mat-tab>
-  <mat-tab label="Добрива">
-    <div class="example-large-box mat-elevation-z4">
-      <app-service-packs
-        (onChange)="changeServicePacks($event)"
+<ng-template #loading><app-loader></app-loader></ng-template>
+<ng-container *ngIf="isLoaded; else loading" @fade>
+  <app-header (onCollapseAll)="collapseAll()"
+              (onToggleFullList)="toggleFullList()"
+              (onCreateInvoice)="createInvoice()"
+              (onChangeDate)="changeDate()"
+              (onRefresh)="refresh()"
+              [amount]="amount"
+              [invoice]="invoice"
+              class="sticky"
+  ></app-header>
+  <mat-tab-group dynamicHeight class="sticky">
+    <mat-tab label="Повний список">
+      <app-table
+        [categories]="categories"
+        [subcategories]="subcategories"
+        [subSubcategories]="subSubcategories"
         [totalServices]="totalServices"
-        [servicePacks]="servicePacks"
-        [totalServicePacks]="totalServicePacks"
-      ></app-service-packs>
-    </div>
-  </mat-tab>
-  <mat-tab label="Паспортизація">
-    <div class="example-large-box mat-elevation-z4">
-      <app-certification
-        [invoice]="invoice"
-        [certificationPrice]="certificationPrice"
-        [certificationsTimestamps]="certificationsTimestamps"
-        (onChangeDate)="changeDate()"
-        (onRecalculateAmount)="recalculateAmount()"
+        [services]="services"
+        [timestampId]="timestampId"
+        [showAllServices]="showAllServices"
+        (addService)="onAddService($event)"
+        (removeService)="onRemoveService($event)"
+      ></app-table>
+    </mat-tab>
+    <mat-tab label="Добрива">
+      <div class="example-large-box mat-elevation-z4">
+        <app-service-packs
+          (changeAmount)="changeServicePacks($event)"
+          [totalServices]="totalServices"
+          [servicePacks]="servicePacks"
+          [totalServicePacks]="totalServicePacks"
+          [timestampId]="timestampId"
+        ></app-service-packs>
+      </div>
+    </mat-tab>
+    <mat-tab label="Паспортизація">
+      <div class="example-large-box mat-elevation-z4">
+        <app-certification
+          [invoice]="invoice"
+          [certificationPrice]="certificationPrice"
+          [certificationTimestamps]="certificationTimestamps"
+          (onChangeDate)="changeDate()"
+          (onRecalculateAmount)="recalculateAmount()"
 
-      ></app-certification>
-    </div>
-  </mat-tab>
-  <mat-tab label="Моніторинг">
-    <div class="example-large-box mat-elevation-z4">
-      <app-monitoring
-
-      ></app-monitoring>
-    </div>
-  </mat-tab>
-</mat-tab-group>
+        ></app-certification>
+      </div>
+    </mat-tab>
+    <mat-tab label="Моніторинг">
+      <div class="example-large-box mat-elevation-z4">
+        <app-monitoring
+          (changeAmount)="changeMonitoringServices($event)"
+          [totalServices]="totalServices"
+          [timestampId]="timestampId"
+          [services]="monitoringServices"
+        ></app-monitoring>
+      </div>
+    </mat-tab>
+    <mat-tab label="Інші">
+      <div class="example-large-box mat-elevation-z4">
+        <app-additional
+        ></app-additional>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</ng-container>

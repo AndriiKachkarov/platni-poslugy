@@ -21,6 +21,7 @@ import { environment } from '../environments/environment';
 import {ServicePacksComponent} from './main-layout/main-page/service-packs/service-packs.component';
 import { CertificationComponent } from './main-layout/main-page/certification/certification.component';
 import { MonitoringComponent } from './main-layout/main-page/monitoring/monitoring.component';
+import { AdditionalComponent } from './main-layout/main-page/additional/additional.component';
 
 registerLocaleData(localeRu, 'ru');
 
@@ -43,6 +44,7 @@ const INTERCEPTOR_PROVIDER: Provider = {
     ClientComponent,
     CertificationComponent,
     MonitoringComponent,
+    AdditionalComponent,
   ],
     imports: [
         BrowserModule,

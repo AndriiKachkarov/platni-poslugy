@@ -8,7 +8,7 @@
     <mat-form-field appearance="fill">
       <mat-label>Рік обстеження</mat-label>
       <mat-select (valueChange)="dateChange($event)" #dateSelect [value]="getInitialTimestamp()">
-        <mat-option *ngFor="let timestamp of certificationsTimestamps" [value]="timestamp">{{getYear(timestamp)}}</mat-option>
+        <mat-option *ngFor="let timestamp of certificationTimestamps" [value]="timestamp">{{getYear(timestamp)}}</mat-option>
       </mat-select>
     </mat-form-field>
   </div>

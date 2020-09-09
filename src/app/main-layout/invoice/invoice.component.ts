@@ -4,10 +4,10 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {InvoiceService} from '../../services/invoice.service';
 import {Client, Invoice} from '../../shared/interfaces';
 import {Observable, of, Subscription} from 'rxjs';
-import {map, switchMap} from 'rxjs/operators';
+import {map, mergeMap, switchMap} from 'rxjs/operators';
 import {ClientService} from '../../services/client.service';
 import {DataHandlerService} from '../../services/data-handler.service';
-import {Service} from '../../data/interfaces';
+import {Service, ServicePack} from '../../data/interfaces';
 import {fadeStateTrigger} from '../../shared/animations/fade.animation';
 
 @Component({
@@ -38,8 +38,13 @@ export class InvoiceComponent implements OnInit, OnDestroy {
   clientName: any = '';
   clientNameFocused = false;
   // currentIdx: number;
-  private querySubscription: Subscription;
-  services: Service[];
+  private subscription: Subscription;
+  totalServices: Service[];
+  timestamps: number[];
+  totalServicePacks: ServicePack[];
+  certificationTimestamps: number[];
+  certificationPrices: number[];
+  isLoaded = false;
 
   constructor(
     private router: Router,
@@ -48,34 +53,53 @@ export class InvoiceComponent implements OnInit, OnDestroy {
     private route: ActivatedRoute,
     private dataService: DataHandlerService
   ) {
-    this.services = dataService.totalServices;
+    // this.totalServices = dataService.totalServices;
   }
 
   ngOnInit(): void {
-    this.querySubscription = this.route.queryParams.pipe(
-      switchMap((queryParam) => {
-        this.invoiceService.currentIdx = queryParam.idx;
-        return this.invoiceService.getInvoiceDate();
+    this.subscription = this.dataService.getTotalServices().pipe(
+      mergeMap((totalServices) => {
+        this.totalServices = totalServices;
+        return this.dataService.getTimestamps();
       }),
-      switchMap((date) => {
-        this.dataService.setPrices(date);
-        return this.invoiceService.getInvoice(this.invoiceService.currentIdx);
+      mergeMap((timestamps) => {
+        this.timestamps = timestamps;
+        return this.dataService.getTotalServicePacks();
       }),
-      switchMap((invoice) => {
-        this.invoice = this.invoiceService.invoice = invoice;
-        return this.clientService.getAllClients();
+      mergeMap((totalServicePacks) => {
+        this.totalServicePacks = totalServicePacks;
+        return this.dataService.getCertificationTimestamps();
+      }),
+      mergeMap((certificationTimestamps) => {
+        this.certificationTimestamps = certificationTimestamps;
+        // this.timestampId = this.dataService.getTimestampId(this.invoice.date).timestampId;
+        return this.dataService.getCertificationPrices();
+      }),
+      mergeMap((certificationPrices) => {
+        this.certificationPrices = certificationPrices;
+        return this.route.queryParams.pipe(
+          switchMap((queryParam) => {
+            this.invoiceService.currentIdx = queryParam.idx;
+          //   return this.invoiceService.getInvoiceDate();
+          // }),
+          // switchMap((date) => {
+            // this.dataService.setPrices(date);
+            return this.invoiceService.getInvoice(this.invoiceService.currentIdx);
+          }),
+          switchMap((invoice: Invoice) => {
+            this.invoice = this.invoiceService.invoice = invoice;
+            return this.clientService.getAllClients();
+          })
+        );
       })
     ).subscribe((clients: Client[]) => {
       if (this.invoice.idx) {
         if (!this.invoiceService.currentIdx) {
-          console.log('!');
           this.invoice.sampleTypes[0].amount = this.numToLocale(this.countTotalAmount());
           this.invoice.sampleTypes[1] = {name: '', unit: '', count: '', amount: ''};
           this.invoice.sampleTypes[2] = {name: '', unit: '', count: '', amount: ''};
         }
-
       } else {
-        console.log(this.invoice);
         if (this.invoice.certificationArea) {
           this.invoice.sampleTypes = [
             {name: `Матеріали агрохімічного обстеження с/г угідь згідно договору №00-01-33-___ від __.__.____р.`, unit: 'га', count: `${this.invoice.certificationArea}`, amount: this.numToLocale(this.countTotalAmount())},
@@ -101,6 +125,7 @@ export class InvoiceComponent implements OnInit, OnDestroy {
       this.clientService.client = clients.find((c) => c.id === this.invoiceService.invoice.client);
       this.clientName = client ? client.name : this.invoiceService.invoice.client;
       this.getInvoiceIdx(this.invoice.idx);
+      this.isLoaded = true;
     });
   }
 
@@ -167,17 +192,52 @@ export class InvoiceComponent implements OnInit, OnDestroy {
     }
   }
 
+  // countTotalAmount() {
+  //   let totalAmount = 0;
+  //   if (this.invoice.services) {
+  //     totalAmount += this.invoice.services.reduce((acc, s) => {
+  //       return s.prices[1591390800000].mainPrice ? s.prices[1591390800000].mainPrice + acc : s.prices[1591390800000].price + acc;
+  //     }, 0);
+  //   }
+  //
+  //   if (this.invoice.certificationArea) {
+  //     console.log(this.dataService.certificationPrise);
+  //     totalAmount += this.invoice.certificationArea * this.dataService.certificationPrise;
+  //   }
+  //   return Math.round(totalAmount * 100) / 100;
+  // }
+
   countTotalAmount() {
     let totalAmount = 0;
-    if (this.invoice.services) {
-      totalAmount += this.invoice.services.reduce((acc, s) => {
-        return s.mainPrice ? s.mainPrice + acc : s.price + acc;
-      }, 0);
+    const {timestampId, certTimestampId} = this.dataService.getTimestampId(this.invoice.date);
+    if (this.invoice.serviceIds.services) {
+      for (const id of this.invoice.serviceIds.services) {
+        totalAmount += this.dataService.totalServices[id].prices[timestampId].mainPrice
+          ? this.dataService.totalServices[id].prices[timestampId].mainPrice
+          : this.dataService.totalServices[id].prices[timestampId].price;
+      }
+    }
+
+    if (this.invoice.serviceIds.servicePacks) {
+      for (const servicePackIds of this.invoice.serviceIds.servicePacks) {
+        for (const id of servicePackIds.services) {
+          totalAmount += this.dataService.totalServices[id].prices[timestampId].mainPrice
+            ? this.dataService.totalServices[id].prices[timestampId].mainPrice
+            : this.dataService.totalServices[id].prices[timestampId].price;
+        }
+      }
     }
 
     if (this.invoice.certificationArea) {
-      console.log(this.dataService.certificationPrise);
-      totalAmount += this.invoice.certificationArea * this.dataService.certificationPrise;
+      totalAmount += this.invoice.certificationArea * this.dataService.certificationPrices[certTimestampId];
+    }
+
+    if (this.invoice.monitoringServiceIds) {
+      for (const id of this.invoice.monitoringServiceIds) {
+        totalAmount += this.dataService.totalServices[id].prices[timestampId].mainPrice
+          ? this.dataService.totalServices[id].prices[timestampId].mainPrice
+          : this.dataService.totalServices[id].prices[timestampId].price;
+      }
     }
     return Math.round(totalAmount * 100) / 100;
   }
@@ -250,6 +310,6 @@ export class InvoiceComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.querySubscription.unsubscribe();
+    this.subscription.unsubscribe();
   }
 }

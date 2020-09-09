@@ -6,7 +6,7 @@ export interface Category {
 
 export interface Subcategory {
   id: number;
-  category: Category;
+  categoryId: number;
   title: string;
   extended: boolean;
 }
@@ -15,7 +15,7 @@ export interface Subcategory {
 
 export interface SubSubcategory {
   id: number;
-  subcategory: Subcategory;
+  subcategoryId: number;
   title: string;
   extended: boolean;
 }
@@ -23,16 +23,15 @@ export interface SubSubcategory {
 export interface Service {
   id: number;
   title: string;
-  category: Category;
-  subcategory?: Subcategory;
-  subSubcategory?: SubSubcategory;
-  price: number;
-  mainPrice?: number;
+  categoryId: number;
+  subcategoryId?: number;
+  subSubcategoryId?: number;
+  prices: any;
 }
 
 export interface ServicePack {
   id: number;
   title?: string;
-  servicesIDs: number[];
+  serviceIds: number[];
 }
 

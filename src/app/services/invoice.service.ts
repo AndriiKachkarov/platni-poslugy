@@ -11,20 +11,33 @@ import {DataHandlerService} from './data-handler.service';
   providedIn: 'root'
 })
 export class InvoiceService {
-  services: Service[];
-  servicePacks: any;
-  invoice: Invoice;
-  totalServices: Service[];
-  totalServicePacks: ServicePack[];
-  currentIdx: number;
+
+  services = [];
+  servicePacks = [];
+  monitoringServices = [];
+  invoice: Invoice = {
+    date: new  Date(),
+    dateOfCreation: new Date(),
+    client: undefined,
+    // services: [],
+    sampleTypes: [],
+    serviceIds: {
+      services: undefined,
+      servicePacks: undefined
+    },
+    certificationArea: null
+  };
+  currentIdx = null;
+  // services: Service[];
+  // servicePacks: any;
+  // invoice: Invoice;
+  // currentIdx: number;
 
   constructor(
     private http: HttpClient,
     private dataService: DataHandlerService
   ) {
-    this.refreshInvoice();
-    this.totalServices = dataService.totalServices;
-    this.totalServicePacks = dataService.totalServicePacks;
+    // this.refreshInvoice();
   }
 
   create(): Observable<Invoice> {
@@ -63,6 +76,7 @@ export class InvoiceService {
 
   private setServiceIds(): void {
     this.invoice.serviceIds.services = this.services.map((s) => s.id);
+    this.invoice.monitoringServiceIds = this.monitoringServices.map((s) => s.id);
     this.invoice.serviceIds.servicePacks = this.servicePacks.map((sample) => ({id: sample.id, services: sample.services.map((s) => s.id)}));
   }
 
@@ -72,23 +86,24 @@ export class InvoiceService {
         map((response) => {
           const invoice: Invoice = Object.values(response).find((i) => {
             if (+i.idx === +idx) {
+              return true;
             }
-            return +i.idx === +idx;
           });
           invoice.date = new Date(invoice.date);
           invoice.dateOfCreation = new Date(invoice.dateOfCreation);
 
-          this.dataService.setPrices(invoice.date);
+          // this.dataService.setPrices(invoice.date);
 
           if (invoice.serviceIds){
             if (invoice.serviceIds.services) {
-              for (const service of this.totalServices) {
+              for (const service of this.dataService.totalServices) {
                 for (const id of invoice.serviceIds.services) {
                   if (service.id === +id) {
-                    this.services.push(service);
+                      this.services.push(service);
                   }
                 }
               }
+              console.log(this.services);
             }  else {
               invoice.serviceIds.services = [];
             }
@@ -97,7 +112,8 @@ export class InvoiceService {
                 const services = [];
                 if (sample.services) {
                   for (const id of sample.services) {
-                    for (const service of this.totalServices) {
+                    console.log(this.dataService.totalServices);
+                    for (const service of this.dataService.totalServices) {
                       if (service.id === +id) {
                         services.push(service);
                       }
@@ -119,14 +135,25 @@ export class InvoiceService {
             };
           }
 
+          if (invoice.monitoringServiceIds) {
+            for (const service of this.dataService.totalServices) {
+              for (const id of invoice.monitoringServiceIds) {
+                if (service.id === +id) {
+                  this.monitoringServices.push(service);
+                }
+              }
+            }
+          } else {
+            this.monitoringServices = [];
+          }
           return invoice;
         })
       );
     } else {
-      this.invoice.services = this.services.slice();
-      for (const servicePack of this.servicePacks) {
-        this.invoice.services = this.invoice.services.concat(servicePack.services);
-      }
+      // this.invoice.services = this.services.slice();
+      // for (const servicePack of this.servicePacks) {
+      //   this.invoice.services = this.invoice.services.concat(servicePack.services);
+      // }
       this.setServiceIds();
       return of(this.invoice);
     }
@@ -169,13 +196,17 @@ export class InvoiceService {
   refreshInvoice(): void{
     this.services = [];
     this.servicePacks = [];
+    this.monitoringServices = [];
     this.invoice = {
       date: new  Date(),
-      dateOfCreation: new  Date(),
+      dateOfCreation: new Date(),
       client: undefined,
-      services: [],
+      // services: [],
       sampleTypes: [],
-      serviceIds: {},
+      serviceIds: {
+        services: undefined,
+        servicePacks: undefined
+      },
       certificationArea: null
     };
     this.currentIdx = null;

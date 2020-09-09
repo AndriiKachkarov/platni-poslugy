@@ -3,7 +3,7 @@ import {Category, ServicePack, Subcategory, SubSubcategory} from './interfaces';
 export class Data {
   // test
 
-  static categories: Category[] = [
+  static categories = [
     {id: 1, title: '1. Агрохімічне обстеження земель сільськогосподарського призначення', extended: false},
     {id: 2, title: '2. Визначення якісних показників води', extended: false},
     {id: 3, title: '3. Агрохімічні дослідження ґрунтосумішей закритого ґрунту', extended: false},
@@ -14,7 +14,7 @@ export class Data {
     {id: 8, title: '8. Інші роботи', extended: false}
   ];
 
-  static subcategories: Subcategory[] = [
+  static subcategories = [
     {id: 1, category: Data.categories[0], title: '1.0. Відбір проб', extended: false},
     {id: 2, category: Data.categories[0], title: '1.1. Агрофізичні та агрохімічні аналізи ґрунту', extended: false},
     {id: 3, category: Data.categories[0], title: '1.2. Визначення мікроелементів', extended: false},
@@ -26,7 +26,7 @@ export class Data {
     {id: 9, category: Data.categories[3], title: '4.3. Хімічні  меліоранти', extended: false}
   ];
 
-  static subSubcategories: SubSubcategory[] = [
+  static subSubcategories = [
     {id: 1, subcategory: Data.subcategories[2], title: 'У ґрунті', extended: false},
     {id: 2, subcategory: Data.subcategories[2], title: 'У рослинах', extended: false},
     {id: 3, subcategory: Data.subcategories[3], title: 'У ґрунті', extended: false},
@@ -37,10 +37,24 @@ export class Data {
 
   static servicePacks = {
     1591390800000: [
-      {id: 1, title: 'КАС', servicesIDs: [176, 180, 181, 189, 195, 244]},
-      {id: 2, title: 'Аміак водний', servicesIDs: [223]},
-      {id: 3, title: 'Сульфат амонію', servicesIDs: [176, 177, 178, 186, 214, 244]},
-      {id: 4, title: 'Аміачна селітра', servicesIDs: [176, 177, 178, 184, 188, 244]},
+      {title: 'КАС', servicesIDs: [176, 180, 181, 189, 195, 244]},
+      {title: 'Аміак водний', servicesIDs: [223]},
+      {title: 'Сульфат амонію', servicesIDs: [176, 177, 178, 186, 214, 244]},
+      {title: 'Аміачна селітра', servicesIDs: [176, 177, 178, 184, 188, 244]},
+      {title: 'CHL', servicesIDs: [176, 177, 193, 244]},
+      {title: 'Вапнякове борошно', servicesIDs: [176, 177, 299, 244]},
+      {title: 'Сульфат магнію', servicesIDs: [176, 177, 214, 203, 244]},
+      {title: 'Гумати в органіці', servicesIDs: [278]},
+      {title: 'Нітрати', servicesIDs: [120]},
+      {title: 'Дефекат', servicesIDs: [176, 297, 299, 244]},
+      {title: 'Органічне добриво', servicesIDs: [247, 248, 250, 252, 252, 253, 254, 255, 256, 259, 266, 267, 326]},
+      {title: 'Карбамід', servicesIDs: [176, 177, 189, 198, 244]},
+      {title: 'Карбамід', servicesIDs: [176, 177, 189, 198, 244]},
+      {title: 'Суперфосфат', servicesIDs: [176, 177, 190, 244]},
+      {title: 'Амофос', servicesIDs: [176, 177, 181, 190, 244]},
+      {title: 'Каліймаг', servicesIDs: [176, 178, 193, 203, 244]},
+      {title: 'Сульфат цинку', servicesIDs: [176, 210, 297, 244]},
+      {title: 'NPK', servicesIDs: [176, 179, 180, 181, 190, 193, 244]},
     ],
     1500000000000: [
       {id: 1, title: 'КАС', servicesIDs: [170, 171, 172, 173, 174, 175]},

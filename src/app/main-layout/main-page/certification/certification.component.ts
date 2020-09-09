@@ -10,7 +10,7 @@ import {MatSelectChange} from '@angular/material/select';
 export class CertificationComponent implements OnInit {
   @Input() invoice: Invoice;
   @Input() certificationPrice: number;
-  @Input() certificationsTimestamps;
+  @Input() certificationTimestamps;
 
   @Output() onChangeDate = new EventEmitter<void>();
   @Output() onRecalculateAmount = new EventEmitter<void>();
@@ -36,11 +36,11 @@ export class CertificationComponent implements OnInit {
 
   getInitialTimestamp() {
     const invoiceTimestamp = this.invoice.date.getTime();
-    for (const s of this.certificationsTimestamps) {
+    for (const s of this.certificationTimestamps) {
       if (s === invoiceTimestamp) {
         return s;
       }
     }
-    return this.certificationsTimestamps[0];
+    return this.certificationTimestamps[0];
   }
 }
