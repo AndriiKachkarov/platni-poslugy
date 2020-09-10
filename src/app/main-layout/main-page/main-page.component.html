@@ -59,6 +59,8 @@
     <mat-tab label="Інші">
       <div class="example-large-box mat-elevation-z4">
         <app-additional
+          [invoice]="invoice"
+          (onRecalculateAmount)="recalculateAmount()"
         ></app-additional>
       </div>
     </mat-tab>

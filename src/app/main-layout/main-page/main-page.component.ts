@@ -101,7 +101,6 @@ export class MainPageComponent implements OnInit, OnDestroy {
       }
     }
 
-
     if (this.invoice.certificationArea) {
       // console.log(this.certificationPrice);
     amount += this.invoice.certificationArea * this.certificationPrices[this.dataService.getTimestampId(this.invoice.date).certTimestampId];
@@ -112,8 +111,11 @@ export class MainPageComponent implements OnInit, OnDestroy {
         amount += service.prices[this.timestampId].mainPrice ? service.prices[this.timestampId].mainPrice : service.prices[this.timestampId].price;
       }
     }
+
+    if (this.invoice.additionalSum) {
+      amount += this.invoice.additionalSum;
+    }
     this.amount = Math.round(amount * 100) / 100;
-    // return amount;
   }
 
   onAddService(service: Service) {

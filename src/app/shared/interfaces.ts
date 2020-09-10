@@ -38,6 +38,7 @@ export interface Invoice {
   serviceIds?: ServiceIds;
   monitoringServiceIds?: number[];
   certificationArea?: number;
+  additionalSum?: number;
 }
 
 export interface ServiceIds {

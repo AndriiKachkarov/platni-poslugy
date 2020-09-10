@@ -1,4 +1,4 @@
-<mat-accordion multi>
+<mat-accordion multi *ngIf="timestampId >= 0">
   <mat-expansion-panel hideToggle *ngFor="let servicePack of totalServicePacks" class="sample">
     <mat-expansion-panel-header>
       <mat-panel-title >

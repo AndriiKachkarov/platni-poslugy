@@ -1,0 +1,8 @@
+<div class="add-container">
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Сумма, грн</mat-label>
+      <input type="number" [(ngModel)]="invoice.additionalSum" matInput #input placeholder="Сумма, грн" (ngModelChange)="recalculateAmount()">
+    </mat-form-field>
+  </div>
+</div>

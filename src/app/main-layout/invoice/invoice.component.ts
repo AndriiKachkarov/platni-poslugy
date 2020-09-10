@@ -239,6 +239,9 @@ export class InvoiceComponent implements OnInit, OnDestroy {
           : this.dataService.totalServices[id].prices[timestampId].price;
       }
     }
+    if (this.invoice.additionalSum) {
+      totalAmount += this.invoice.additionalSum;
+    }
     return Math.round(totalAmount * 100) / 100;
   }
 

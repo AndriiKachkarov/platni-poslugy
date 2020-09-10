@@ -14,7 +14,7 @@ import {switchMap} from 'rxjs/operators';
 })
 export class MonitoringComponent implements OnInit {
 
-  monitoringServiceIds = [3, 5, 7, 12, 8];
+  monitoringServiceIds = [4, 3, 25, 27, 28, 29, 20, 12, 16, 35, 53, 56, 82, 83, 119, 113, 435, 432];
   @Input() services: Service[];
 
   @Input() totalServices: Service[];

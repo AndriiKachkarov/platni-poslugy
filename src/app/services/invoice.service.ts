@@ -25,7 +25,8 @@ export class InvoiceService {
       services: undefined,
       servicePacks: undefined
     },
-    certificationArea: null
+    certificationArea: null,
+    additionalSum: null
   };
   currentIdx = null;
   // services: Service[];
@@ -103,7 +104,6 @@ export class InvoiceService {
                   }
                 }
               }
-              console.log(this.services);
             }  else {
               invoice.serviceIds.services = [];
             }
@@ -207,7 +207,8 @@ export class InvoiceService {
         services: undefined,
         servicePacks: undefined
       },
-      certificationArea: null
+      certificationArea: null,
+      additionalSum: null
     };
     this.currentIdx = null;
   }
