@@ -1,19 +1,20 @@
+<div class="monitoring">
+  <ng-container *ngIf="timestampId >=0">
+    <div class="service" *ngFor="let id of monitoringServiceIds">
+      <span class="service__id">{{getServiceById(id).prices[this.timestampId].id}}</span>
+      <span class="service__title">{{getServiceById(id).title}}</span>
+      <span class="service__price">{{getServiceById(id).prices[this.timestampId].mainPrice ? getServiceById(id).prices[this.timestampId].mainPrice : getServiceById(id).prices[this.timestampId].price}}</span>
+      <div class="service__counter counter">
+        <button mat-icon-button class="counter__add" (click)="addService(getServiceById(id))">
+          <mat-icon>add</mat-icon>
+        </button>
 
-<ng-container *ngIf="timestampId >=0">
-  <div class="service" *ngFor="let id of monitoringServiceIds">
-    <span class="service__id">{{id}}</span>
-    <span class="service__title">{{getServiceById(id).title}}</span>
-    <span class="service__price">{{getServiceById(id).prices[this.timestampId].mainPrice ? getServiceById(id).prices[this.timestampId].mainPrice : getServiceById(id).prices[this.timestampId].price}}</span>
-    <div class="service__counter counter">
-      <button mat-icon-button class="counter__add" (click)="addService(getServiceById(id))">
-        <mat-icon>add</mat-icon>
-      </button>
+        <span class="counter__count">{{countService(getServiceById(id))}}</span>
 
-      <span class="counter__count">{{countService(getServiceById(id))}}</span>
-
-      <button mat-icon-button class="counter__remove" (click)="removeService(getServiceById(id))">
-        <mat-icon>remove</mat-icon>
-      </button>
+        <button mat-icon-button class="counter__remove" (click)="removeService(getServiceById(id))">
+          <mat-icon>remove</mat-icon>
+        </button>
+      </div>
     </div>
-  </div>
-</ng-container>
+  </ng-container>
+</div>

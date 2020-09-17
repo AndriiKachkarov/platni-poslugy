@@ -3,6 +3,10 @@ mat-expansion-panel-header {
   padding: 5px 10px;
 }
 
+.table {
+  min-height: 100vh;
+}
+
 .service {
   display: grid;
   grid-template-columns: 20px 1fr 50px 50px;

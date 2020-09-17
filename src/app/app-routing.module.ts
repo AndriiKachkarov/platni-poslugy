@@ -13,6 +13,9 @@ import {PreviousRouteRecorderService} from './services/previous-route-recorder.s
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {
+    path: 'stats', loadChildren: () => import('./stats/stats.module').then(m => m.StatsModule)
+  },
+  {
     path: '', component: MainLayoutComponent, canActivate: [AuthGuard],  children: [
       {path: '', redirectTo: '/', pathMatch: 'full'},
       {path: '', component: MainPageComponent, canDeactivate: [PreviousRouteRecorderService]},
@@ -20,9 +23,6 @@ const routes: Routes = [
       {path: 'client', component: ClientComponent, canDeactivate: [PreviousRouteRecorderService]},
     ]
   },
-  // {
-  //   path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
-  // },
   {path: '**', component: NotFoundComponent}
 ];
 
