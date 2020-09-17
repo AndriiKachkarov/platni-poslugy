@@ -33,6 +33,7 @@ export class InvoiceService {
   // servicePacks: any;
   // invoice: Invoice;
   // currentIdx: number;
+  invoices: Invoice[];
 
   constructor(
     private http: HttpClient,
@@ -52,15 +53,20 @@ export class InvoiceService {
   }
 
   getAllInvoices(): Observable<Invoice[]>{
-    return this.http.get<Invoice[]>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/2020.json`).pipe(
-      map((response) => {
-        if (response) {
-          return Object.values(response);
-        } else {
-          return [];
-        }
-      })
-    );
+    if (this.invoices) {
+      return of(this.invoices);
+    } else {
+      return this.http.get<Invoice[]>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/2020.json`).pipe(
+        map((response) => {
+          if (response) {
+            this.invoices = Object.values(response);
+            return Object.values(response);
+          } else {
+            return [];
+          }
+        })
+      );
+    }
   }
 
   patch(idx: number): Observable<any>{

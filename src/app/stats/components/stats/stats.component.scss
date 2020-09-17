@@ -1,0 +1,21 @@
+.invoice {
+
+  &__id {
+    display: inline-block;
+    margin: 20px;
+    width: 30px;
+  }
+
+  &__date {
+    display: inline-block;
+    margin: 20px;
+    width: 60px;
+  }
+
+  &__client {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+  }
+
+}

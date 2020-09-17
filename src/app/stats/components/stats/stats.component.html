@@ -1,1 +1,7 @@
-<p>stats works!</p>
+<div class="container" *ngFor="let invoice of invoices$ | async; index as i" (click)="goToInvoice(invoice.idx)">
+  <div class="invoice">
+    <span class="invoice__id">{{invoice.idx}}</span>
+    <span class="invoice__date">{{invoice.date | date: "short"}}</span>
+    <span class="invoice__client">{{clients[invoice.client]?.name}}</span>
+  </div>
+</div>

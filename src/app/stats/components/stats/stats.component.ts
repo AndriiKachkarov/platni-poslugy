@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {InvoiceService} from '../../../services/invoice.service';
+import {Client, Invoice} from '../../../shared/interfaces';
+import {Observable} from 'rxjs';
+import {ClientService} from '../../../services/client.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-stats',
@@ -7,9 +12,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatsComponent implements OnInit {
 
-  constructor() { }
+  invoices$: Observable<Invoice[]>;
+  clients: Client[];
+
+  constructor(
+    private clientService: ClientService,
+    private invoiceService: InvoiceService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+    this.clientService.getAllClients().subscribe( (clients: Client[]) => {
+      this.clients = clients;
+      this.invoices$ = this.invoiceService.getAllInvoices();
+    });
+  }
+
+  goToInvoice(idx: number) {
+    this.router.navigate(['invoice'], {queryParams: {idx}});
   }
 
 }

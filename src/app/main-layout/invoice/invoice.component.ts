@@ -262,7 +262,7 @@ export class InvoiceComponent implements OnInit, OnDestroy {
   }
 
   return() {
-    this.router.navigate(['/']);
+    this.router.navigate([localStorage.getItem('previousRoute') ? localStorage.getItem('previousRoute') : '/']);
   }
 
   localeToNum(locale: string): number {
