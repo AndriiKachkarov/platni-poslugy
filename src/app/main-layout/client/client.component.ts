@@ -3,6 +3,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {ActivatedRoute, Router} from '@angular/router';
 import {ClientService} from '../../services/client.service';
 import {Client} from '../../shared/interfaces';
+import {Data} from '../../data/Data';
 
 @Component({
   selector: 'app-client',
@@ -44,7 +45,7 @@ export class ClientComponent implements OnInit {
       return;
     }
     this.submitted = true;
-    if (this.clientService.client && this.clientService.client.id) {
+    if (this.clientService.client && this.clientService.client.id >= 0) {
       const id = this.clientService.client.id;
       this.clientService.client = this.form.value;
       this.clientService.client.id = id;
@@ -64,7 +65,13 @@ export class ClientComponent implements OnInit {
   return() {
     const url = localStorage.getItem('previousRoute');
     if (url) {
-      this.router.navigate([url]);
+      const urlParts = url.split('?');
+      if (urlParts[1]) {
+       this.router.navigate([urlParts[0]], {queryParams: {[urlParts[1].split('=')[0]]: urlParts[1].split('=')[1]}});
+      } else {
+        this.router.navigate([urlParts[0]]);
+
+      }
     } else {
       this.router.navigate(['/']);
     }

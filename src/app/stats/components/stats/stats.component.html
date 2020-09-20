@@ -3,5 +3,6 @@
     <span class="invoice__id">{{invoice.idx}}</span>
     <span class="invoice__date">{{invoice.date | date: "short"}}</span>
     <span class="invoice__client">{{clients[invoice.client]?.name}}</span>
+    <span class="invoice__amount">{{countTotalAmount(invoice)}}</span>
   </div>
 </div>

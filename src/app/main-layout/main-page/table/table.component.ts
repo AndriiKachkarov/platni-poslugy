@@ -54,9 +54,14 @@ export class TableComponent implements OnInit{
   }
 
   onAddService(service: Service) {
+    this.services.push(service);
     this.addService.emit(service);
   }
   onRemoveService(service: Service) {
+    const index = this.services.map((s) => s.id).indexOf(service.id);
+    if (index > -1) {
+      this.services.splice(index, 1);
+    }
     this.removeService.emit(service);
   }
 

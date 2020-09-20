@@ -20,7 +20,7 @@ const routes: Routes = [
       {path: '', redirectTo: '/', pathMatch: 'full'},
       {path: '', component: MainPageComponent, canDeactivate: [PreviousRouteRecorderService]},
       {path: 'invoice', component: InvoiceComponent, canDeactivate: [PreviousRouteRecorderService]},
-      {path: 'client', component: ClientComponent, canDeactivate: [PreviousRouteRecorderService]},
+      {path: 'client', component: ClientComponent},
     ]
   },
   {path: '**', component: NotFoundComponent}

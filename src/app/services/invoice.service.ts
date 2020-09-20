@@ -6,6 +6,7 @@ import {environment} from '../../environments/environment';
 import {map, mergeMap, switchMap} from 'rxjs/operators';
 import {ServicePack, Service} from '../data/interfaces';
 import {DataHandlerService} from './data-handler.service';
+import {log} from 'util';
 
 @Injectable({
   providedIn: 'root'
@@ -29,36 +30,32 @@ export class InvoiceService {
     additionalSum: null
   };
   currentIdx = null;
-  // services: Service[];
-  // servicePacks: any;
-  // invoice: Invoice;
-  // currentIdx: number;
   invoices: Invoice[];
 
   constructor(
     private http: HttpClient,
     private dataService: DataHandlerService
   ) {
-    // this.refreshInvoice();
   }
 
-  create(): Observable<Invoice> {
+  create(date: Date): Observable<Invoice> {
     this.setServiceIds();
 
-    return this.http.post<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/2020.json`, this.invoice).pipe(
+    return this.http.post<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${date.getFullYear()}.json`, this.invoice).pipe(
       switchMap((res) => {
-        return this.http.get<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/2020/${res['name']}.json`);
+        return this.http.get<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${date.getFullYear()}/${res['name']}.json`);
       })
     );
   }
 
-  getAllInvoices(): Observable<Invoice[]>{
-    if (this.invoices) {
-      return of(this.invoices);
-    } else {
-      return this.http.get<Invoice[]>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/2020.json`).pipe(
+  getAllInvoices(date: Date): Observable<Invoice[]>{
+    // if (this.invoices) {
+    //   return of(this.invoices);
+    // } else {
+      return this.http.get<Invoice[]>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${date.getFullYear()}.json`).pipe(
         map((response) => {
           if (response) {
+            console.log(response);
             this.invoices = Object.values(response);
             return Object.values(response);
           } else {
@@ -66,17 +63,17 @@ export class InvoiceService {
           }
         })
       );
-    }
+    // }
   }
 
-  patch(idx: number): Observable<any>{
+  patch(idx: number, date: Date): Observable<any>{
     this.setServiceIds();
-    return this.http.get<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/2020.json`).pipe(
+    return this.http.get<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${date.getFullYear()}.json`).pipe(
       mergeMap((res) => {
         const values = Object.values(res);
         const index = values.indexOf(values.find((i) => +i.idx === +idx));
         const name = Object.keys(res)[index];
-        return this.http.patch<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/2020/${name}.json`, this.invoice);
+        return this.http.patch<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${date.getFullYear()}/${name}.json`, this.invoice);
       })
     );
   }
@@ -87,15 +84,17 @@ export class InvoiceService {
     this.invoice.serviceIds.servicePacks = this.servicePacks.map((sample) => ({id: sample.id, services: sample.services.map((s) => s.id)}));
   }
 
-  getInvoice(idx: number = null): Observable<Invoice> {
-    if (idx) {
-      return this.http.get<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/2020.json`).pipe(
+  getInvoice(idx: number | undefined, date: Date): Observable<Invoice> {
+    if (idx >= 0) {
+      console.log(idx);
+      return this.http.get<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${date.getFullYear()}.json`).pipe(
         map((response) => {
           const invoice: Invoice = Object.values(response).find((i) => {
             if (+i.idx === +idx) {
               return true;
             }
           });
+          console.log(invoice);
           invoice.date = new Date(invoice.date);
           invoice.dateOfCreation = new Date(invoice.dateOfCreation);
 
@@ -118,7 +117,6 @@ export class InvoiceService {
                 const services = [];
                 if (sample.services) {
                   for (const id of sample.services) {
-                    console.log(this.dataService.totalServices);
                     for (const service of this.dataService.totalServices) {
                       if (service.id === +id) {
                         services.push(service);
@@ -182,27 +180,10 @@ export class InvoiceService {
     }
   }
 
-  // getInvoiceDate(idx: number = null): Observable<Date> {
-  //   if (idx) {
-  //     return this.http.get<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/2020.json`).pipe(
-  //       map((response) => {
-  //         const invoice = Object.values(response).find((i) => {
-  //           if (+i.idx === +idx) {
-  //           }
-  //           return +i.idx === +idx;
-  //         });
-  //         return  new Date(invoice.date);
-  //       })
-  //     );
-  //   } else {
-  //     return of(this.invoice.date);
-  //   }
-  // }
-
   refreshInvoice(): void{
-    this.services = [];
-    this.servicePacks = [];
-    this.monitoringServices = [];
+    this.services.length = 0;
+    this.servicePacks.length = 0;
+    this.monitoringServices.length = 0;
     this.invoice = {
       date: new  Date(),
       dateOfCreation: new Date(),
@@ -218,5 +199,6 @@ export class InvoiceService {
     };
     this.currentIdx = null;
   }
+
 }
 

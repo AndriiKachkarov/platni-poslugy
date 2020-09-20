@@ -84,7 +84,7 @@ export class InvoiceComponent implements OnInit, OnDestroy {
           // }),
           // switchMap((date) => {
             // this.dataService.setPrices(date);
-            return this.invoiceService.getInvoice(this.invoiceService.currentIdx);
+            return this.invoiceService.getInvoice(this.invoiceService.currentIdx, this.invoiceService.invoice.date);
           }),
           switchMap((invoice: Invoice) => {
             this.invoice = this.invoiceService.invoice = invoice;
@@ -115,7 +115,7 @@ export class InvoiceComponent implements OnInit, OnDestroy {
         }
         if (this.clientService.client) {
           this.clientName = this.clientService.client.name;
-          this.invoice.client = this.clientService.client.id ?
+          this.invoice.client = this.clientService.client.id >= 0 ?
             this.clientService.client.id :
             this.clientService.client.name;
         }
@@ -157,13 +157,16 @@ export class InvoiceComponent implements OnInit, OnDestroy {
       this.invoiceIdx$.pipe(
         switchMap((idx) => {
           this.invoiceService.invoice.idx = idx;
-          return this.invoiceService.create();
+          return this.invoiceService.create(this.invoice.date);
         })
       ).subscribe((res) => {
         this.getInvoiceIdx(res.idx);
       });
     } else {
-      this.invoiceService.patch(this.invoiceService.invoice.idx).subscribe((res) => {
+
+      //   // const invoice = this.invoiceService.invoices.find((i) => i.idx = this.invoice.idx);
+    //   // this.invoiceService.invoices[this.invoiceService.invoices.indexOf(invoice)] = this.invoice;
+      this.invoiceService.patch(this.invoiceService.invoice.idx, this.invoice.date).subscribe((res) => {
       });
     }
 
@@ -177,7 +180,7 @@ export class InvoiceComponent implements OnInit, OnDestroy {
     if (idx) {
       this.invoiceIdx$ = of(idx);
     } else {
-      this.invoiceIdx$ = this.invoiceService.getAllInvoices().pipe(
+      this.invoiceIdx$ = this.invoiceService.getAllInvoices(this.invoice.date).pipe(
         map((res) => {
             let max = 0;
             for (const inv of res) {
@@ -210,6 +213,7 @@ export class InvoiceComponent implements OnInit, OnDestroy {
   countTotalAmount() {
     let totalAmount = 0;
     const {timestampId, certTimestampId} = this.dataService.getTimestampId(this.invoice.date);
+    console.log(this.invoice);
     if (this.invoice.serviceIds.services) {
       for (const id of this.invoice.serviceIds.services) {
         totalAmount += this.dataService.totalServices[id].prices[timestampId].mainPrice
@@ -261,8 +265,16 @@ export class InvoiceComponent implements OnInit, OnDestroy {
     return this.countTotalAmount() / 6;
   }
 
-  return() {
-    this.router.navigate([localStorage.getItem('previousRoute') ? localStorage.getItem('previousRoute') : '/']);
+  return(type) {
+    switch (type) {
+      case 'main':
+        this.router.navigate(['/']);
+        break;
+      case 'stats':
+        this.invoiceService.refreshInvoice();
+        this.router.navigate(['/stats']);
+        break;
+    }
   }
 
   localeToNum(locale: string): number {
@@ -309,7 +321,7 @@ export class InvoiceComponent implements OnInit, OnDestroy {
   selectClient(client: Client) {
     this.clientService.client = client;
     this.clientName = client.name;
-    this.invoice.client = client.id ? client.id : client.name;
+    this.invoice.client = client.id >= 0 ? client.id : client.name;
   }
 
   ngOnDestroy(): void {

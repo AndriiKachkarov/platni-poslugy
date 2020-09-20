@@ -120,10 +120,10 @@
     <mat-icon>save</mat-icon>
   </button>
 
-  <button mat-button [matMenuTriggerFor]="menu">
+  <button mat-button [matMenuTriggerFor]="printMenu">
     <mat-icon>print</mat-icon>
   </button>
-  <mat-menu #menu="matMenu">
+  <mat-menu #printMenu="matMenu">
     <button mat-menu-item (click)="print('data')">
       <mat-icon>reorder</mat-icon>
       Друк даних
@@ -137,9 +137,17 @@
       Друк Даних з формою
     </button>
   </mat-menu>
-  <button mat-button (click)="return()">
+  <button mat-button [matMenuTriggerFor]="returnMenu">
     <mat-icon>reply</mat-icon>
   </button>
+  <mat-menu #returnMenu="matMenu">
+    <button mat-menu-item (click)="return('main')">
+      До переліку послуг
+    </button>
+    <button mat-menu-item (click)="return('stats')">
+      До реєстру рахунків
+    </button>
+  </mat-menu>
 </div>
 
 

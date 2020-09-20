@@ -1,12 +1,13 @@
-import {ChangeDetectionStrategy, Component, HostBinding, OnDestroy, OnInit} from '@angular/core';
+import {Component, HostBinding, OnDestroy, OnInit} from '@angular/core';
 import {DataHandlerService} from '../../services/data-handler.service';
 import {Router} from '@angular/router';
 import {InvoiceService} from '../../services/invoice.service';
 import {Category, Service, ServicePack, Subcategory, SubSubcategory} from '../../data/interfaces';
 import {fadeStateTrigger} from '../../shared/animations/fade.animation';
 import {Invoice} from '../../shared/interfaces';
-import {mergeAll, mergeMap} from 'rxjs/operators';
-import {Observable, Subscription} from 'rxjs';
+import {mergeMap} from 'rxjs/operators';
+import {Subscription} from 'rxjs';
+import {ClientService} from '../../services/client.service';
 
 @Component({
   selector: 'app-main-page',
@@ -40,13 +41,15 @@ export class MainPageComponent implements OnInit, OnDestroy {
   constructor(
     private dataService: DataHandlerService,
     private router: Router,
-    private invoiceService: InvoiceService
+    private invoiceService: InvoiceService,
+    private clientService: ClientService
   ) {
   }
 
 
   ngOnInit(): void {
     this.services = this.invoiceService.services;
+    console.log(this.services === this.invoiceService.services);
     this.monitoringServices = this.invoiceService.monitoringServices;
     this.servicePacks = this.invoiceService.servicePacks;
     this.invoice = this.invoiceService.invoice;
@@ -119,15 +122,19 @@ export class MainPageComponent implements OnInit, OnDestroy {
   }
 
   onAddService(service: Service) {
-    this.services.push(service);
+    console.log(this.services === this.invoiceService.services);
+    // this.services.push(service);
+    console.log(this.services === this.invoiceService.services);
+    console.log(this.services);
+    console.log(this.invoiceService.services);
     this.recalculateAmount();
   }
 
   onRemoveService(service: Service) {
-    const index = this.services.map((s) => s.id).indexOf(service.id);
-    if (index > -1) {
-      this.services.splice(index, 1);
-    }
+    // const index = this.services.map((s) => s.id).indexOf(service.id);
+    // if (index > -1) {
+    //   this.services.splice(index, 1);
+    // }
     this.recalculateAmount();
 
   }
@@ -149,7 +156,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
   }
 
   changeServicePacks(servicePacks: any) {
-    this.servicePacks = servicePacks;
+    // this.servicePacks = servicePacks;
     this.recalculateAmount();
   }
 
@@ -170,8 +177,9 @@ export class MainPageComponent implements OnInit, OnDestroy {
 
   refresh() {
     this.invoiceService.refreshInvoice();
-    this.ngOnInit();
+    // this.ngOnInit();
     this.changeDate();
+    this.clientService.refreshClient();
   }
 
   removeNonexistedServices(): Service[]{
@@ -183,7 +191,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
       }
     }
 
-    this.services = tempServices;
+    this.invoiceService.services = this.services = tempServices;
     return tempServices;
   }
 
