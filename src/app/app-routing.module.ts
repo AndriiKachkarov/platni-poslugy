@@ -13,7 +13,10 @@ import {PreviousRouteRecorderService} from './services/previous-route-recorder.s
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {
-    path: 'stats', loadChildren: () => import('./stats/stats.module').then(m => m.StatsModule)
+    path: 'stats', canActivate: [AuthGuard], loadChildren: () => import('./stats/stats.module').then(m => m.StatsModule)
+  },
+  {
+    path: 'admin', canActivate: [AuthGuard], loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
   },
   {
     path: '', component: MainLayoutComponent, canActivate: [AuthGuard],  children: [

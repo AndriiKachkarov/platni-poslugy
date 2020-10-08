@@ -18,4 +18,13 @@
     width: 300px;
   }
 
+  &__amount, &__paid-amount {
+    display: inline-block;
+    margin: 20px;
+    width: 60px;
+  }
+}
+
+.isPaid {
+  background: #19a05e;
 }

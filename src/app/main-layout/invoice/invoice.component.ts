@@ -95,20 +95,20 @@ export class InvoiceComponent implements OnInit, OnDestroy {
     ).subscribe((clients: Client[]) => {
       if (this.invoice.idx) {
         if (!this.invoiceService.currentIdx) {
-          this.invoice.sampleTypes[0].amount = this.numToLocale(this.countTotalAmount());
+          this.invoice.sampleTypes[0].amount = this.numToLocale(this.invoice.amount);
           this.invoice.sampleTypes[1] = {name: '', unit: '', count: '', amount: ''};
           this.invoice.sampleTypes[2] = {name: '', unit: '', count: '', amount: ''};
         }
       } else {
         if (this.invoice.certificationArea) {
           this.invoice.sampleTypes = [
-            {name: `Матеріали агрохімічного обстеження с/г угідь згідно договору №00-01-33-___ від __.__.____р.`, unit: 'га', count: `${this.invoice.certificationArea}`, amount: this.numToLocale(this.countTotalAmount())},
+            {name: `Матеріали агрохімічного обстеження с/г угідь згідно договору №00-01-33-___ від __.__.____р.`, unit: 'га', count: `${this.invoice.certificationArea}`, amount: this.numToLocale(this.invoice.amount)},
             {name: '', unit: '', count: '', amount: ''},
             {name: '', unit: '', count: '', amount: ''}
           ];
         } else {
           this.invoice.sampleTypes = [
-            {name: '', unit: 'зр.', count: '1', amount: this.numToLocale(this.countTotalAmount())},
+            {name: '', unit: 'зр.', count: '1', amount: this.numToLocale(this.invoice.amount)},
             {name: '', unit: '', count: '', amount: ''},
             {name: '', unit: '', count: '', amount: ''}
           ];
@@ -166,7 +166,7 @@ export class InvoiceComponent implements OnInit, OnDestroy {
 
       //   // const invoice = this.invoiceService.invoices.find((i) => i.idx = this.invoice.idx);
     //   // this.invoiceService.invoices[this.invoiceService.invoices.indexOf(invoice)] = this.invoice;
-      this.invoiceService.patch(this.invoiceService.invoice.idx, this.invoice.date).subscribe((res) => {
+      this.invoiceService.patch(this.invoiceService.invoice).subscribe((res) => {
       });
     }
 
@@ -180,89 +180,52 @@ export class InvoiceComponent implements OnInit, OnDestroy {
     if (idx) {
       this.invoiceIdx$ = of(idx);
     } else {
-      this.invoiceIdx$ = this.invoiceService.getAllInvoices(this.invoice.date).pipe(
-        map((res) => {
-            let max = 0;
-            for (const inv of res) {
-              if (inv.idx && inv.idx > max) {
-                max = inv.idx;
-              }
-            }
-            return max + 1;
-          }
-        )
-      );
+      this.invoiceIdx$ = this.invoiceService.getIdx(this.invoice.date);
     }
   }
-
-  // countTotalAmount() {
-  //   let totalAmount = 0;
-  //   if (this.invoice.services) {
-  //     totalAmount += this.invoice.services.reduce((acc, s) => {
-  //       return s.prices[1591390800000].mainPrice ? s.prices[1591390800000].mainPrice + acc : s.prices[1591390800000].price + acc;
-  //     }, 0);
-  //   }
-  //
-  //   if (this.invoice.certificationArea) {
-  //     console.log(this.dataService.certificationPrise);
-  //     totalAmount += this.invoice.certificationArea * this.dataService.certificationPrise;
-  //   }
-  //   return Math.round(totalAmount * 100) / 100;
-  // }
 
   countTotalAmount() {
-    let totalAmount = 0;
-    const {timestampId, certTimestampId} = this.dataService.getTimestampId(this.invoice.date);
-    console.log(this.invoice);
-    if (this.invoice.serviceIds.services) {
-      for (const id of this.invoice.serviceIds.services) {
-        totalAmount += this.dataService.totalServices[id].prices[timestampId].mainPrice
-          ? this.dataService.totalServices[id].prices[timestampId].mainPrice
-          : this.dataService.totalServices[id].prices[timestampId].price;
-      }
-    }
-
-    if (this.invoice.serviceIds.servicePacks) {
-      for (const servicePackIds of this.invoice.serviceIds.servicePacks) {
-        for (const id of servicePackIds.services) {
-          totalAmount += this.dataService.totalServices[id].prices[timestampId].mainPrice
-            ? this.dataService.totalServices[id].prices[timestampId].mainPrice
-            : this.dataService.totalServices[id].prices[timestampId].price;
-        }
-      }
-    }
-
-    if (this.invoice.certificationArea) {
-      totalAmount += this.invoice.certificationArea * this.dataService.certificationPrices[certTimestampId];
-    }
-
-    if (this.invoice.monitoringServiceIds) {
-      for (const id of this.invoice.monitoringServiceIds) {
-        totalAmount += this.dataService.totalServices[id].prices[timestampId].mainPrice
-          ? this.dataService.totalServices[id].prices[timestampId].mainPrice
-          : this.dataService.totalServices[id].prices[timestampId].price;
-      }
-    }
-    if (this.invoice.additionalSum) {
-      totalAmount += this.invoice.additionalSum;
-    }
-    return Math.round(totalAmount * 100) / 100;
+    // let totalAmount = 0;
+    // const {timestampId, certTimestampId} = this.dataService.getTimestampId(this.invoice.date);
+    // console.log(this.invoice);
+    // if (this.invoice.serviceIds.services) {
+    //   for (const id of this.invoice.serviceIds.services) {
+    //     totalAmount += this.dataService.totalServices[id].prices[timestampId].mainPrice
+    //       ? this.dataService.totalServices[id].prices[timestampId].mainPrice
+    //       : this.dataService.totalServices[id].prices[timestampId].price;
+    //   }
+    // }
+    //
+    // if (this.invoice.serviceIds.servicePacks) {
+    //   for (const servicePackIds of this.invoice.serviceIds.servicePacks) {
+    //     for (const id of servicePackIds.services) {
+    //       totalAmount += this.dataService.totalServices[id].prices[timestampId].mainPrice
+    //         ? this.dataService.totalServices[id].prices[timestampId].mainPrice
+    //         : this.dataService.totalServices[id].prices[timestampId].price;
+    //     }
+    //   }
+    // }
+    //
+    // if (this.invoice.certificationArea) {
+    //   totalAmount += this.invoice.certificationArea * this.dataService.certificationPrices[certTimestampId];
+    // }
+    //
+    // if (this.invoice.monitoringServiceIds) {
+    //   for (const id of this.invoice.monitoringServiceIds) {
+    //     totalAmount += this.dataService.totalServices[id].prices[timestampId].mainPrice
+    //       ? this.dataService.totalServices[id].prices[timestampId].mainPrice
+    //       : this.dataService.totalServices[id].prices[timestampId].price;
+    //   }
+    // }
+    // if (this.invoice.additionalSum) {
+    //   totalAmount += this.invoice.additionalSum;
+    // }
+    // return Math.round(totalAmount * 100) / 100;
+    // return this.invoice.amount;
   }
 
-  // countTotalAmount() {
-  //     let totalAmount = this.invoiceService.services.reduce((acc, s) => {
-  //       return s.mainPrice ? s.mainPrice + acc : s.price + acc;
-  //     }, 0);
-  //     for (const sample of this.invoiceService.servicePacks) {
-  //       totalAmount += sample.services.reduce((acc, s) => {
-  //         return s.mainPrice ? s.mainPrice + acc : s.price + acc;
-  //       }, 0);
-  //     }
-  //     return Math.round(totalAmount * 100) / 100;
-  // }
-
   countPDV() {
-    return this.countTotalAmount() / 6;
+    return this.invoice.amount / 6;
   }
 
   return(type) {

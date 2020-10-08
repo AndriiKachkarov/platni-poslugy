@@ -30,7 +30,6 @@ export class MainPageComponent implements OnInit, OnDestroy {
   certificationPrice: number;
   services: Service[];
   servicePacks: Array<any>;
-  amount = 0;
   showAllServices = false;
   invoice: Invoice;
   isLoaded = false;
@@ -49,7 +48,6 @@ export class MainPageComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.services = this.invoiceService.services;
-    console.log(this.services === this.invoiceService.services);
     this.monitoringServices = this.invoiceService.monitoringServices;
     this.servicePacks = this.invoiceService.servicePacks;
     this.invoice = this.invoiceService.invoice;
@@ -118,7 +116,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
     if (this.invoice.additionalSum) {
       amount += this.invoice.additionalSum;
     }
-    this.amount = Math.round(amount * 100) / 100;
+    this.invoice.amount = Math.round(amount * 100) / 100;
   }
 
   onAddService(service: Service) {
@@ -177,7 +175,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
 
   refresh() {
     this.invoiceService.refreshInvoice();
-    // this.ngOnInit();
+    this.ngOnInit();
     this.changeDate();
     this.clientService.refreshClient();
   }

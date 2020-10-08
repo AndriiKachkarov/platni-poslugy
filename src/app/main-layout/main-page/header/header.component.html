@@ -1,4 +1,4 @@
-<div class="total-amount">{{amount | number:'1.2-2'}}</div>
+<div class="total-amount">{{invoice.amount | number:'1.2-2'}}</div>
 <div class="invoice-idx">{{invoice.idx ? invoice.idx + '/25' : 'Новий рахунок'}}</div>
 <div class="date-picker">
   <input [(ngModel)]="invoice.date" matInput [matDatepicker]="picker" class="date-picker-input" (ngModelChange)="changeDate()" contenteditable="false">

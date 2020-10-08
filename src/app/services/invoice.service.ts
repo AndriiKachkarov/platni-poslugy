@@ -1,12 +1,10 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Observable, of} from 'rxjs';
+import {forkJoin, Observable, of} from 'rxjs';
 import {Invoice} from '../shared/interfaces';
 import {environment} from '../../environments/environment';
-import {map, mergeMap, switchMap} from 'rxjs/operators';
-import {ServicePack, Service} from '../data/interfaces';
+import {delay, map, mergeMap, switchMap} from 'rxjs/operators';
 import {DataHandlerService} from './data-handler.service';
-import {log} from 'util';
 
 @Injectable({
   providedIn: 'root'
@@ -20,6 +18,7 @@ export class InvoiceService {
     date: new  Date(),
     dateOfCreation: new Date(),
     client: undefined,
+    amount: 0,
     // services: [],
     sampleTypes: [],
     serviceIds: {
@@ -48,32 +47,89 @@ export class InvoiceService {
     );
   }
 
-  getAllInvoices(date: Date): Observable<Invoice[]>{
-    // if (this.invoices) {
-    //   return of(this.invoices);
-    // } else {
-      return this.http.get<Invoice[]>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${date.getFullYear()}.json`).pipe(
-        map((response) => {
-          if (response) {
-            console.log(response);
-            this.invoices = Object.values(response);
-            return Object.values(response);
-          } else {
-            return [];
-          }
-        })
-      );
-    // }
+  getAllInvoices(dateStart: Date, dateEnd: Date): Observable<Invoice[]>{
+    const start = dateStart.getFullYear();
+    const end = dateEnd.getFullYear();
+    const yearsArr = [];
+
+    for (let i = start; i <= end; i++) {
+      yearsArr.push(this.http.get<Invoice[]>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${i}.json`).pipe(
+          map((response) => {
+            if (response) {
+              const invoices: Invoice[] = Object.values(response);
+              return invoices.filter((invoice: Invoice) => new Date(invoice.date).getTime() >= dateStart.getTime() && new Date(invoice.date).getTime() <= dateEnd.getTime());
+            } else {
+              return [];
+            }
+          })
+        ));
+
+    }
+
+    return forkJoin(...yearsArr).pipe(
+      map((res) => {
+        console.log(res);
+        return res.flat();
+      })
+    );
+      // return this.http.get<Invoice[]>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${dateStart.getFullYear()}.json`).pipe(
+      //   map((response) => {
+      //     if (response) {
+      //       console.log(response);
+      //       this.invoices = Object.values(response);
+      //       return Object.values(response);
+      //     } else {
+      //       return [];
+      //     }
+      //   })
+      // );
   }
 
-  patch(idx: number, date: Date): Observable<any>{
+  test(): Observable<any> {
+    const start = 2018;
+    const end = 2020;
+
+    const arr = [];
+
+    for (let i = start; i <= end; i++) {
+      if (i === start) {
+        arr.push(of(i).pipe(
+          delay(3000)
+        ));
+      } else {
+        arr.push(of(i));
+      }
+    }
+
+    return forkJoin(arr);
+  }
+
+  getIdx(date: Date): Observable<number>{
+    return this.http.get<Invoice[]>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${date.getFullYear()}.json`).pipe(
+      map((response) => {
+        if (response) {
+          let max = 0;
+          for (const inv of Object.values(response)) {
+            if (inv.idx && inv.idx > max) {
+              max = inv.idx;
+            }
+          }
+          return max + 1;
+        } else {
+          return 1;
+        }
+      })
+    );
+  }
+
+  patch(invoice: Invoice): Observable<any>{
     this.setServiceIds();
-    return this.http.get<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${date.getFullYear()}.json`).pipe(
+    return this.http.get<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${invoice.date.getFullYear()}.json`).pipe(
       mergeMap((res) => {
         const values = Object.values(res);
-        const index = values.indexOf(values.find((i) => +i.idx === +idx));
+        const index = values.indexOf(values.find((i) => +i.idx === +invoice.idx));
         const name = Object.keys(res)[index];
-        return this.http.patch<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${date.getFullYear()}/${name}.json`, this.invoice);
+        return this.http.patch<Invoice>(`${environment.fbDbUrl}/${environment.fbDbInvoicesCollection}/${invoice.date.getFullYear()}/${name}.json`, invoice);
       })
     );
   }
@@ -188,6 +244,7 @@ export class InvoiceService {
       date: new  Date(),
       dateOfCreation: new Date(),
       client: undefined,
+      amount: 0,
       // services: [],
       sampleTypes: [],
       serviceIds: {

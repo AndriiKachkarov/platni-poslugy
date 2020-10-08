@@ -17,6 +17,8 @@ import { LoaderComponent } from './components/loader/loader.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSelectModule} from '@angular/material/select';
 import { SortPipe } from './pipes/sort.pipe';
+import { PaidAmountDialogComponent } from './components/paid-amount-dialog/paid-amount-dialog.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -27,7 +29,8 @@ import { SortPipe } from './pipes/sort.pipe';
         SearchPipe,
         LoaderComponent,
         SortPipe,
-        SortPipe
+        SortPipe,
+        PaidAmountDialogComponent
     ],
   imports: [
     HttpClientModule,
@@ -43,7 +46,8 @@ import { SortPipe } from './pipes/sort.pipe';
     MatDatepickerModule,
     MatNativeDateModule,
     MatMenuModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDialogModule
   ],
     exports: [
         HttpClientModule,

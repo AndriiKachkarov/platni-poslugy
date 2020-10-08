@@ -10,7 +10,6 @@ import {Invoice} from '../../../shared/interfaces';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() amount: number;
   @Input() invoice: Invoice;
 
   @Output() onCollapseAll = new EventEmitter<void>();

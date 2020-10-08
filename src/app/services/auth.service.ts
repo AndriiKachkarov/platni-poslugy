@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {Observable, of, Subject, Subscription, throwError} from 'rxjs';
 import {environment} from '../../environments/environment';
-import {catchError, map, tap} from 'rxjs/operators';
+import {catchError, map, switchMap, tap} from 'rxjs/operators';
 import {FbAuthResponse} from '../shared/interfaces';
 
 @Injectable({
@@ -13,7 +13,7 @@ export class AuthService {
   sub1: Subscription;
 
   public error$: Subject<string> = new Subject<string>();
-  refreshflag = false;
+  refreshFlag = false;
 
   constructor(private http: HttpClient) {
   }
@@ -41,30 +41,38 @@ export class AuthService {
     const expDate = new Date(localStorage.getItem('fb-token-exp'));
     if (new Date().getTime() > expDate.getTime() - 60000) {
       if (localStorage.getItem('refresh-token')) {
+        if (!this.refreshFlag) {
+          this.refreshFlag = true;
+          return this.refreshToken().pipe(
+            switchMap(() => {
+              this.refreshFlag = false;
+              return of(true);
+            })
+          );
 
-        if (!this.refreshflag) {
-          this.refreshflag = true;
-          this.sub1 = this.refreshToken().subscribe((res) => {
-            this.refreshflag = false;
-            setTimeout(() => {
-              this.sub1.unsubscribe();
-            }, 0);
-            return of(true);
-          });
+        } else {
+          return of(false);
         }
-        // return this.refreshToken().pipe(
-        //   map((res) => {
-        //     console.log(res);
-        //     return true;
-        //   })
-        // );
+
+
+        // if (!this.refreshFlag) {
+          // this.refreshFlag = true;
+          // this.sub1 = this.refreshToken()
+            // .subscribe((res) => {
+            // this.refreshFlag = false;
+            // setTimeout(() => {
+            //   this.sub1.unsubscribe();
+            // }, 0);
+            // return of(true);
+          // });
+        // }
       } else {
         this.logout();
-        return of(null);
+        return of(false);
       }
-
+    } else {
+      return of(!!this.token);
     }
-    return of(!!this.token);
   }
 
   // isAuthenticated(): boolean {
@@ -77,19 +85,21 @@ export class AuthService {
   // }
 
   private handleError(error: HttpErrorResponse) {
-    const {message} = error.error.error;
-    switch (message) {
-      case 'EMAIL_NOT_FOUND':
-        this.error$.next('Введіть коректний email');
-        break;
-      case 'INVALID_EMAIL':
-        this.error$.next('Введіть коректний email');
+    if (error.error) {
+      const {message} = error.error.error;
+      switch (message) {
+        case 'EMAIL_NOT_FOUND':
+          this.error$.next('Введіть коректний email');
+          break;
+        case 'INVALID_EMAIL':
+          this.error$.next('Введіть коректний email');
 
-        break;
-      case 'INVALID_PASSWORD':
-        this.error$.next('Введіть коректний пароль');
-        break;
+          break;
+        case 'INVALID_PASSWORD':
+          this.error$.next('Введіть коректний пароль');
+          break;
 
+      }
     }
     return throwError(error);
   }

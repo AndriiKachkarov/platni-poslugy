@@ -25,16 +25,15 @@ export interface SampleType {
   name: string;
 }
 
-// export interface Monitoring {
-//
-// }
+
 export interface Invoice {
-  // services: Service[];
   sampleTypes?: SampleType[];
   idx?: number;
   dateOfCreation?: Date; // invoice creating date
   date?: Date;
   client: number | string;
+  amount: number;
+  paidAmount?: number;
   serviceIds?: ServiceIds;
   monitoringServiceIds?: number[];
   certificationArea?: number;

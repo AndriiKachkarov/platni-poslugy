@@ -1,8 +1,34 @@
-<div class="container" *ngFor="let invoice of invoices$ | async; index as i" (click)="goToInvoice(invoice.idx)">
-  <div class="invoice">
+<div class="container">
+  <div>
+    <div class="date-picker">
+      <input [(ngModel)]="dateStart" matInput [matDatepicker]="pickerStart" class="date-picker-input" (ngModelChange)="changeDate()" contenteditable="false">
+      <mat-datepicker #pickerStart></mat-datepicker>
+      <button mat-icon-button (click)="pickerStart.open()">
+        <mat-icon>today</mat-icon>
+      </button>
+    </div>
+
+    <div class="date-picker">
+      <input [(ngModel)]="dateEnd" matInput [matDatepicker]="pickerEnd" class="date-picker-input" (ngModelChange)="changeDate()" contenteditable="false">
+      <mat-datepicker #pickerEnd></mat-datepicker>
+      <button mat-icon-button (click)="pickerEnd.open()">
+        <mat-icon>today</mat-icon>
+      </button>
+    </div>
+
+    <button (click)="test()">test</button>
+
+  </div>
+  <div class="invoice" *ngFor="let invoice of invoices$ | async; index as i" (click)="goToInvoice(invoice.idx)" [ngClass]="{isPaid: isPaid(invoice)}">
     <span class="invoice__id">{{invoice.idx}}</span>
     <span class="invoice__date">{{invoice.date | date: "short"}}</span>
     <span class="invoice__client">{{clients[invoice.client]?.name}}</span>
-    <span class="invoice__amount">{{countTotalAmount(invoice)}}</span>
+    <span class="invoice__amount">{{invoice.amount}}</span>
+    <span class="invoice__paid-amount">{{invoice.paidAmount}}</span>
+    <span class="invoice__paid-amount">
+      <button mat-icon-button (click)="$event.stopPropagation(); setPaidAmount(invoice)">
+        <mat-icon>money</mat-icon>
+      </button>
+    </span>
   </div>
 </div>

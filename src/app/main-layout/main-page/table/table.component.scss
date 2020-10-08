@@ -9,11 +9,15 @@ mat-expansion-panel-header {
 
 .service {
   display: grid;
-  grid-template-columns: 20px 1fr 50px 50px;
+  grid-template-columns: 40px 1fr 50px 50px;
   gap: 5px;
   align-items: center;
   padding: 10px 5px;
   border-bottom: 1px solid #f0f0f0;
+
+  &__id {
+    padding-left: 10px;
+  }
 }
 
 :host {

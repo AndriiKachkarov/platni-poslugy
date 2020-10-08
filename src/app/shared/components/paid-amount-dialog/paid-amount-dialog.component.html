@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Введіть оплачену суму</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Оплачена сума</mat-label>
+    <label>
+      <input type="number" matInput [(ngModel)]="data.paidAmount">
+    </label>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Ні, діякую</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ок</button>
+</div>
