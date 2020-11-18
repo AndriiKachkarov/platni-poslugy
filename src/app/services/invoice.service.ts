@@ -5,6 +5,7 @@ import {Invoice} from '../shared/interfaces';
 import {environment} from '../../environments/environment';
 import {delay, map, mergeMap, switchMap} from 'rxjs/operators';
 import {DataHandlerService} from './data-handler.service';
+import {MonitoringServices} from '../main-layout/main-page/monitoring/monitoring-services';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class InvoiceService {
 
   services = [];
   servicePacks = [];
-  monitoringServices = [];
+  monitoringServices: MonitoringServices = new MonitoringServices();
   invoice: Invoice = {
     date: new  Date(),
     dateOfCreation: new Date(),
@@ -136,7 +137,7 @@ export class InvoiceService {
 
   private setServiceIds(): void {
     this.invoice.serviceIds.services = this.services.map((s) => s.id);
-    this.invoice.monitoringServiceIds = this.monitoringServices.map((s) => s.id);
+    this.invoice.monitoringServiceIds = this.monitoringServices;
     this.invoice.serviceIds.servicePacks = this.servicePacks.map((sample) => ({id: sample.id, services: sample.services.map((s) => s.id)}));
   }
 
@@ -196,15 +197,9 @@ export class InvoiceService {
           }
 
           if (invoice.monitoringServiceIds) {
-            for (const service of this.dataService.totalServices) {
-              for (const id of invoice.monitoringServiceIds) {
-                if (service.id === +id) {
-                  this.monitoringServices.push(service);
-                }
-              }
-            }
+            this.monitoringServices = invoice.monitoringServiceIds;
           } else {
-            this.monitoringServices = [];
+            this.monitoringServices = new MonitoringServices();
           }
           return invoice;
         })
@@ -239,7 +234,7 @@ export class InvoiceService {
   refreshInvoice(): void{
     this.services.length = 0;
     this.servicePacks.length = 0;
-    this.monitoringServices.length = 0;
+    this.monitoringServices = new MonitoringServices();
     this.invoice = {
       date: new  Date(),
       dateOfCreation: new Date(),

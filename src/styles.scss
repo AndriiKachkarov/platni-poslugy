@@ -23,6 +23,7 @@ html, body {
   margin: 0 auto;
   background: #f3f3f3;
   width: 100%;
+  min-height: 100%;
 }
 
 
@@ -124,6 +125,10 @@ html, body {
     }
   }
 
+}
+
+.mat-form-field-wrapper {
+  margin: 5px !important;
 }
 
 

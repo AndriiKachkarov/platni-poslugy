@@ -24,7 +24,7 @@
                       {{subSubcategory.title}}
                     </mat-panel-title>
                   </mat-expansion-panel-header>
-                  <ng-container *ngFor="let service of getServicesBySubSubcat(subSubcatIdx)">
+                  <ng-container *ngFor="let service of getServicesBySubSubcat(subSubcatIdx) | sort:timestampId">
                     <div class="service"  *ngIf="service.prices[this.timestampId] !== undefined">
                       <span class="service__id">{{service.prices[this.timestampId].id}}</span>
                       <span class="service__title">{{service.title}}</span>
@@ -47,7 +47,7 @@
 
               </ng-container>
 
-              <ng-container *ngFor="let service of getServicesBySubcat(subcatIdx)">
+              <ng-container *ngFor="let service of getServicesBySubcat(subcatIdx) | sort:timestampId">
                 <div class="service"  *ngIf="service.subSubcategoryId === undefined && service.prices[this.timestampId] !== undefined">
                   <span class="service__id">{{service.prices[this.timestampId].id}}</span>
                   <span class="service__title">{{service.title}}</span>
@@ -68,7 +68,7 @@
             </ng-container>
 
             <ng-template #subServices>
-              <ng-container *ngFor="let service of getServicesBySubcat(subcatIdx) | sort : timestampId">
+              <ng-container *ngFor="let service of getServicesBySubcat(subcatIdx) | sort:timestampId">
                 <div class="service" *ngIf="service.prices[this.timestampId] !== undefined">
                   <span class="service__id">{{service.prices[this.timestampId].id}}</span>
                   <span class="service__title">{{service.title}}</span>
@@ -93,7 +93,7 @@
 
         </ng-container>
 
-        <ng-container *ngFor="let service of getServicesByCat(CatIdx)">
+        <ng-container *ngFor="let service of getServicesByCat(CatIdx) | sort:timestampId">
           <div class="service" *ngIf="service.subcategoryId === undefined  && service.prices[this.timestampId] !== undefined">
             <span class="service__id">{{service.prices[this.timestampId].id}}</span>
             <span class="service__title">{{service.title}}</span>
@@ -115,7 +115,7 @@
       </ng-container>
 
       <ng-template #services>
-        <ng-container *ngFor="let service of getServicesByCat(CatIdx)">
+        <ng-container *ngFor="let service of getServicesByCat(CatIdx) | sort:timestampId">
           <div class="service" *ngIf="service.prices[this.timestampId] !== undefined">
             <span class="service__id">{{service.prices[this.timestampId].id}}</span>
             <span class="service__title">{{service.title}}</span>

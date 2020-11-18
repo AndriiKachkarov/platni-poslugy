@@ -4,7 +4,6 @@ import {Observable} from 'rxjs';
 import {Client, Invoice} from '../shared/interfaces';
 import {environment} from '../../environments/environment';
 import {map, mergeMap, switchMap} from 'rxjs/operators';
-import {Data} from '../data/Data';
 
 @Injectable({
   providedIn: 'root'

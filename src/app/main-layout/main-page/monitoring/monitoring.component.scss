@@ -1,5 +1,6 @@
 .monitoring {
   min-height: 100vh;
+  padding: 10px;
 }
 .service {
   display: grid;
@@ -22,4 +23,9 @@
   text-align: center;
 }
 }
+}
+
+.hidden {
+  z-index: -100;
+  opacity: 0;
 }

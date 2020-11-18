@@ -116,4 +116,12 @@ export class ServicePacksComponent implements OnInit {
     console.log(this.servicePacks);
     this.changeAmount.emit(this.servicePacks);
   }
+
+  getServicePackCost(serviceIds) {
+    return Math.round(serviceIds.reduce((accum, currentId) => {
+      return accum + (this.totalServices[currentId].prices[this.timestampId].mainPrice
+        ? this.totalServices[currentId].prices[this.timestampId].mainPrice
+        : this.totalServices[currentId].prices[this.timestampId].price);
+    }, 0) * 100) / 100;
+  }
 }

@@ -4,7 +4,7 @@ import {Router} from '@angular/router';
 import {InvoiceService} from '../../services/invoice.service';
 import {Category, Service, ServicePack, Subcategory, SubSubcategory} from '../../data/interfaces';
 import {fadeStateTrigger} from '../../shared/animations/fade.animation';
-import {Invoice} from '../../shared/interfaces';
+import {Invoice, MonitoringServices} from '../../shared/interfaces';
 import {mergeMap} from 'rxjs/operators';
 import {Subscription} from 'rxjs';
 import {ClientService} from '../../services/client.service';
@@ -33,7 +33,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
   showAllServices = false;
   invoice: Invoice;
   isLoaded = false;
-  monitoringServices: Service[];
+  monitoringServices;
   subscription: Subscription;
 
 
@@ -108,8 +108,10 @@ export class MainPageComponent implements OnInit, OnDestroy {
     }
 
     if (this.monitoringServices) {
-      for (const service of this.monitoringServices) {
-        amount += service.prices[this.timestampId].mainPrice ? service.prices[this.timestampId].mainPrice : service.prices[this.timestampId].price;
+      for (const serviceId of Object.keys(this.monitoringServices)) {
+        amount += this.totalServices[serviceId].prices[this.timestampId].mainPrice
+          ? this.monitoringServices[serviceId] * this.totalServices[serviceId].prices[this.timestampId].mainPrice
+          : this.monitoringServices[serviceId] * this.totalServices[serviceId].prices[this.timestampId].price;
       }
     }
 
@@ -193,8 +195,8 @@ export class MainPageComponent implements OnInit, OnDestroy {
     return tempServices;
   }
 
-  changeMonitoringServices(services: Service[]) {
-    this.monitoringServices = services;
+  changeMonitoringServices(monitoringServices: MonitoringServices) {
+    this.monitoringServices = monitoringServices;
     this.recalculateAmount();
   }
 

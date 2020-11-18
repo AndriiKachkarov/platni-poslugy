@@ -22,6 +22,7 @@ import {ServicePacksComponent} from './main-layout/main-page/service-packs/servi
 import { CertificationComponent } from './main-layout/main-page/certification/certification.component';
 import { MonitoringComponent } from './main-layout/main-page/monitoring/monitoring.component';
 import { AdditionalComponent } from './main-layout/main-page/additional/additional.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 registerLocaleData(localeRu, 'ru');
 
@@ -52,6 +53,7 @@ const INTERCEPTOR_PROVIDER: Provider = {
         AppRoutingModule,
         BrowserAnimationsModule,
         ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
+        MatCheckboxModule,
     ],
   providers: [
     INTERCEPTOR_PROVIDER,

@@ -3,7 +3,6 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {ActivatedRoute, Router} from '@angular/router';
 import {ClientService} from '../../services/client.service';
 import {Client} from '../../shared/interfaces';
-import {Data} from '../../data/Data';
 
 @Component({
   selector: 'app-client',

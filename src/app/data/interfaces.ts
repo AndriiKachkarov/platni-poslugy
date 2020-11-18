@@ -23,11 +23,17 @@ export interface SubSubcategory {
 export interface Service {
   id: number;
   title: string;
+  category?: any;
+  subcategory?: any;
+  subSubcategory?: any;
+  price?: number;
+  mainPrice?: number;
   categoryId: number;
   subcategoryId?: number;
   subSubcategoryId?: number;
   prices: any;
 }
+
 
 export interface ServicePack {
   id: number;
