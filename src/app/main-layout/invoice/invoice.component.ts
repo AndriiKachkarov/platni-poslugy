@@ -4,11 +4,13 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {InvoiceService} from '../../services/invoice.service';
 import {Client, Invoice} from '../../shared/interfaces';
 import {Observable, of, Subscription} from 'rxjs';
-import {map, mergeMap, switchMap} from 'rxjs/operators';
+import {mergeMap, switchMap} from 'rxjs/operators';
 import {ClientService} from '../../services/client.service';
 import {DataHandlerService} from '../../services/data-handler.service';
 import {Service, ServicePack} from '../../data/interfaces';
 import {fadeStateTrigger} from '../../shared/animations/fade.animation';
+import {MatDialog} from '@angular/material/dialog';
+import {ModalDialogComponent} from '../../shared/components/modal-dialog/modal-dialog.component';
 
 @Component({
   selector: 'app-invoice',
@@ -37,7 +39,6 @@ export class InvoiceComponent implements OnInit, OnDestroy {
   clients: Client[];
   clientName: any = '';
   clientNameFocused = false;
-  // currentIdx: number;
   private subscription: Subscription;
   totalServices: Service[];
   timestamps: number[];
@@ -51,9 +52,9 @@ export class InvoiceComponent implements OnInit, OnDestroy {
     private invoiceService: InvoiceService,
     private clientService: ClientService,
     private route: ActivatedRoute,
-    private dataService: DataHandlerService
+    private dataService: DataHandlerService,
+    public dialog: MatDialog
   ) {
-    // this.totalServices = dataService.totalServices;
   }
 
   ngOnInit(): void {
@@ -72,7 +73,6 @@ export class InvoiceComponent implements OnInit, OnDestroy {
       }),
       mergeMap((certificationTimestamps) => {
         this.certificationTimestamps = certificationTimestamps;
-        // this.timestampId = this.dataService.getTimestampId(this.invoice.date).timestampId;
         return this.dataService.getCertificationPrices();
       }),
       mergeMap((certificationPrices) => {
@@ -80,10 +80,6 @@ export class InvoiceComponent implements OnInit, OnDestroy {
         return this.route.queryParams.pipe(
           switchMap((queryParam) => {
             this.invoiceService.currentIdx = queryParam.idx;
-          //   return this.invoiceService.getInvoiceDate();
-          // }),
-          // switchMap((date) => {
-            // this.dataService.setPrices(date);
             return this.invoiceService.getInvoice(this.invoiceService.currentIdx, this.invoiceService.invoice.date);
           }),
           switchMap((invoice: Invoice) => {
@@ -161,12 +157,26 @@ export class InvoiceComponent implements OnInit, OnDestroy {
         })
       ).subscribe((res) => {
         this.getInvoiceIdx(res.idx);
+        this.dialog.open(ModalDialogComponent, {
+          data: {type: 'success'}
+        });
+      }, (rej) => {
+        this.dialog.open(ModalDialogComponent, {
+          data: {type: 'danger'}
+        });
       });
     } else {
 
       //   // const invoice = this.invoiceService.invoices.find((i) => i.idx = this.invoice.idx);
     //   // this.invoiceService.invoices[this.invoiceService.invoices.indexOf(invoice)] = this.invoice;
       this.invoiceService.patch(this.invoiceService.invoice).subscribe((res) => {
+        this.dialog.open(ModalDialogComponent, {
+          data: {type: 'success'}
+        });
+      }, (rej) => {
+        this.dialog.open(ModalDialogComponent, {
+          data: {type: 'danger'}
+        });
       });
     }
 
