@@ -1,0 +1,4 @@
+<h1 mat-dialog-title [ngClass]="data.type">{{data.type === 'success' ? 'Збережено' : 'Виникла помилка, спробуйте зберегти ще раз'}}</h1>
+<div mat-dialog-actions class="actions">
+  <button mat-button cdkFocusInitial (click)="onNoClick()">Ок</button>
+</div>
