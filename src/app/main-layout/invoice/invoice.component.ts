@@ -23,6 +23,7 @@ export class InvoiceComponent implements OnInit, OnDestroy {
 
   months = [
     'січня',
+    'лютого',
     'березня',
     'квітня',
     'травня',
@@ -279,11 +280,18 @@ export class InvoiceComponent implements OnInit, OnDestroy {
   }
 
   getDay() {
+    console.log(this.invoice.dateOfCreation);
     return this.invoice.dateOfCreation.getDate();
   }
 
   getMonth() {
-    return this.months[this.invoice.dateOfCreation.getMonth() - 1];
+    console.log(this.invoice.dateOfCreation.getMonth());
+    return this.months[this.invoice.dateOfCreation.getMonth()];
+  }
+
+  getFullYear() {
+    console.log(this.invoice.dateOfCreation);
+    return this.invoice.dateOfCreation.getFullYear();
   }
 
   addClient() {

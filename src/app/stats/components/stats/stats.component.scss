@@ -1,30 +1,64 @@
 .invoice {
+  .header {
+    display: flex;
+    align-items: center;
 
-  &__id {
-    display: inline-block;
-    margin: 20px;
-    width: 30px;
+    &__id {
+      flex-basis: 5%;
+      padding: 5px;
+    }
+
+    &__date {
+      flex-basis: 15%;
+      padding: 5px;
+    }
+
+    &__client {
+      flex-basis: 45%;
+      padding: 5px;
+    }
+
+    &__amount, &__paid-amount {
+      flex-basis: 15%;
+      padding: 5px;
+    }
   }
 
-  &__date {
-    display: inline-block;
-    margin: 20px;
-    width: 60px;
-  }
+}
 
-  &__client {
-    display: inline-block;
-    margin: 20px;
-    width: 300px;
-  }
-
-  &__amount, &__paid-amount {
-    display: inline-block;
-    margin: 20px;
-    width: 60px;
-  }
+.invoice h4 {
+  padding: 5px 25px;
+  font-size: 24px;
 }
 
 .isPaid {
   background: #19a05e;
+}
+
+.service {
+  display: flex;
+  padding: 0 10px;
+
+  &:nth-child(odd) {
+    background: #dfdfdf;
+  }
+
+  .id {
+    flex-basis: 5%;
+  }
+
+  .title {
+    flex-basis: 70%;
+  }
+
+  .count {
+    flex-basis: 10%;
+  }
+
+  .price {
+    flex-basis: 15%;
+  }
+  &-head {
+    background: #b8b8b8;
+  }
 }

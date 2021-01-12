@@ -19,16 +19,38 @@
     <button (click)="test()">test</button>
 
   </div>
-  <div class="invoice" *ngFor="let invoice of invoices$ | async; index as i" (click)="goToInvoice(invoice.idx)" [ngClass]="{isPaid: isPaid(invoice)}">
-    <span class="invoice__id">{{invoice.idx}}</span>
-    <span class="invoice__date">{{invoice.date | date: "short"}}</span>
-    <span class="invoice__client">{{clients[invoice.client]?.name}}</span>
-    <span class="invoice__amount">{{invoice.amount}}</span>
-    <span class="invoice__paid-amount">{{invoice.paidAmount}}</span>
-    <span class="invoice__paid-amount">
+  <mat-accordion multi>
+    <mat-expansion-panel class="invoice" *ngFor="let invoice of invoices$ | async; index as i" [ngClass]="{isPaid: isPaid(invoice)}" (click)="goToInvoice(invoice)">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="header">
+          <span class="header__id">{{invoice.idx}}</span>
+          <span class="header__date">{{invoice.date | date: "short"}}</span>
+          <span class="header__client">{{clients[invoice.client]?.name}}</span>
+          <span class="header__amount">{{invoice.amount}}</span>
+          <span class="header__paid-amount">{{invoice.paidAmount}}</span>
+          <span class="header__paid-amount">
       <button mat-icon-button (click)="$event.stopPropagation(); setPaidAmount(invoice)">
         <mat-icon>money</mat-icon>
       </button>
     </span>
-  </div>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ng-container *ngIf="invoice.serviceIds">
+        <h4>Аналізи</h4>
+        <div class="service service-head">
+          <span class="id"> #з/п </span>
+          <span class="title"> Назва послуги </span>
+          <span class="count"> Кількість </span>
+          <span class="price"> Ціна </span>
+        </div>
+        <div *ngFor="let service of getServicesList(invoice)" class="service">
+          <span class="id"> {{service.id}} </span>
+          <span class="title"> {{service.title}} </span>
+          <span class="count"> {{service.count}} </span>
+          <span class="price"> {{service.price}} </span>
+        </div>
+
+      </ng-container>
+    </mat-expansion-panel>
+  </mat-accordion>
 </div>

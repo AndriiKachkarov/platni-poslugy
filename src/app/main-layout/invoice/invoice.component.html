@@ -11,7 +11,7 @@
         <span class="day" class="hide-data">{{getDay()}}</span>
         <span class="hide-text">» </span>
         <span class="month" class="hide-data">{{getMonth()}}</span>
-        <span class="hide-text"> 2020 р.</span>
+        <span class="hide-text"> {{getFullYear()}} р.</span>
         <div class="date-picker hide-button">
           <input [(ngModel)]="invoice.dateOfCreation" matInput [matDatepicker]="picker" class="date-picker-input">
           <mat-datepicker #picker></mat-datepicker>

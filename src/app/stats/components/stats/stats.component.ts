@@ -9,7 +9,6 @@ import {mergeMap, switchMap, tap} from 'rxjs/operators';
 import {Service, ServicePack} from '../../../data/interfaces';
 import {MatDialog} from '@angular/material/dialog';
 import {PaidAmountDialogComponent} from '../../../shared/components/paid-amount-dialog/paid-amount-dialog.component';
-import {log} from 'util';
 
 @Component({
   selector: 'app-stats',
@@ -73,8 +72,9 @@ export class StatsComponent implements OnInit {
     });
   }
 
-  goToInvoice(idx: number) {
-    this.router.navigate(['invoice'], {queryParams: {idx}});
+  goToInvoice(invoice: Invoice) {
+    console.log(invoice);
+    // this.router.navigate(['/invoice'], {queryParams: {idx: invoice['idx']}});
   }
 
   // countTotalAmount(invoice) {
@@ -155,5 +155,35 @@ export class StatsComponent implements OnInit {
 
   isPaid(invoice: Invoice): boolean {
     return invoice.amount <= invoice.paidAmount;
+  }
+
+  getServicesList(invoice: Invoice): any {
+    const idsMap = {};
+    if (invoice.serviceIds.services) {
+      invoice.serviceIds.services.forEach(id => {
+        idsMap[id] = idsMap[id] ? idsMap[id] + 1 : 1;
+      });
+    }
+
+    if (invoice.serviceIds.servicePacks) {
+      invoice.serviceIds.servicePacks.forEach(servicePack => {
+        servicePack.services.forEach(id => {
+          idsMap[id] = idsMap[id] ? idsMap[id] + 1 : 1;
+        });
+      });
+    }
+
+
+    const result = Object.entries(idsMap).reduce((acc, item) => {
+      const timestampId = this.dataService.getTimestampId(new Date(invoice.date)).timestampId;
+      acc.push({
+        title: this.totalServices[item[0]].title,
+        id: this.totalServices[item[0]].prices[timestampId].id,
+        price: this.totalServices[item[0]].prices[timestampId].mainPrice ? this.totalServices[item[0]].prices[timestampId].mainPrice : this.totalServices[item[0]].prices[timestampId].price,
+        count: item[1]
+      });
+      return acc;
+    }, []);
+    return result;
   }
 }
