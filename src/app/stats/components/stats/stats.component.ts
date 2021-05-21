@@ -9,6 +9,9 @@ import {mergeMap, switchMap, tap} from 'rxjs/operators';
 import {Service, ServicePack} from '../../../data/interfaces';
 import {MatDialog} from '@angular/material/dialog';
 import {PaidAmountDialogComponent} from '../../../shared/components/paid-amount-dialog/paid-amount-dialog.component';
+import data from 'src/app/stats/components/stats/data.json';
+import prices from 'src/app/stats/components/stats/prices.json';
+import {log} from 'util';
 
 @Component({
   selector: 'app-stats',
@@ -40,7 +43,7 @@ export class StatsComponent implements OnInit {
 
   ngOnInit(): void {
     this.dateEnd = new Date();
-    this.dateStart = new Date(this.dateEnd.getFullYear(), 0, 1);
+    this.dateStart = new Date(this.dateEnd.getFullYear(), this.dateEnd.getMonth(), 1);
 
     this.subscription = this.dataService.getTotalServices().pipe(
       mergeMap((totalServices) => {
@@ -122,9 +125,40 @@ export class StatsComponent implements OnInit {
   }
 
   test() {
-    this.invoiceService.test().subscribe((res) => {
-      console.log(res);
-    });
+    // this.invoiceService.test().subscribe((res) => {
+    //   res = res.map(item => {
+    //     item.prices.push(item.prices[1]);
+    //     return item;
+    //   });
+    //   console.log(JSON.stringify(res));
+    // });
+
+    // const pr = data[1].reduce((dict, el) => {
+    //   dict[el.id] = +el.sum;
+    //   return dict;
+    // }, {});
+    //
+    // const mainPr = data[2].reduce((dict, el) => {
+    //   dict[el.id] = +el.sum;
+    //   return dict;
+    // }, {});
+    //
+    // const newPrices = prices.map((el: any): any => {
+    //   if (pr[el.prices[2].id]) {
+    //     el.prices[2].price = pr[el.prices[2].id];
+    //   }
+    //   if (mainPr[el.prices[2].id]) {
+    //     el.prices[2].mainPrice = mainPr[el.prices[2].id];
+    //   }
+    //   return el;
+    // });
+    //
+    // this.invoiceService.test(newPrices).subscribe((res) => {
+    //   console.log(res);
+    // });
+
+    console.log(Date.now());
+
   }
 
   setPaidAmount(invoice: Invoice) {

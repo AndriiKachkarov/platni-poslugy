@@ -86,23 +86,8 @@ export class InvoiceService {
       // );
   }
 
-  test(): Observable<any> {
-    const start = 2018;
-    const end = 2020;
-
-    const arr = [];
-
-    for (let i = start; i <= end; i++) {
-      if (i === start) {
-        arr.push(of(i).pipe(
-          delay(3000)
-        ));
-      } else {
-        arr.push(of(i));
-      }
-    }
-
-    return forkJoin(arr);
+  test(data): Observable<any> {
+    return  this.http.put<any>(`${environment.fbDbUrl}/services.json`, data);
   }
 
   getIdx(date: Date): Observable<number>{

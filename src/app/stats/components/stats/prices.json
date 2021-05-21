@@ -1,0 +1,9679 @@
+[
+  {
+    "categoryId": 0,
+    "id": 0,
+    "prices": [
+      {
+        "id": 1,
+        "mainPrice": 127.56,
+        "price": 117.6
+      },
+      {
+        "id": 1,
+        "mainPrice": 131.28,
+        "price": 124.44
+      },
+      {
+        "id": 1,
+        "mainPrice": 131.28,
+        "price": 148.7
+      }
+    ],
+    "subcategoryId": 0,
+    "title": "Відбирання гніздових  ґрунтових проб з підорного горизонту"
+  },
+  {
+    "categoryId": 0,
+    "id": 1,
+    "prices": [
+      {
+        "id": 2,
+        "mainPrice": 20.52,
+        "price": 19.2
+      },
+      {
+        "id": 2,
+        "mainPrice": 41.16,
+        "price": 19.92
+      },
+      {
+        "id": 2,
+        "mainPrice": 41.16,
+        "price": 23.3
+      }
+    ],
+    "subcategoryId": 0,
+    "title": "Відбирання ґрунтових проб при пошаровому відборі"
+  },
+  {
+    "categoryId": 0,
+    "id": 2,
+    "prices": [
+      {
+        "id": 3,
+        "mainPrice": 190.56,
+        "price": 161.64
+      },
+      {
+        "id": 3,
+        "mainPrice": 198.24,
+        "price": 170.04
+      },
+      {
+        "id": 3,
+        "mainPrice": 198.24,
+        "price": 203.5
+      }
+    ],
+    "subcategoryId": 0,
+    "title": "Відбір ґрунтових проб  для радіологічних досліджень з орного горизонту"
+  },
+  {
+    "categoryId": 0,
+    "id": 3,
+    "prices": [
+      {
+        "id": 4,
+        "mainPrice": 71.16,
+        "price": 70.32
+      },
+      {
+        "id": 4,
+        "mainPrice": 97.08,
+        "price": 74.28
+      },
+      {
+        "id": 4,
+        "mainPrice": 97.08,
+        "price": 88.4
+      }
+    ],
+    "subcategoryId": 0,
+    "title": "Відбирання гніздових проб  з орного горизонту"
+  },
+  {
+    "categoryId": 0,
+    "id": 4,
+    "prices": [
+      {
+        "id": 5,
+        "mainPrice": 756,
+        "price": 696.72
+      },
+      {
+        "id": 5,
+        "mainPrice": 774.12,
+        "price": 736.8
+      },
+      {
+        "id": 5,
+        "mainPrice": 774.12,
+        "price": 882.1
+      }
+    ],
+    "subcategoryId": 0,
+    "title": "Відбір ґрунтових зразків з генетичних горизонтів розрізів під закладку багаторічних насаджень"
+  },
+  {
+    "categoryId": 0,
+    "id": 5,
+    "prices": [
+      {
+        "id": 6,
+        "mainPrice": 972.6,
+        "price": 930.48
+      },
+      {
+        "id": 6,
+        "mainPrice": 1007.28,
+        "price": 985.08
+      },
+      {
+        "id": 6,
+        "mainPrice": 1007.28,
+        "price": 1181.4
+      }
+    ],
+    "subcategoryId": 0,
+    "title": "Закладка розрізів на неглибоких ґрунтах"
+  },
+  {
+    "categoryId": 0,
+    "id": 6,
+    "prices": [
+      {
+        "id": 7,
+        "mainPrice": 972.6,
+        "price": 930.48
+      },
+      {
+        "id": 7,
+        "mainPrice": 1007.28,
+        "price": 985.08
+      },
+      {
+        "id": 7,
+        "mainPrice": 1007.28,
+        "price": 1181.4
+      }
+    ],
+    "subcategoryId": 0,
+    "title": "Закладка розрізів на середньоглибоких та глибоких ґрунтах"
+  },
+  {
+    "categoryId": 0,
+    "id": 7,
+    "prices": [
+      {
+        "id": 8,
+        "price": 50.16
+      },
+      {
+        "id": 8,
+        "price": 53.04
+      },
+      {
+        "id": 8,
+        "price": 62.6
+      }
+    ],
+    "subcategoryId": 0,
+    "title": "Препарування розрізу та відбір ґрунтових зразків"
+  },
+  {
+    "categoryId": 0,
+    "id": 8,
+    "prices": [
+      {
+        "id": 9,
+        "price": 47.76
+      },
+      {
+        "id": 9,
+        "price": 50.88
+      },
+      {
+        "id": 9,
+        "price": 61.1
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "Питома електрична провідність у ґрунті"
+  },
+  {
+    "categoryId": 0,
+    "id": 9,
+    "prices": [
+      {
+        "id": 10,
+        "mainPrice": 223.8,
+        "price": 205.8
+      },
+      {
+        "id": 10,
+        "mainPrice": 237.24,
+        "price": 218.04
+      },
+      {
+        "id": 10,
+        "mainPrice": 237.24,
+        "price": 261.5
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "Гранулометричний склад ґрунту за Качинським"
+  },
+  {
+    "categoryId": 0,
+    "id": 10,
+    "prices": [
+      {
+        "id": 11,
+        "price": 151.8
+      },
+      {
+        "id": 11,
+        "price": 160.8
+      },
+      {
+        "id": 11,
+        "price": 193.0
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "Гранулометричний склад ґрунту за Качинським (скорочений)"
+  },
+  {
+    "categoryId": 0,
+    "id": 11,
+    "prices": [
+      {
+        "id": 12,
+        "mainPrice": 77.4,
+        "price": 77.16
+      },
+      {
+        "id": 12,
+        "mainPrice": 82.56,
+        "price": 81.72
+      },
+      {
+        "id": 12,
+        "mainPrice": 82.56,
+        "price": 97.9
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "рухомих сполук  фосфору за методом Чирикова"
+  },
+  {
+    "categoryId": 0,
+    "id": 12,
+    "prices": [
+      {
+        "id": 13,
+        "mainPrice": 70.56,
+        "price": 69.72
+      },
+      {
+        "id": 13,
+        "mainPrice": 77.52,
+        "price": 73.92
+      },
+      {
+        "id": 13,
+        "mainPrice": 77.52,
+        "price": 88.6
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "рухомих сполук  фосфору за методом Мачигіна"
+  },
+  {
+    "categoryId": 0,
+    "id": 13,
+    "prices": [
+      {
+        "id": 14,
+        "mainPrice": 75.84,
+        "price": 75.24
+      },
+      {
+        "id": 14,
+        "mainPrice": 81.72,
+        "price": 79.92
+      },
+      {
+        "id": 14,
+        "mainPrice": 81.72,
+        "price": 95.6
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "рухомих сполук  фосфору за методом Кірсанова"
+  },
+  {
+    "categoryId": 0,
+    "id": 14,
+    "prices": [
+      {
+        "id": 15,
+        "price": 141.72
+      },
+      {
+        "id": 15,
+        "price": 149.88
+      },
+      {
+        "id": 15,
+        "price": 180.00
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "загального фосфору"
+  },
+  {
+    "categoryId": 0,
+    "id": 15,
+    "prices": [
+      {
+        "id": 16,
+        "mainPrice": 53.88,
+        "price": 51.72
+      },
+      {
+        "id": 16,
+        "mainPrice": 54.96,
+        "price": 54.72
+      },
+      {
+        "id": 16,
+        "mainPrice": 54.96,
+        "price": 65.8
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "рухомих сполук  калію за методом Чирикова"
+  },
+  {
+    "categoryId": 0,
+    "id": 16,
+    "prices": [
+      {
+        "id": 17,
+        "mainPrice": 64.56,
+        "price": 62.16
+      },
+      {
+        "id": 17,
+        "mainPrice": 68.4,
+        "price": 65.88
+      },
+      {
+        "id": 17,
+        "mainPrice": 68.4,
+        "price": 79
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "рухомих сполук  калію за методом Мачигіна"
+  },
+  {
+    "categoryId": 0,
+    "id": 17,
+    "prices": [
+      {
+        "id": 18,
+        "mainPrice": 59.4,
+        "price": 52.08
+      },
+      {
+        "id": 18,
+        "mainPrice": 61.92,
+        "price": 55.2
+      },
+      {
+        "id": 18,
+        "mainPrice": 61.92,
+        "price": 66.4
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "рухомих сполук  калію за методом Кірсанова"
+  },
+  {
+    "categoryId": 0,
+    "id": 18,
+    "prices": [
+      {
+        "id": 19,
+        "price": 175.68
+      },
+      {
+        "id": 19,
+        "price": 186
+      },
+      {
+        "id": 19,
+        "price": 222.8
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "загального калію"
+  },
+  {
+    "categoryId": 0,
+    "id": 19,
+    "prices": [
+      {
+        "id": 20,
+        "mainPrice": 68.16,
+        "price": 68.16
+      },
+      {
+        "id": 20,
+        "mainPrice": 75.72,
+        "price": 72.24
+      },
+      {
+        "id": 20,
+        "mainPrice": 75.72,
+        "price": 86.8
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "азоту лужногідролізованого за методом Корнфілда"
+  },
+  {
+    "categoryId": 0,
+    "id": 20,
+    "prices": [
+      {
+        "id": 21,
+        "price": 55.92
+      },
+      {
+        "id": 21,
+        "price": 59.16
+      },
+      {
+        "id": 21,
+        "price": 70.9
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "азоту  нітратного (нітрати в  ґрунті)"
+  },
+  {
+    "categoryId": 0,
+    "id": 21,
+    "prices": [
+      {
+        "id": 22,
+        "price": 69.24
+      },
+      {
+        "id": 22,
+        "price": 73.2
+      },
+      {
+        "id": 22,
+        "price": 88.1
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "азоту амонійного"
+  },
+  {
+    "categoryId": 0,
+    "id": 22,
+    "prices": [
+      {
+        "id": 23,
+        "price": 83.28
+      },
+      {
+        "id": 23,
+        "price": 88.08
+      },
+      {
+        "id": 23,
+        "price": 105.6
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "азоту загального (метод сухого спалювання)"
+  },
+  {
+    "categoryId": 0,
+    "id": 23,
+    "prices": [
+      {
+        "id": 24,
+        "price": 96.72
+      },
+      {
+        "id": 24,
+        "price": 102.24
+      },
+      {
+        "id": 24,
+        "price": 122.6
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "ємності поглинання"
+  },
+  {
+    "categoryId": 0,
+    "id": 24,
+    "prices": [
+      {
+        "id": 25,
+        "mainPrice": 45.36,
+        "price": 45
+      },
+      {
+        "id": 25,
+        "mainPrice": 48.72,
+        "price": 47.76
+      },
+      {
+        "id": 25,
+        "mainPrice": 48.72,
+        "price": 57.2
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "гідролітичної  кислотності"
+  },
+  {
+    "categoryId": 0,
+    "id": 25,
+    "prices": [
+      {
+        "id": 26,
+        "price": 61.56
+      },
+      {
+        "id": 26,
+        "price": 65.04
+      },
+      {
+        "id": 26,
+        "price": 78.2
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "рН водного"
+  },
+  {
+    "categoryId": 0,
+    "id": 26,
+    "prices": [
+      {
+        "id": 27,
+        "mainPrice": 61.56,
+        "price": 61.56
+      },
+      {
+        "id": 27,
+        "mainPrice": 65.28,
+        "price": 65.04
+      },
+      {
+        "id": 27,
+        "mainPrice": 65.28,
+        "price": 78.2
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "рН сольового"
+  },
+  {
+    "categoryId": 0,
+    "id": 27,
+    "prices": [
+      {
+        "id": 28,
+        "mainPrice": 48.12,
+        "price": 48.12
+      },
+      {
+        "id": 28,
+        "mainPrice": 52.08,
+        "price": 50.88
+      },
+      {
+        "id": 28,
+        "mainPrice": 52.08,
+        "price": 61.1
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "суми ввібраних основ"
+  },
+  {
+    "categoryId": 0,
+    "id": 28,
+    "prices": [
+      {
+        "id": 29,
+        "mainPrice": 72.84,
+        "price": 72.48
+      },
+      {
+        "id": 29,
+        "mainPrice": 79.92,
+        "price": 76.8
+      },
+      {
+        "id": 29,
+        "mainPrice": 79.92,
+        "price": 92.2
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "органічної речовини (гумус)"
+  },
+  {
+    "categoryId": 0,
+    "id": 29,
+    "prices": [
+      {
+        "id": 30,
+        "mainPrice": 63.24,
+        "price": 62.88
+      },
+      {
+        "id": 30,
+        "mainPrice": 68.4,
+        "price": 66.72
+      },
+      {
+        "id": 30,
+        "mainPrice": 68.4,
+        "price": 79.9
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "обмінного кальцію"
+  },
+  {
+    "categoryId": 0,
+    "id": 30,
+    "prices": [
+      {
+        "id": 31,
+        "price": 67.32
+      },
+      {
+        "id": 31,
+        "price": 71.52
+      },
+      {
+        "id": 31,
+        "price": 85.7
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "обмінного натрію"
+  },
+  {
+    "categoryId": 0,
+    "id": 31,
+    "prices": [
+      {
+        "id": 32,
+        "mainPrice": 63.24,
+        "price": 62.88
+      },
+      {
+        "id": 32,
+        "mainPrice": 68.4,
+        "price": 66.72
+      },
+      {
+        "id": 32,
+        "mainPrice": 68.4,
+        "price": 79.9
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "обмінного магнію"
+  },
+  {
+    "categoryId": 0,
+    "id": 32,
+    "prices": [
+      {
+        "id": 33,
+        "price": 49.68
+      },
+      {
+        "id": 33,
+        "price": 52.8
+      },
+      {
+        "id": 33,
+        "price": 63.1
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "обмінного алюмінію"
+  },
+  {
+    "categoryId": 0,
+    "id": 33,
+    "prices": [
+      {
+        "id": 34,
+        "price": 43.56
+      },
+      {
+        "id": 34,
+        "price": 46.08
+      },
+      {
+        "id": 34,
+        "price": 55.2
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "обмінного марганцю"
+  },
+  {
+    "categoryId": 0,
+    "id": 34,
+    "prices": [
+      {
+        "id": 35,
+        "mainPrice": 55.2,
+        "price": 55.2
+      },
+      {
+        "id": 35,
+        "mainPrice": 59.52,
+        "price": 58.68
+      },
+      {
+        "id": 35,
+        "mainPrice": 59.52,
+        "price": 70.1
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "рухомої сірки"
+  },
+  {
+    "categoryId": 0,
+    "id": 35,
+    "prices": [
+      {
+        "id": 36,
+        "mainPrice": 64.56,
+        "price": 62.16
+      },
+      {
+        "id": 36,
+        "mainPrice": 67.08,
+        "price": 65.88
+      },
+      {
+        "id": 36,
+        "mainPrice": 67.08,
+        "price": 79.00
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "сума ввібраних основ (кальцій + магній)"
+  },
+  {
+    "categoryId": 0,
+    "id": 36,
+    "prices": [
+      {
+        "id": 37,
+        "price": 95.16
+      },
+      {
+        "id": 37,
+        "price": 100.68
+      },
+      {
+        "id": 37,
+        "price": 121.00
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "питомої  ваги ґрунту"
+  },
+  {
+    "categoryId": 0,
+    "id": 37,
+    "prices": [
+      {
+        "id": 38,
+        "price": 39.24
+      },
+      {
+        "id": 38,
+        "price": 41.28
+      },
+      {
+        "id": 38,
+        "price": 49.7
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "нітрифікаційної  здатності  ґрунту"
+  },
+  {
+    "categoryId": 0,
+    "id": 38,
+    "prices": [
+      {
+        "id": 39,
+        "price": 270.48
+      },
+      {
+        "id": 39,
+        "price": 286.2
+      },
+      {
+        "id": 39,
+        "price": 343.6
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "водної витяжки"
+  },
+  {
+    "categoryId": 0,
+    "id": 39,
+    "prices": [
+      {
+        "id": 40,
+        "price": 74.4
+      },
+      {
+        "id": 40,
+        "price": 78.96
+      },
+      {
+        "id": 40,
+        "price": 94.7
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "вологості ґрунту"
+  },
+  {
+    "categoryId": 0,
+    "id": 40,
+    "prices": [
+      {
+        "id": 41,
+        "price": 95.88
+      },
+      {
+        "id": 41,
+        "price": 101.52
+      },
+      {
+        "id": 41,
+        "price": 121.8
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "щільності ґрунту"
+  },
+  {
+    "categoryId": 0,
+    "id": 41,
+    "prices": [
+      {
+        "id": 42,
+        "price": 83.28
+      },
+      {
+        "id": 42,
+        "price": 88.08
+      },
+      {
+        "id": 42,
+        "price": 105.6
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "щільності залишку водної витяжки (сухий залишок)"
+  },
+  {
+    "categoryId": 0,
+    "id": 42,
+    "prices": [
+      {
+        "id": 43,
+        "price": 71.76
+      },
+      {
+        "id": 43,
+        "price": 75.96
+      },
+      {
+        "id": 43,
+        "price": 91.2
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "карбонатів загальних"
+  },
+  {
+    "categoryId": 0,
+    "id": 43,
+    "prices": [
+      {
+        "id": 44,
+        "price": 105.36
+      },
+      {
+        "id": 44,
+        "price": 111.48
+      },
+      {
+        "id": 44,
+        "price": 133.9
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "активного вапна"
+  },
+  {
+    "categoryId": 0,
+    "id": 44,
+    "prices": [
+      {
+        "id": 45,
+        "price": 162.6
+      },
+      {
+        "id": 45,
+        "price": 169.8
+      },
+      {
+        "id": 45,
+        "price": 194.6
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "загального азоту за К’єльдальом"
+  },
+  {
+    "categoryId": 0,
+    "id": 45,
+    "prices": [
+      {
+        "id": 46,
+        "price": 83.4
+      },
+      {
+        "id": 46,
+        "price": 88.32
+      },
+      {
+        "id": 46,
+        "price": 106.1
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "хлору"
+  },
+  {
+    "categoryId": 0,
+    "id": 46,
+    "prices": [
+      {
+        "id": 47,
+        "mainPrice": 759.84,
+        "price": 746.76
+      },
+      {
+        "id": 47,
+        "mainPrice": 870.48,
+        "price": 948.2
+      },
+      {
+        "id": 47,
+        "mainPrice": 870.48,
+        "price": 790.56
+      }
+    ],
+    "subcategoryId": 1,
+    "title": "Підготовка висновку, рекомендацій"
+  },
+  {
+    "categoryId": 0,
+    "id": 47,
+    "prices": [
+      {
+        "id": 48,
+        "mainPrice": 106.08,
+        "price": 104.4
+      },
+      {
+        "id": 48,
+        "mainPrice": 110.52,
+        "price": 110.4
+      },
+      {
+        "id": 48,
+        "mainPrice": 110.52,
+        "price": 132.6
+      }
+    ],
+    "subSubcategoryId": 0,
+    "subcategoryId": 2,
+    "title": "міді"
+  },
+  {
+    "categoryId": 0,
+    "id": 48,
+    "prices": [
+      {
+        "id": 49,
+        "mainPrice": 106.08,
+        "price": 104.4
+      },
+      {
+        "id": 49,
+        "mainPrice": 110.4,
+        "price": 110.4
+      },
+      {
+        "id": 49,
+        "mainPrice": 110.4,
+        "price": 132.6
+      }
+    ],
+    "subSubcategoryId": 0,
+    "subcategoryId": 2,
+    "title": "цинку"
+  },
+  {
+    "categoryId": 0,
+    "id": 49,
+    "prices": [
+      {
+        "id": 50,
+        "mainPrice": 106.08,
+        "price": 104.4
+      },
+      {
+        "id": 50,
+        "mainPrice": 110.52,
+        "price": 110.4
+      },
+      {
+        "id": 50,
+        "mainPrice": 110.52,
+        "price": 132.6
+      }
+    ],
+    "subSubcategoryId": 0,
+    "subcategoryId": 2,
+    "title": "марганцю"
+  },
+  {
+    "categoryId": 0,
+    "id": 50,
+    "prices": [
+      {
+        "id": 51,
+        "mainPrice": 106.08,
+        "price": 104.4
+      },
+      {
+        "id": 51,
+        "mainPrice": 110.52,
+        "price": 110.4
+      },
+      {
+        "id": 51,
+        "mainPrice": 110.52,
+        "price": 132.6
+      }
+    ],
+    "subSubcategoryId": 0,
+    "subcategoryId": 2,
+    "title": "кобальту"
+  },
+  {
+    "categoryId": 0,
+    "id": 51,
+    "prices": [
+      {
+        "id": 52,
+        "mainPrice": 106.08,
+        "price": 104.4
+      },
+      {
+        "id": 52,
+        "mainPrice": 110.52,
+        "price": 110.4
+      },
+      {
+        "id": 52,
+        "mainPrice": 110.52,
+        "price": 132.6
+      }
+    ],
+    "subSubcategoryId": 0,
+    "subcategoryId": 2,
+    "title": "заліза"
+  },
+  {
+    "categoryId": 0,
+    "id": 52,
+    "prices": [
+      {
+        "id": 53,
+        "mainPrice": 113.52,
+        "price": 99.36
+      },
+      {
+        "id": 53,
+        "mainPrice": 118.68,
+        "price": 105
+      },
+      {
+        "id": 53,
+        "mainPrice": 118.68,
+        "price": 126
+      }
+    ],
+    "subSubcategoryId": 0,
+    "subcategoryId": 2,
+    "title": "бору"
+  },
+  {
+    "categoryId": 0,
+    "id": 53,
+    "prices": [
+      {
+        "id": 54,
+        "mainPrice": 148.68,
+        "price": 146.4
+      },
+      {
+        "id": 54,
+        "mainPrice": 155.04,
+        "price": 154.7
+      },
+      {
+        "id": 54,
+        "mainPrice": 155.04,
+        "price": 185.9
+      }
+    ],
+    "subSubcategoryId": 0,
+    "subcategoryId": 2,
+    "title": "молібдену"
+  },
+  {
+    "categoryId": 0,
+    "id": 54,
+    "prices": [
+      {
+        "id": 55,
+        "mainPrice": 220.68,
+        "price": 201
+      },
+      {
+        "id": 55,
+        "mainPrice": 222.72,
+        "price": 208.9
+      },
+      {
+        "id": 55,
+        "mainPrice": 222.72,
+        "price": 250.6
+      }
+    ],
+    "subSubcategoryId": 0,
+    "subcategoryId": 2,
+    "title": "вмісту хімічних елементів (4 показники)"
+  },
+  {
+    "categoryId": 0,
+    "id": 55,
+    "prices": [
+      {
+        "id": 56,
+        "mainPrice": 266.04,
+        "price": 262.32
+      },
+      {
+        "id": 56,
+        "mainPrice": 277.68,
+        "price": 277.6
+      },
+      {
+        "id": 56,
+        "mainPrice": 277.68,
+        "price": 333
+      }
+    ],
+    "subSubcategoryId": 0,
+    "subcategoryId": 2,
+    "title": "вмісту хімічних елементів (6 показників)"
+  },
+  {
+    "categoryId": 0,
+    "id": 56,
+    "prices": [
+      {
+        "id": 57,
+        "mainPrice": 137.64,
+        "price": 137.4
+      },
+      {
+        "id": 57,
+        "mainPrice": 154.68,
+        "price": 145.3
+      },
+      {
+        "id": 57,
+        "mainPrice": 154.68,
+        "price": 174.6
+      }
+    ],
+    "subSubcategoryId": 1,
+    "subcategoryId": 2,
+    "title": "міді"
+  },
+  {
+    "categoryId": 0,
+    "id": 57,
+    "prices": [
+      {
+        "id": 58,
+        "mainPrice": 137.76,
+        "price": 137.4
+      },
+      {
+        "id": 58,
+        "mainPrice": 154.8,
+        "price": 145.3
+      },
+      {
+        "id": 58,
+        "mainPrice": 154.8,
+        "price": 174.6
+      }
+    ],
+    "subSubcategoryId": 1,
+    "subcategoryId": 2,
+    "title": "цинку"
+  },
+  {
+    "categoryId": 0,
+    "id": 58,
+    "prices": [
+      {
+        "id": 59,
+        "mainPrice": 137.76,
+        "price": 137.4
+      },
+      {
+        "id": 59,
+        "mainPrice": 154.68,
+        "price": 145.3
+      },
+      {
+        "id": 59,
+        "mainPrice": 154.68,
+        "price": 174.6
+      }
+    ],
+    "subSubcategoryId": 1,
+    "subcategoryId": 2,
+    "title": "марганцю"
+  },
+  {
+    "categoryId": 0,
+    "id": 59,
+    "prices": [
+      {
+        "id": 60,
+        "mainPrice": 140.88,
+        "price": 137.4
+      },
+      {
+        "id": 60,
+        "mainPrice": 157.92,
+        "price": 145.3
+      },
+      {
+        "id": 60,
+        "mainPrice": 157.92,
+        "price": 174.6
+      }
+    ],
+    "subSubcategoryId": 1,
+    "subcategoryId": 2,
+    "title": "кобальту"
+  },
+  {
+    "categoryId": 0,
+    "id": 60,
+    "prices": [
+      {
+        "id": 61,
+        "mainPrice": 137.76,
+        "price": 137.4
+      },
+      {
+        "id": 61,
+        "mainPrice": 154.68,
+        "price": 145.3
+      },
+      {
+        "id": 61,
+        "mainPrice": 154.68,
+        "price": 174.6
+      }
+    ],
+    "subSubcategoryId": 1,
+    "subcategoryId": 2,
+    "title": "заліза"
+  },
+  {
+    "categoryId": 0,
+    "id": 61,
+    "prices": [
+      {
+        "id": 62,
+        "mainPrice": 142.8,
+        "price": 142.68
+      },
+      {
+        "id": 62,
+        "mainPrice": 162.96,
+        "price": 150.7
+      },
+      {
+        "id": 62,
+        "mainPrice": 162.96,
+        "price": 181.2
+      }
+    ],
+    "subSubcategoryId": 1,
+    "subcategoryId": 2,
+    "title": "бору"
+  },
+  {
+    "categoryId": 0,
+    "id": 62,
+    "prices": [
+      {
+        "id": 63,
+        "mainPrice": 150.36,
+        "price": 148.08
+      },
+      {
+        "id": 63,
+        "mainPrice": 177.72,
+        "price": 156.7
+      },
+      {
+        "id": 63,
+        "mainPrice": 177.72,
+        "price": 188
+      }
+    ],
+    "subSubcategoryId": 1,
+    "subcategoryId": 2,
+    "title": "молібдену"
+  },
+  {
+    "categoryId": 0,
+    "id": 63,
+    "prices": [
+      {
+        "id": 64,
+        "price": 267.6
+      },
+      {
+        "id": 64,
+        "price": 267.6
+      },
+      {
+        "id": 64,
+        "price": 281
+      }
+    ],
+    "subSubcategoryId": 1,
+    "subcategoryId": 2,
+    "title": "вмісту хімічних елементів (4 показники)"
+  },
+  {
+    "categoryId": 0,
+    "id": 64,
+    "prices": [
+      {
+        "id": 65,
+        "price": 316.2
+      },
+      {
+        "id": 65,
+        "price": 316.2
+      },
+      {
+        "id": 65,
+        "price": 360.6
+      }
+    ],
+    "subSubcategoryId": 1,
+    "subcategoryId": 2,
+    "title": "вмісту хімічних елементів (6 показників)"
+  },
+  {
+    "categoryId": 0,
+    "id": 65,
+    "prices": [
+      {
+        "id": 66,
+        "mainPrice": 127.68,
+        "price": 122.88
+      },
+      {
+        "id": 66,
+        "mainPrice": 136.92,
+        "price": 129.96
+      },
+      {
+        "id": 66,
+        "mainPrice": 136.92,
+        "price": 155.9
+      }
+    ],
+    "subSubcategoryId": 2,
+    "subcategoryId": 3,
+    "title": "свинцю"
+  },
+  {
+    "categoryId": 0,
+    "id": 66,
+    "prices": [
+      {
+        "id": 67,
+        "mainPrice": 127.68,
+        "price": 122.88
+      },
+      {
+        "id": 67,
+        "mainPrice": 136.92,
+        "price": 129.96
+      },
+      {
+        "id": 67,
+        "mainPrice": 136.92,
+        "price": 155.9
+      }
+    ],
+    "subSubcategoryId": 2,
+    "subcategoryId": 3,
+    "title": "кадмію"
+  },
+  {
+    "categoryId": 0,
+    "id": 67,
+    "prices": [
+      {
+        "id": 68,
+        "price": 122.88
+      },
+      {
+        "id": 68,
+        "price": 129.96
+      },
+      {
+        "id": 68,
+        "price": 155.9
+      }
+    ],
+    "subSubcategoryId": 2,
+    "subcategoryId": 3,
+    "title": "міді"
+  },
+  {
+    "categoryId": 0,
+    "id": 68,
+    "prices": [
+      {
+        "id": 69,
+        "price": 122.88
+      },
+      {
+        "id": 69,
+        "price": 129.96
+      },
+      {
+        "id": 69,
+        "price": 155.9
+      }
+    ],
+    "subSubcategoryId": 2,
+    "subcategoryId": 3,
+    "title": "цинку"
+  },
+  {
+    "categoryId": 0,
+    "id": 69,
+    "prices": [
+      {
+        "id": 70,
+        "price": 240.96
+      },
+      {
+        "id": 70,
+        "price": 255.24
+      },
+      {
+        "id": 70,
+        "price": 306.1
+      }
+    ],
+    "subSubcategoryId": 2,
+    "subcategoryId": 3,
+    "title": "ртуті"
+  },
+  {
+    "categoryId": 0,
+    "id": 70,
+    "prices": [
+      {
+        "id": 71,
+        "price": 201
+      },
+      {
+        "id": 71,
+        "price": 208.2
+      },
+      {
+        "id": 71,
+        "price": 249.7
+      }
+    ],
+    "subSubcategoryId": 2,
+    "subcategoryId": 3,
+    "title": "вмісту хімічних елементів (4 показники)"
+  },
+  {
+    "categoryId": 0,
+    "id": 71,
+    "prices": [
+      {
+        "id": 72,
+        "price": 262.32
+      },
+      {
+        "id": 72,
+        "price": 277.56
+      },
+      {
+        "id": 72,
+        "price": 333
+      }
+    ],
+    "subSubcategoryId": 2,
+    "subcategoryId": 3,
+    "title": "вмісту хімічних елементів (6 показників)"
+  },
+  {
+    "categoryId": 0,
+    "id": 72,
+    "prices": [
+      {
+        "id": 73,
+        "mainPrice": 177.36,
+        "price": 164.4
+      },
+      {
+        "id": 73,
+        "mainPrice": 185.16,
+        "price": 174
+      },
+      {
+        "id": 73,
+        "mainPrice": 185.16,
+        "price": 208.6
+      }
+    ],
+    "subSubcategoryId": 3,
+    "subcategoryId": 3,
+    "title": "свинцю"
+  },
+  {
+    "categoryId": 0,
+    "id": 73,
+    "prices": [
+      {
+        "id": 74,
+        "mainPrice": 177.36,
+        "price": 164.4
+      },
+      {
+        "id": 74,
+        "mainPrice": 185.16,
+        "price": 174
+      },
+      {
+        "id": 74,
+        "mainPrice": 185.16,
+        "price": 208.6
+      }
+    ],
+    "subSubcategoryId": 3,
+    "subcategoryId": 3,
+    "title": "кадмію"
+  },
+  {
+    "categoryId": 0,
+    "id": 74,
+    "prices": [
+      {
+        "id": 75,
+        "mainPrice": 177.36,
+        "price": 164.4
+      },
+      {
+        "id": 75,
+        "mainPrice": 185.04,
+        "price": 174
+      },
+      {
+        "id": 75,
+        "mainPrice": 185.04,
+        "price": 208.6
+      }
+    ],
+    "subSubcategoryId": 3,
+    "subcategoryId": 3,
+    "title": "міді"
+  },
+  {
+    "categoryId": 0,
+    "id": 75,
+    "prices": [
+      {
+        "id": 76,
+        "mainPrice": 177.36,
+        "price": 164.4
+      },
+      {
+        "id": 76,
+        "mainPrice": 185.16,
+        "price": 174
+      },
+      {
+        "id": 76,
+        "mainPrice": 185.16,
+        "price": 208.6
+      }
+    ],
+    "subSubcategoryId": 3,
+    "subcategoryId": 3,
+    "title": "цинку"
+  },
+  {
+    "categoryId": 0,
+    "id": 76,
+    "prices": [
+      {
+        "id": 77,
+        "price": 164.4
+      },
+      {
+        "id": 77,
+        "price": 174
+      },
+      {
+        "id": 77,
+        "price": 208.6
+      }
+    ],
+    "subSubcategoryId": 3,
+    "subcategoryId": 3,
+    "title": "марганцю"
+  },
+  {
+    "categoryId": 0,
+    "id": 77,
+    "prices": [
+      {
+        "id": 78,
+        "price": 231.6
+      },
+      {
+        "id": 78,
+        "price": 245.28
+      },
+      {
+        "id": 78,
+        "price": 294
+      }
+    ],
+    "subSubcategoryId": 3,
+    "subcategoryId": 3,
+    "title": "ртуті"
+  },
+  {
+    "categoryId": 0,
+    "id": 78,
+    "prices": [
+      {
+        "id": 79,
+        "price": 229.32
+      },
+      {
+        "id": 79,
+        "price": 242.52
+      },
+      {
+        "id": 79,
+        "price": 291
+      }
+    ],
+    "subSubcategoryId": 3,
+    "subcategoryId": 3,
+    "title": "миш’яку"
+  },
+  {
+    "categoryId": 0,
+    "id": 79,
+    "prices": [
+      {
+        "id": 80,
+        "mainPrice": 283.44,
+        "price": 267.6
+      },
+      {
+        "id": 80,
+        "mainPrice": 292.2,
+        "price": 267.6
+      },
+      {
+        "id": 80,
+        "mainPrice": 292.2,
+        "price": 281
+      }
+    ],
+    "subSubcategoryId": 3,
+    "subcategoryId": 3,
+    "title": "вмісту хімічних елементів (4 показники)"
+  },
+  {
+    "categoryId": 0,
+    "id": 80,
+    "prices": [
+      {
+        "id": 81,
+        "price": 316.2
+      },
+      {
+        "id": 81,
+        "price": 316.2
+      },
+      {
+        "id": 81,
+        "price": 356.4
+      }
+    ],
+    "subSubcategoryId": 3,
+    "subcategoryId": 3,
+    "title": "вмісту хімічних елементів (6 показників)"
+  },
+  {
+    "categoryId": 0,
+    "id": 81,
+    "prices": [
+      {
+        "id": 82,
+        "mainPrice": 300.48,
+        "price": 293.88
+      },
+      {
+        "id": 82,
+        "mainPrice": 319.2,
+        "price": 310.92
+      },
+      {
+        "id": 82,
+        "mainPrice": 319.2,
+        "price": 373.1
+      }
+    ],
+    "subSubcategoryId": 4,
+    "subcategoryId": 4,
+    "title": "ДДТ та його метаболітів"
+  },
+  {
+    "categoryId": 0,
+    "id": 82,
+    "prices": [
+      {
+        "id": 83,
+        "mainPrice": 300.48,
+        "price": 293.88
+      },
+      {
+        "id": 83,
+        "mainPrice": 319.2,
+        "price": 310.92
+      },
+      {
+        "id": 83,
+        "mainPrice": 319.2,
+        "price": 373.1
+      }
+    ],
+    "subSubcategoryId": 4,
+    "subcategoryId": 4,
+    "title": "ГЦХГ та його ізомерів, гептахлорану"
+  },
+  {
+    "categoryId": 0,
+    "id": 83,
+    "prices": [
+      {
+        "id": 84,
+        "price": 296.16
+      },
+      {
+        "id": 84,
+        "price": 313.44
+      },
+      {
+        "id": 84,
+        "price": 376.1
+      }
+    ],
+    "subSubcategoryId": 4,
+    "subcategoryId": 4,
+    "title": "інсектицидів і акарицидів"
+  },
+  {
+    "categoryId": 0,
+    "id": 84,
+    "prices": [
+      {
+        "id": 85,
+        "price": 336.84
+      },
+      {
+        "id": 85,
+        "price": 356.64
+      },
+      {
+        "id": 85,
+        "price": 427.9
+      }
+    ],
+    "subSubcategoryId": 4,
+    "subcategoryId": 4,
+    "title": "амінної солі  2,4-Д"
+  },
+  {
+    "categoryId": 0,
+    "id": 85,
+    "prices": [
+      {
+        "id": 86,
+        "price": 306.24
+      },
+      {
+        "id": 86,
+        "price": 324
+      },
+      {
+        "id": 86,
+        "price": 388.7
+      }
+    ],
+    "subSubcategoryId": 4,
+    "subcategoryId": 4,
+    "title": "сим-триазинів"
+  },
+  {
+    "categoryId": 0,
+    "id": 86,
+    "prices": [
+      {
+        "id": 87,
+        "price": 316.92
+      },
+      {
+        "id": 87,
+        "price": 335.4
+      },
+      {
+        "id": 87,
+        "price": 402.4
+      }
+    ],
+    "subSubcategoryId": 4,
+    "subcategoryId": 4,
+    "title": "фосфорорганічних пестицидів методом ГРХ"
+  },
+  {
+    "categoryId": 0,
+    "id": 87,
+    "prices": [
+      {
+        "id": 88,
+        "price": 466.08
+      },
+      {
+        "id": 88,
+        "price": 466.08
+      },
+      {
+        "id": 88,
+        "price": 505.9
+      }
+    ],
+    "subSubcategoryId": 4,
+    "subcategoryId": 4,
+    "title": "хлорорганічних пестицидів методом ГРХ"
+  },
+  {
+    "categoryId": 0,
+    "id": 88,
+    "prices": [
+      {
+        "id": 89,
+        "price": 257.16
+      },
+      {
+        "id": 89,
+        "price": 271.68
+      },
+      {
+        "id": 89,
+        "price": 326.6
+      }
+    ],
+    "subSubcategoryId": 4,
+    "subcategoryId": 4,
+    "title": "групи поліхлорбіфенілів та інших сполук методом ГРХ"
+  },
+  {
+    "categoryId": 0,
+    "id": 89,
+    "prices": [
+      {
+        "id": 90,
+        "price": 338.52
+      },
+      {
+        "id": 90,
+        "price": 358.2
+      },
+      {
+        "id": 90,
+        "price": 429.7
+      }
+    ],
+    "subSubcategoryId": 4,
+    "subcategoryId": 4,
+    "title": "дуал голд"
+  },
+  {
+    "categoryId": 0,
+    "id": 90,
+    "prices": [
+      {
+        "id": 91,
+        "price": 423.24
+      },
+      {
+        "id": 91,
+        "price": 447.84
+      },
+      {
+        "id": 91,
+        "price": 537.2
+      }
+    ],
+    "subSubcategoryId": 4,
+    "subcategoryId": 4,
+    "title": "вмісту пестицидів (2 показники)"
+  },
+  {
+    "categoryId": 0,
+    "id": 91,
+    "prices": [
+      {
+        "id": 92,
+        "price": 614.28
+      },
+      {
+        "id": 92,
+        "price": 650.16
+      },
+      {
+        "id": 92,
+        "price": 780
+      }
+    ],
+    "subSubcategoryId": 4,
+    "subcategoryId": 4,
+    "title": "вмісту пестицидів (3 показники)"
+  },
+  {
+    "categoryId": 0,
+    "id": 92,
+    "prices": [
+      {
+        "id": 93,
+        "price": 801.24
+      },
+      {
+        "id": 93,
+        "price": 847.8
+      },
+      {
+        "id": 93,
+        "price": 1017.4
+      }
+    ],
+    "subSubcategoryId": 4,
+    "subcategoryId": 4,
+    "title": "вмісту пестицидів (4 показники)"
+  },
+  {
+    "categoryId": 0,
+    "id": 93,
+    "prices": [
+      {
+        "id": 94,
+        "mainPrice": 365.76,
+        "price": 342
+      },
+      {
+        "id": 94,
+        "mainPrice": 339.72,
+        "price": 361.8
+      },
+      {
+        "id": 94,
+        "mainPrice": 339.72,
+        "price": 434
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "ДДТ та його метаболітів"
+  },
+  {
+    "categoryId": 0,
+    "id": 94,
+    "prices": [
+      {
+        "id": 95,
+        "mainPrice": 367.8,
+        "price": 340.68
+      },
+      {
+        "id": 95,
+        "mainPrice": 369.48,
+        "price": 360.6
+      },
+      {
+        "id": 95,
+        "mainPrice": 369.48,
+        "price": 432.7
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "ГЦХГ та його ізомерів, гептахлорану"
+  },
+  {
+    "categoryId": 0,
+    "id": 95,
+    "prices": [
+      {
+        "id": 96,
+        "price": 354.12
+      },
+      {
+        "id": 96,
+        "price": 375
+      },
+      {
+        "id": 96,
+        "price": 449.8
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "амінної солі  2,4-Д"
+  },
+  {
+    "categoryId": 0,
+    "id": 96,
+    "prices": [
+      {
+        "id": 97,
+        "price": 405.84
+      },
+      {
+        "id": 97,
+        "price": 429.72
+      },
+      {
+        "id": 97,
+        "price": 515.5
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "інсектицидів і акарицидів"
+  },
+  {
+    "categoryId": 0,
+    "id": 97,
+    "prices": [
+      {
+        "id": 98,
+        "price": 405.84
+      },
+      {
+        "id": 98,
+        "price": 429.72
+      },
+      {
+        "id": 98,
+        "price": 515.5
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "фунгіцидів"
+  },
+  {
+    "categoryId": 0,
+    "id": 98,
+    "prices": [
+      {
+        "id": 99,
+        "price": 450.96
+      },
+      {
+        "id": 99,
+        "price": 477.24
+      },
+      {
+        "id": 99,
+        "price": 572.6
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "гербіцидів"
+  },
+  {
+    "categoryId": 0,
+    "id": 99,
+    "prices": [
+      {
+        "id": 100,
+        "price": 343.92
+      },
+      {
+        "id": 100,
+        "price": 364.08
+      },
+      {
+        "id": 100,
+        "price": 436.8
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "фосфорорганічних пестицидів методом ГРХ"
+  },
+  {
+    "categoryId": 0,
+    "id": 100,
+    "prices": [
+      {
+        "id": 101,
+        "price": 343.92
+      },
+      {
+        "id": 101,
+        "price": 364.08
+      },
+      {
+        "id": 101,
+        "price": 436.8
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "хлорорганічних пестицидів методом ГРХ"
+  },
+  {
+    "categoryId": 0,
+    "id": 101,
+    "prices": [
+      {
+        "id": 102,
+        "price": 249.24
+      },
+      {
+        "id": 102,
+        "price": 263.88
+      },
+      {
+        "id": 102,
+        "price": 316.7
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "групи поліхлорбіфенілів та інших сполук методом ГРХ"
+  },
+  {
+    "categoryId": 0,
+    "id": 102,
+    "prices": [
+      {
+        "id": 103,
+        "price": 360
+      },
+      {
+        "id": 103,
+        "price": 380.76
+      },
+      {
+        "id": 103,
+        "price": 457.1
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "сим-триазинів"
+  },
+  {
+    "categoryId": 0,
+    "id": 103,
+    "prices": [
+      {
+        "id": 104,
+        "price": 433.44
+      },
+      {
+        "id": 104,
+        "price": 458.76
+      },
+      {
+        "id": 104,
+        "price": 550.4
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "піретроїдів синтетичних"
+  },
+  {
+    "categoryId": 0,
+    "id": 104,
+    "prices": [
+      {
+        "id": 105,
+        "mainPrice": 120,
+        "price": 119.04
+      },
+      {
+        "id": 105,
+        "mainPrice": 128.16,
+        "price": 126.12
+      },
+      {
+        "id": 105,
+        "mainPrice": 128.16,
+        "price": 151.4
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "нітратів"
+  },
+  {
+    "categoryId": 0,
+    "id": 105,
+    "prices": [
+      {
+        "id": 106,
+        "price": 355.92
+      },
+      {
+        "id": 106,
+        "price": 376.8
+      },
+      {
+        "id": 106,
+        "price": 452
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "діючої речовини в хімічних засобах захисту рослин (на 1 ДР)"
+  },
+  {
+    "categoryId": 0,
+    "id": 106,
+    "prices": [
+      {
+        "id": 107,
+        "price": 377.28
+      },
+      {
+        "id": 107,
+        "price": 399.12
+      },
+      {
+        "id": 107,
+        "price": 479
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "гранстар"
+  },
+  {
+    "categoryId": 0,
+    "id": 107,
+    "prices": [
+      {
+        "id": 108,
+        "price": 420.24
+      },
+      {
+        "id": 108,
+        "price": 444.84
+      },
+      {
+        "id": 108,
+        "price": 533.6
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "вміст пестицидів (2 показники)"
+  },
+  {
+    "categoryId": 0,
+    "id": 108,
+    "prices": [
+      {
+        "id": 109,
+        "price": 611.28
+      },
+      {
+        "id": 109,
+        "price": 646.92
+      },
+      {
+        "id": 109,
+        "price": 776.2
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "вміст пестицидів (3 показники)"
+  },
+  {
+    "categoryId": 0,
+    "id": 109,
+    "prices": [
+      {
+        "id": 110,
+        "price": 794.04
+      },
+      {
+        "id": 110,
+        "price": 840.48
+      },
+      {
+        "id": 110,
+        "price": 1008.4
+      }
+    ],
+    "subSubcategoryId": 5,
+    "subcategoryId": 4,
+    "title": "вміст пестицидів (4 показники)"
+  },
+  {
+    "categoryId": 0,
+    "id": 110,
+    "prices": [
+      {
+        "id": 111,
+        "price": 108.12
+      },
+      {
+        "id": 111,
+        "price": 114.36
+      },
+      {
+        "id": 111,
+        "price": 137.2
+      }
+    ],
+    "subcategoryId": 5,
+    "title": "заміри гамма-фону"
+  },
+  {
+    "categoryId": 0,
+    "id": 111,
+    "prices": [
+      {
+        "id": 112,
+        "price": 257.04
+      },
+      {
+        "id": 112,
+        "price": 271.92
+      },
+      {
+        "id": 112,
+        "price": 326.4
+      }
+    ],
+    "subcategoryId": 5,
+    "title": "питомої активності природних радіонуклідів (радій, торій, калій) в будівельних матеріалах"
+  },
+  {
+    "categoryId": 0,
+    "id": 112,
+    "prices": [
+      {
+        "id": 113,
+        "mainPrice": 860.04,
+        "price": 847.2
+      },
+      {
+        "id": 113,
+        "mainPrice": 897.96,
+        "price": 896.64
+      },
+      {
+        "id": 113,
+        "mainPrice": 897.96,
+        "price": 1075.9
+      }
+    ],
+    "subcategoryId": 5,
+    "title": "стронцію-90 радіохімічним методом у ґрунті"
+  },
+  {
+    "categoryId": 0,
+    "id": 113,
+    "prices": [
+      {
+        "id": 114,
+        "mainPrice": 927.84,
+        "price": 916.32
+      },
+      {
+        "id": 114,
+        "mainPrice": 971.28,
+        "price": 969.96
+      },
+      {
+        "id": 114,
+        "mainPrice": 971.28,
+        "price": 1163.6
+      }
+    ],
+    "subcategoryId": 5,
+    "title": "стронцію-90 радіохімічним методом у торфі"
+  },
+  {
+    "categoryId": 0,
+    "id": 114,
+    "prices": [
+      {
+        "id": 115,
+        "mainPrice": 892.68,
+        "price": 855.24
+      },
+      {
+        "id": 115,
+        "mainPrice": 922.44,
+        "price": 905.4
+      },
+      {
+        "id": 115,
+        "mainPrice": 922.44,
+        "price": 1086.2
+      }
+    ],
+    "subcategoryId": 5,
+    "title": "стронцію-90 радіохімічним методом у рослинах"
+  },
+  {
+    "categoryId": 0,
+    "id": 115,
+    "prices": [
+      {
+        "id": 116,
+        "price": 334.32
+      },
+      {
+        "id": 116,
+        "price": 354
+      },
+      {
+        "id": 116,
+        "price": 424.7
+      }
+    ],
+    "subcategoryId": 5,
+    "title": "стронцію-90 спектрометричним методом у ґрунті"
+  },
+  {
+    "categoryId": 0,
+    "id": 116,
+    "prices": [
+      {
+        "id": 117,
+        "price": 337.32
+      },
+      {
+        "id": 117,
+        "price": 357.24
+      },
+      {
+        "id": 117,
+        "price": 428.4
+      }
+    ],
+    "subcategoryId": 5,
+    "title": "стронцію-90 спектрометричним методом у торфі"
+  },
+  {
+    "categoryId": 0,
+    "id": 117,
+    "prices": [
+      {
+        "id": 118,
+        "price": 337.56
+      },
+      {
+        "id": 118,
+        "price": 357.24
+      },
+      {
+        "id": 118,
+        "price": 428.5
+      }
+    ],
+    "subcategoryId": 5,
+    "title": "стронцію-90 спектрометричним методом у рослинах"
+  },
+  {
+    "categoryId": 0,
+    "id": 118,
+    "prices": [
+      {
+        "id": 119,
+        "mainPrice": 271.08,
+        "price": 269.28
+      },
+      {
+        "id": 119,
+        "mainPrice": 293.88,
+        "price": 285.24
+      },
+      {
+        "id": 119,
+        "mainPrice": 293.88,
+        "price": 342.1
+      }
+    ],
+    "subcategoryId": 5,
+    "title": "цезію-137 у ґрунті"
+  },
+  {
+    "categoryId": 0,
+    "id": 119,
+    "prices": [
+      {
+        "id": 120,
+        "mainPrice": 264,
+        "price": 261.12
+      },
+      {
+        "id": 120,
+        "mainPrice": 286.32,
+        "price": 276.36
+      },
+      {
+        "id": 120,
+        "mainPrice": 286.32,
+        "price": 331.6
+      }
+    ],
+    "subcategoryId": 5,
+    "title": "цезію-137 у торфі"
+  },
+  {
+    "categoryId": 0,
+    "id": 120,
+    "prices": [
+      {
+        "id": 121,
+        "mainPrice": 278.52,
+        "price": 270.24
+      },
+      {
+        "id": 121,
+        "mainPrice": 288.36,
+        "price": 286.08
+      },
+      {
+        "id": 121,
+        "mainPrice": 288.36,
+        "price": 343.1
+      }
+    ],
+    "subcategoryId": 5,
+    "title": "цезію-137 у рослинах"
+  },
+  {
+    "categoryId": 0,
+    "id": 121,
+    "prices": [
+      {
+        "id": 122,
+        "price": 270.24
+      },
+      {
+        "id": 122,
+        "price": 286.08
+      },
+      {
+        "id": 122,
+        "price": 343.1
+      }
+    ],
+    "subcategoryId": 5,
+    "title": "цезію-137 у сухофруктах"
+  },
+  {
+    "categoryId": 0,
+    "id": 122,
+    "prices": [
+      {
+        "id": 123,
+        "price": 323.4
+      },
+      {
+        "id": 123,
+        "price": 342.12
+      },
+      {
+        "id": 123,
+        "price": 410.6
+      }
+    ],
+    "subcategoryId": 5,
+    "title": "цезію-134 в рослинах"
+  },
+  {
+    "categoryId": 1,
+    "id": 123,
+    "prices": [
+      {
+        "id": 124,
+        "mainPrice": 180.24,
+        "price": 99.96
+      },
+      {
+        "id": 124,
+        "mainPrice": 108.48,
+        "price": 105.6
+      },
+      {
+        "id": 124,
+        "mainPrice": 108.48,
+        "price": 126.7
+      }
+    ],
+    "title": "фосфатів"
+  },
+  {
+    "categoryId": 1,
+    "id": 124,
+    "prices": [
+      {
+        "id": 125,
+        "mainPrice": 74.52,
+        "price": 70.08
+      },
+      {
+        "id": 125,
+        "mainPrice": 81.12,
+        "price": 74.04
+      },
+      {
+        "id": 125,
+        "mainPrice": 81.12,
+        "price": 88.8
+      }
+    ],
+    "title": "твердості загальної (жорсткості)"
+  },
+  {
+    "categoryId": 1,
+    "id": 125,
+    "prices": [
+      {
+        "id": 126,
+        "mainPrice": 104.4,
+        "price": 87.72
+      },
+      {
+        "id": 126,
+        "mainPrice": 107.16,
+        "price": 93
+      },
+      {
+        "id": 126,
+        "mainPrice": 107.16,
+        "price": 111.4
+      }
+    ],
+    "title": "сульфатів"
+  },
+  {
+    "categoryId": 1,
+    "id": 126,
+    "prices": [
+      {
+        "id": 127,
+        "mainPrice": 91.56,
+        "price": 89.76
+      },
+      {
+        "id": 127,
+        "mainPrice": 95.76,
+        "price": 95.16
+      },
+      {
+        "id": 127,
+        "mainPrice": 95.76,
+        "price": 114.1
+      }
+    ],
+    "title": "хлоридів"
+  },
+  {
+    "categoryId": 1,
+    "id": 127,
+    "prices": [
+      {
+        "id": 128,
+        "price": 78
+      },
+      {
+        "id": 128,
+        "price": 82.44
+      },
+      {
+        "id": 128,
+        "price": 99.0
+      }
+    ],
+    "title": "калію"
+  },
+  {
+    "categoryId": 1,
+    "id": 128,
+    "prices": [
+      {
+        "id": 129,
+        "price": 78.36
+      },
+      {
+        "id": 129,
+        "price": 82.68
+      },
+      {
+        "id": 129,
+        "price": 99.5
+      }
+    ],
+    "title": "натрію"
+  },
+  {
+    "categoryId": 1,
+    "id": 129,
+    "prices": [
+      {
+        "id": 130,
+        "mainPrice": 65.52,
+        "price": 55.32
+      },
+      {
+        "id": 130,
+        "mainPrice": 68.64,
+        "price": 58.68
+      },
+      {
+        "id": 130,
+        "mainPrice": 68.64,
+        "price": 70.1
+      }
+    ],
+    "title": "рН"
+  },
+  {
+    "categoryId": 1,
+    "id": 130,
+    "prices": [
+      {
+        "id": 131,
+        "mainPrice": 86.4,
+        "price": 83.64
+      },
+      {
+        "id": 131,
+        "mainPrice": 90.24,
+        "price": 88.68
+      },
+      {
+        "id": 131,
+        "mainPrice": 90.24,
+        "price": 106.1
+      }
+    ],
+    "title": "нітритів"
+  },
+  {
+    "categoryId": 1,
+    "id": 131,
+    "prices": [
+      {
+        "id": 132,
+        "mainPrice": 86.28,
+        "price": 83.64
+      },
+      {
+        "id": 132,
+        "mainPrice": 90.12,
+        "price": 88.68
+      },
+      {
+        "id": 132,
+        "mainPrice": 90.12,
+        "price": 106.1
+      }
+    ],
+    "title": "нітратів"
+  },
+  {
+    "categoryId": 1,
+    "id": 132,
+    "prices": [
+      {
+        "id": 133,
+        "mainPrice": 109.32,
+        "price": 94.56
+      },
+      {
+        "id": 133,
+        "mainPrice": 112.92,
+        "price": 100.2
+      },
+      {
+        "id": 133,
+        "mainPrice": 112.92,
+        "price": 120.0
+      }
+    ],
+    "title": "амонійного азоту"
+  },
+  {
+    "categoryId": 1,
+    "id": 133,
+    "prices": [
+      {
+        "id": 134,
+        "mainPrice": 133.8,
+        "price": 116.28
+      },
+      {
+        "id": 134,
+        "mainPrice": 138.6,
+        "price": 123.12
+      },
+      {
+        "id": 134,
+        "mainPrice": 138.6,
+        "price": 147.6
+      }
+    ],
+    "title": "сухого залишку"
+  },
+  {
+    "categoryId": 1,
+    "id": 134,
+    "prices": [
+      {
+        "id": 135,
+        "mainPrice": 91.08,
+        "price": 85.08
+      },
+      {
+        "id": 135,
+        "mainPrice": 93.72,
+        "price": 90.12
+      },
+      {
+        "id": 135,
+        "mainPrice": 93.72,
+        "price": 108.1
+      }
+    ],
+    "title": "карбонатів, гідрокарбонатів"
+  },
+  {
+    "categoryId": 1,
+    "id": 135,
+    "prices": [
+      {
+        "id": 136,
+        "mainPrice": 61.68,
+        "price": 52.8
+      },
+      {
+        "id": 136,
+        "mainPrice": 63.96,
+        "price": 55.92
+      },
+      {
+        "id": 136,
+        "mainPrice": 63.96,
+        "price": 67.2
+      }
+    ],
+    "title": "кальцію Ca"
+  },
+  {
+    "categoryId": 1,
+    "id": 136,
+    "prices": [
+      {
+        "id": 137,
+        "mainPrice": 57.36,
+        "price": 52.8
+      },
+      {
+        "id": 137,
+        "mainPrice": 59.4,
+        "price": 55.92
+      },
+      {
+        "id": 137,
+        "mainPrice": 59.4,
+        "price": 67.2
+      }
+    ],
+    "title": "кальцію Mg"
+  },
+  {
+    "categoryId": 1,
+    "id": 137,
+    "prices": [
+      {
+        "id": 138,
+        "price": 195
+      },
+      {
+        "id": 138,
+        "price": 206.28
+      },
+      {
+        "id": 138,
+        "price": 247.4
+      }
+    ],
+    "title": "для зрошення"
+  },
+  {
+    "categoryId": 1,
+    "id": 138,
+    "prices": [
+      {
+        "id": 139,
+        "price": 44.76
+      },
+      {
+        "id": 139,
+        "price": 47.64
+      },
+      {
+        "id": 139,
+        "price": 57.0
+      }
+    ],
+    "title": "запаху"
+  },
+  {
+    "categoryId": 1,
+    "id": 139,
+    "prices": [
+      {
+        "id": 140,
+        "price": 44.76
+      },
+      {
+        "id": 140,
+        "price": 47.64
+      },
+      {
+        "id": 140,
+        "price": 57.0
+      }
+    ],
+    "title": "кольоровості"
+  },
+  {
+    "categoryId": 1,
+    "id": 140,
+    "prices": [
+      {
+        "id": 141,
+        "price": 109.68
+      },
+      {
+        "id": 141,
+        "price": 115.92
+      },
+      {
+        "id": 141,
+        "price": 115.92
+      }
+    ],
+    "title": "осаду, завислих речовин"
+  },
+  {
+    "categoryId": 1,
+    "id": 141,
+    "prices": [
+      {
+        "id": 142,
+        "price": 66.96
+      },
+      {
+        "id": 142,
+        "price": 70.92
+      },
+      {
+        "id": 142,
+        "price": 70.92
+      }
+    ],
+    "title": "лужності"
+  },
+  {
+    "categoryId": 1,
+    "id": 142,
+    "prices": [
+      {
+        "id": 143,
+        "price": 127.56
+      },
+      {
+        "id": 143,
+        "price": 135.12
+      },
+      {
+        "id": 143,
+        "price": 135.12
+      }
+    ],
+    "title": "кадмій"
+  },
+  {
+    "categoryId": 1,
+    "id": 143,
+    "prices": [
+      {
+        "id": 144,
+        "mainPrice": 130.44,
+        "price": 127.56
+      },
+      {
+        "id": 144,
+        "mainPrice": 135.96,
+        "price": 135.12
+      },
+      {
+        "id": 144,
+        "mainPrice": 135.96,
+        "price": 135.12
+      }
+    ],
+    "title": "свинець"
+  },
+  {
+    "categoryId": 1,
+    "id": 144,
+    "prices": [
+      {
+        "id": 145,
+        "mainPrice": 134.4,
+        "price": 127.56
+      },
+      {
+        "id": 145,
+        "mainPrice": 139.8,
+        "price": 135.12
+      },
+      {
+        "id": 145,
+        "mainPrice": 139.8,
+        "price": 135.12
+      }
+    ],
+    "title": "мідь"
+  },
+  {
+    "categoryId": 1,
+    "id": 145,
+    "prices": [
+      {
+        "id": 146,
+        "mainPrice": 134.4,
+        "price": 127.56
+      },
+      {
+        "id": 146,
+        "mainPrice": 139.92,
+        "price": 135.12
+      },
+      {
+        "id": 146,
+        "mainPrice": 139.92,
+        "price": 135.12
+      }
+    ],
+    "title": "цинк"
+  },
+  {
+    "categoryId": 1,
+    "id": 146,
+    "prices": [
+      {
+        "id": 147,
+        "mainPrice": 134.4,
+        "price": 127.56
+      },
+      {
+        "id": 147,
+        "mainPrice": 139.8,
+        "price": 135.12
+      },
+      {
+        "id": 147,
+        "mainPrice": 139.8,
+        "price": 135.12
+      }
+    ],
+    "title": "марганець"
+  },
+  {
+    "categoryId": 1,
+    "id": 147,
+    "prices": [
+      {
+        "id": 148,
+        "mainPrice": 134.76,
+        "price": 127.56
+      },
+      {
+        "id": 148,
+        "mainPrice": 140.16,
+        "price": 135.12
+      },
+      {
+        "id": 148,
+        "mainPrice": 140.16,
+        "price": 135.12
+      }
+    ],
+    "title": "залізо"
+  },
+  {
+    "categoryId": 1,
+    "id": 148,
+    "prices": [
+      {
+        "id": 149,
+        "price": 197.64
+      },
+      {
+        "id": 149,
+        "price": 209.16
+      },
+      {
+        "id": 149,
+        "price": 209.16
+      }
+    ],
+    "title": "ртуть"
+  },
+  {
+    "categoryId": 1,
+    "id": 149,
+    "prices": [
+      {
+        "id": 150,
+        "price": 231.84
+      },
+      {
+        "id": 150,
+        "price": 245.28
+      },
+      {
+        "id": 150,
+        "price": 245.28
+      }
+    ],
+    "title": "ДДТ та його метаболіти"
+  },
+  {
+    "categoryId": 1,
+    "id": 150,
+    "prices": [
+      {
+        "id": 151,
+        "price": 231.84
+      },
+      {
+        "id": 151,
+        "price": 245.28
+      },
+      {
+        "id": 151,
+        "price": 245.28
+      }
+    ],
+    "title": "ГЦХГ та його ізомери, гептахлоран"
+  },
+  {
+    "categoryId": 1,
+    "id": 151,
+    "prices": [
+      {
+        "id": 152,
+        "price": 230.04
+      },
+      {
+        "id": 152,
+        "price": 243.48
+      },
+      {
+        "id": 152,
+        "price": 243.48
+      }
+    ],
+    "title": "амінна сіль  2,4-Д"
+  },
+  {
+    "categoryId": 1,
+    "id": 152,
+    "prices": [
+      {
+        "id": 153,
+        "price": 250.32
+      },
+      {
+        "id": 153,
+        "price": 264.72
+      },
+      {
+        "id": 153,
+        "price": 264.72
+      }
+    ],
+    "title": "сим-триазини"
+  },
+  {
+    "categoryId": 1,
+    "id": 153,
+    "prices": [
+      {
+        "id": 154,
+        "price": 290.4
+      },
+      {
+        "id": 154,
+        "price": 307.32
+      },
+      {
+        "id": 154,
+        "price": 307.32
+      }
+    ],
+    "title": "хлорорганічні пестициди методом ГРХ"
+  },
+  {
+    "categoryId": 1,
+    "id": 154,
+    "prices": [
+      {
+        "id": 155,
+        "price": 658.08
+      },
+      {
+        "id": 155,
+        "price": 696.24
+      },
+      {
+        "id": 155,
+        "price": 696.24
+      }
+    ],
+    "title": "стронцій-90"
+  },
+  {
+    "categoryId": 1,
+    "id": 155,
+    "prices": [
+      {
+        "id": 156,
+        "mainPrice": 255.96,
+        "price": 252.48
+      },
+      {
+        "id": 156,
+        "mainPrice": 273.84,
+        "price": 267.36
+      },
+      {
+        "id": 156,
+        "mainPrice": 273.84,
+        "price": 267.36
+      }
+    ],
+    "title": "цезій-137"
+  },
+  {
+    "categoryId": 2,
+    "id": 156,
+    "prices": [
+      {
+        "id": 157,
+        "price": 52.44
+      },
+      {
+        "id": 157,
+        "price": 55.56
+      },
+      {
+        "id": 157,
+        "price": 55.56
+      }
+    ],
+    "title": "рН"
+  },
+  {
+    "categoryId": 2,
+    "id": 157,
+    "prices": [
+      {
+        "id": 158,
+        "price": 68.76
+      },
+      {
+        "id": 158,
+        "price": 72.84
+      },
+      {
+        "id": 158,
+        "price": 72.84
+      }
+    ],
+    "title": "фосфору"
+  },
+  {
+    "categoryId": 2,
+    "id": 158,
+    "prices": [
+      {
+        "id": 159,
+        "price": 60
+      },
+      {
+        "id": 159,
+        "price": 65.28
+      },
+      {
+        "id": 159,
+        "price": 65.28
+      }
+    ],
+    "title": "калію"
+  },
+  {
+    "categoryId": 2,
+    "id": 159,
+    "prices": [
+      {
+        "id": 160,
+        "price": 70.8
+      },
+      {
+        "id": 160,
+        "price": 74.88
+      },
+      {
+        "id": 160,
+        "price": 74.88
+      }
+    ],
+    "title": "нітратного азоту"
+  },
+  {
+    "categoryId": 2,
+    "id": 160,
+    "prices": [
+      {
+        "id": 161,
+        "price": 72
+      },
+      {
+        "id": 161,
+        "price": 76.08
+      },
+      {
+        "id": 161,
+        "price": 76.08
+      }
+    ],
+    "title": "аміачного азоту"
+  },
+  {
+    "categoryId": 2,
+    "id": 161,
+    "prices": [
+      {
+        "id": 162,
+        "price": 74.04
+      },
+      {
+        "id": 162,
+        "price": 78.36
+      },
+      {
+        "id": 162,
+        "price": 78.36
+      }
+    ],
+    "title": "кальцію"
+  },
+  {
+    "categoryId": 2,
+    "id": 162,
+    "prices": [
+      {
+        "id": 163,
+        "price": 74.04
+      },
+      {
+        "id": 163,
+        "price": 78.36
+      },
+      {
+        "id": 163,
+        "price": 78.36
+      }
+    ],
+    "title": "магнію"
+  },
+  {
+    "categoryId": 2,
+    "id": 163,
+    "prices": [
+      {
+        "id": 164,
+        "price": 91.2
+      },
+      {
+        "id": 164,
+        "price": 96.36
+      },
+      {
+        "id": 164,
+        "price": 96.36
+      }
+    ],
+    "title": "органічної речовини"
+  },
+  {
+    "categoryId": 2,
+    "id": 164,
+    "prices": [
+      {
+        "id": 165,
+        "price": 60.84
+      },
+      {
+        "id": 165,
+        "price": 64.32
+      },
+      {
+        "id": 165,
+        "price": 64.32
+      }
+    ],
+    "title": "вологості"
+  },
+  {
+    "categoryId": 2,
+    "id": 165,
+    "prices": [
+      {
+        "id": 166,
+        "price": 76.32
+      },
+      {
+        "id": 166,
+        "price": 81
+      },
+      {
+        "id": 166,
+        "price": 81
+      }
+    ],
+    "title": "хлоридів"
+  },
+  {
+    "categoryId": 2,
+    "id": 166,
+    "prices": [
+      {
+        "id": 167,
+        "price": 66.36
+      },
+      {
+        "id": 167,
+        "price": 70.2
+      },
+      {
+        "id": 167,
+        "price": 70.2
+      }
+    ],
+    "title": "натрію"
+  },
+  {
+    "categoryId": 2,
+    "id": 167,
+    "prices": [
+      {
+        "id": 168,
+        "price": 94.32
+      },
+      {
+        "id": 168,
+        "price": 99.84
+      },
+      {
+        "id": 168,
+        "price": 99.84
+      }
+    ],
+    "title": "загальної засоленості"
+  },
+  {
+    "categoryId": 2,
+    "id": 168,
+    "prices": [
+      {
+        "id": 169,
+        "price": 25.68
+      },
+      {
+        "id": 169,
+        "price": 27.36
+      },
+      {
+        "id": 169,
+        "price": 27.36
+      }
+    ],
+    "title": "засміченості"
+  },
+  {
+    "categoryId": 2,
+    "id": 169,
+    "prices": [
+      {
+        "id": 170,
+        "price": 66.72
+      },
+      {
+        "id": 170,
+        "price": 70.44
+      },
+      {
+        "id": 170,
+        "price": 70.44
+      }
+    ],
+    "title": "масової частки золи"
+  },
+  {
+    "categoryId": 2,
+    "id": 170,
+    "prices": [
+      {
+        "id": 171,
+        "price": 83.28
+      },
+      {
+        "id": 171,
+        "price": 88.08
+      },
+      {
+        "id": 171,
+        "price": 88.08
+      }
+    ],
+    "title": "сульфатів"
+  },
+  {
+    "categoryId": 2,
+    "id": 171,
+    "prices": [
+      {
+        "id": 172,
+        "price": 46.8
+      },
+      {
+        "id": 172,
+        "price": 49.44
+      },
+      {
+        "id": 172,
+        "price": 49.44
+      }
+    ],
+    "title": "гігроскопічної вологи"
+  },
+  {
+    "categoryId": 2,
+    "id": 172,
+    "prices": [
+      {
+        "id": 173,
+        "price": 83.28
+      },
+      {
+        "id": 173,
+        "price": 88.08
+      },
+      {
+        "id": 173,
+        "price": 88.08
+      }
+    ],
+    "title": "карбонатів, гідрокарбонатів"
+  },
+  {
+    "categoryId": 2,
+    "id": 173,
+    "prices": [
+      {
+        "id": 174,
+        "price": 61.58
+      },
+      {
+        "id": 174,
+        "price": 65.04
+      },
+      {
+        "id": 174,
+        "price": 65.04
+      }
+    ],
+    "title": "Підготовка  висновків досліджень"
+  },
+  {
+    "categoryId": 3,
+    "id": 174,
+    "prices": [
+      {
+        "id": 175,
+        "price": 70.44
+      },
+      {
+        "id": 175,
+        "price": 74.28
+      },
+      {
+        "id": 175,
+        "price": 74.28
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "Відбір зразків мінеральних добрив"
+  },
+  {
+    "categoryId": 3,
+    "id": 175,
+    "prices": [
+      {
+        "id": 176,
+        "mainPrice": 115.92,
+        "price": 95.88
+      },
+      {
+        "id": 176,
+        "mainPrice": 116.52,
+        "price": 101.52
+      },
+      {
+        "id": 176,
+        "mainPrice": 116.52,
+        "price": 101.52
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "Підготовчі роботи"
+  },
+  {
+    "categoryId": 3,
+    "id": 176,
+    "prices": [
+      {
+        "id": 177,
+        "mainPrice": 177,
+        "price": 147
+      },
+      {
+        "id": 177,
+        "mainPrice": 181.2,
+        "price": 155.64
+      },
+      {
+        "id": 177,
+        "mainPrice": 181.2,
+        "price": 155.64
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "вологості"
+  },
+  {
+    "categoryId": 3,
+    "id": 177,
+    "prices": [
+      {
+        "id": 178,
+        "mainPrice": 155.76,
+        "price": 145.08
+      },
+      {
+        "id": 178,
+        "mainPrice": 157.56,
+        "price": 153.48
+      },
+      {
+        "id": 178,
+        "mainPrice": 157.56,
+        "price": 153.48
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "гранулометричного складу добрив"
+  },
+  {
+    "categoryId": 3,
+    "id": 178,
+    "prices": [
+      {
+        "id": 179,
+        "mainPrice": 121.08,
+        "price": 106.32
+      },
+      {
+        "id": 179,
+        "mainPrice": 122.4,
+        "price": 112.32
+      },
+      {
+        "id": 179,
+        "mainPrice": 122.4,
+        "price": 112.32
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "рН"
+  },
+  {
+    "categoryId": 3,
+    "id": 179,
+    "prices": [
+      {
+        "id": 180,
+        "mainPrice": 91.44,
+        "price": 84.48
+      },
+      {
+        "id": 180,
+        "mainPrice": 103.2,
+        "price": 89.52
+      },
+      {
+        "id": 180,
+        "mainPrice": 103.2,
+        "price": 89.52
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "об’ємної ваги, густини"
+  },
+  {
+    "categoryId": 3,
+    "id": 180,
+    "prices": [
+      {
+        "id": 181,
+        "mainPrice": 198.72,
+        "price": 178.56
+      },
+      {
+        "id": 181,
+        "mainPrice": 201.36,
+        "price": 189
+      },
+      {
+        "id": 181,
+        "mainPrice": 201.36,
+        "price": 189
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "азоту загального"
+  },
+  {
+    "categoryId": 3,
+    "id": 181,
+    "prices": [
+      {
+        "id": 182,
+        "price": 730.8
+      },
+      {
+        "id": 182,
+        "price": 730.8
+      },
+      {
+        "id": 182,
+        "price": 730.8
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "азоту загального дистиляційним методом"
+  },
+  {
+    "categoryId": 3,
+    "id": 182,
+    "prices": [
+      {
+        "id": 183,
+        "mainPrice": 361.8,
+        "price": 296.64
+      },
+      {
+        "id": 183,
+        "mainPrice": 383.4,
+        "price": 313.56
+      },
+      {
+        "id": 183,
+        "mainPrice": 383.4,
+        "price": 313.56
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "азоту (за Девардом)"
+  },
+  {
+    "categoryId": 3,
+    "id": 183,
+    "prices": [
+      {
+        "id": 184,
+        "mainPrice": 188.64,
+        "price": 168.72
+      },
+      {
+        "id": 184,
+        "mainPrice": 192.36,
+        "price": 178.68
+      },
+      {
+        "id": 184,
+        "mainPrice": 192.36,
+        "price": 178.68
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "азоту амонійного (хлораміновим методом)"
+  },
+  {
+    "categoryId": 3,
+    "id": 184,
+    "prices": [
+      {
+        "id": 185,
+        "mainPrice": 300.84,
+        "price": 263.76
+      },
+      {
+        "id": 185,
+        "mainPrice": 333.24,
+        "price": 279.12
+      },
+      {
+        "id": 185,
+        "mainPrice": 333.24,
+        "price": 279.12
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "азоту (гіпохлоридним методом)"
+  },
+  {
+    "categoryId": 3,
+    "id": 185,
+    "prices": [
+      {
+        "id": 186,
+        "mainPrice": 189,
+        "price": 165.24
+      },
+      {
+        "id": 186,
+        "mainPrice": 195.48,
+        "price": 175.08
+      },
+      {
+        "id": 186,
+        "mainPrice": 195.48,
+        "price": 175.08
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "азоту аміачного (формальдегідним методом)"
+  },
+  {
+    "categoryId": 3,
+    "id": 186,
+    "prices": [
+      {
+        "id": 187,
+        "mainPrice": 312,
+        "price": 267.48
+      },
+      {
+        "id": 187,
+        "mainPrice": 318.72,
+        "price": 283.2
+      },
+      {
+        "id": 187,
+        "mainPrice": 318.72,
+        "price": 283.2
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "азоту аміачного з реактивом Несслера"
+  },
+  {
+    "categoryId": 3,
+    "id": 187,
+    "prices": [
+      {
+        "id": 188,
+        "mainPrice": 221.64,
+        "price": 185.04
+      },
+      {
+        "id": 188,
+        "mainPrice": 223.56,
+        "price": 195.84
+      },
+      {
+        "id": 188,
+        "mainPrice": 223.56,
+        "price": 195.84
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "азоту нітратного"
+  },
+  {
+    "categoryId": 3,
+    "id": 188,
+    "prices": [
+      {
+        "id": 189,
+        "mainPrice": 214.32,
+        "price": 189.48
+      },
+      {
+        "id": 189,
+        "mainPrice": 218.28,
+        "price": 200.52
+      },
+      {
+        "id": 189,
+        "mainPrice": 218.28,
+        "price": 200.52
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "азоту амідного"
+  },
+  {
+    "categoryId": 3,
+    "id": 189,
+    "prices": [
+      {
+        "id": 190,
+        "mainPrice": 258,
+        "price": 211.32
+      },
+      {
+        "id": 190,
+        "mainPrice": 260.52,
+        "price": 223.68
+      },
+      {
+        "id": 190,
+        "mainPrice": 260.52,
+        "price": 223.68
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "фосфору загального"
+  },
+  {
+    "categoryId": 3,
+    "id": 190,
+    "prices": [
+      {
+        "id": 191,
+        "mainPrice": 230.28,
+        "price": 204.12
+      },
+      {
+        "id": 191,
+        "mainPrice": 237.12,
+        "price": 216.12
+      },
+      {
+        "id": 191,
+        "mainPrice": 237.12,
+        "price": 216.12
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "фосфору водорозчинного"
+  },
+  {
+    "categoryId": 3,
+    "id": 191,
+    "prices": [
+      {
+        "id": 192,
+        "mainPrice": 251.04,
+        "price": 215.88
+      },
+      {
+        "id": 192,
+        "mainPrice": 255.36,
+        "price": 228.6
+      },
+      {
+        "id": 192,
+        "mainPrice": 255.36,
+        "price": 228.6
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "фосфору засвоюваного"
+  },
+  {
+    "categoryId": 3,
+    "id": 192,
+    "prices": [
+      {
+        "id": 193,
+        "mainPrice": 160.56,
+        "price": 149.4
+      },
+      {
+        "id": 193,
+        "mainPrice": 162.48,
+        "price": 158.28
+      },
+      {
+        "id": 193,
+        "mainPrice": 162.48,
+        "price": 158.28
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "калію полум’яно-фотометричним методом"
+  },
+  {
+    "categoryId": 3,
+    "id": 193,
+    "prices": [
+      {
+        "id": 194,
+        "price": 148.2
+      },
+      {
+        "id": 194,
+        "price": 156.96
+      },
+      {
+        "id": 194,
+        "price": 156.96
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "калію тетрафенілборатним методом"
+  },
+  {
+    "categoryId": 3,
+    "id": 194,
+    "prices": [
+      {
+        "id": 195,
+        "mainPrice": 153.12,
+        "price": 105.24
+      },
+      {
+        "id": 195,
+        "mainPrice": 153.6,
+        "price": 111.48
+      },
+      {
+        "id": 195,
+        "mainPrice": 153.6,
+        "price": 111.48
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "лужності"
+  },
+  {
+    "categoryId": 3,
+    "id": 195,
+    "prices": [
+      {
+        "id": 196,
+        "price": 176.28
+      },
+      {
+        "id": 196,
+        "price": 186.6
+      },
+      {
+        "id": 196,
+        "price": 186.6
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "вільної кислоти в сульфаті амонію"
+  },
+  {
+    "categoryId": 3,
+    "id": 196,
+    "prices": [
+      {
+        "id": 197,
+        "mainPrice": 199.2,
+        "price": 168
+      },
+      {
+        "id": 197,
+        "mainPrice": 199.56,
+        "price": 177.96
+      },
+      {
+        "id": 197,
+        "mainPrice": 199.56,
+        "price": 177.96
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "суми кальцію і магнію"
+  },
+  {
+    "categoryId": 3,
+    "id": 197,
+    "prices": [
+      {
+        "id": 198,
+        "mainPrice": 213.12,
+        "price": 162.24
+      },
+      {
+        "id": 198,
+        "mainPrice": 217.68,
+        "price": 171.6
+      },
+      {
+        "id": 198,
+        "mainPrice": 217.68,
+        "price": 171.6
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "біурету в карбаміді"
+  },
+  {
+    "categoryId": 3,
+    "id": 198,
+    "prices": [
+      {
+        "id": 199,
+        "price": 444.96
+      },
+      {
+        "id": 199,
+        "price": 471
+      },
+      {
+        "id": 199,
+        "price": 471
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "вуглеаміакатів"
+  },
+  {
+    "categoryId": 3,
+    "id": 199,
+    "prices": [
+      {
+        "id": 200,
+        "price": 164.16
+      },
+      {
+        "id": 200,
+        "price": 173.76
+      },
+      {
+        "id": 200,
+        "price": 173.76
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "хлоридів"
+  },
+  {
+    "categoryId": 3,
+    "id": 200,
+    "prices": [
+      {
+        "id": 201,
+        "mainPrice": 178.68,
+        "price": 115.8
+      },
+      {
+        "id": 201,
+        "mainPrice": 180.12,
+        "price": 122.4
+      },
+      {
+        "id": 201,
+        "mainPrice": 180.12,
+        "price": 122.4
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "кальцію"
+  },
+  {
+    "categoryId": 3,
+    "id": 201,
+    "prices": [
+      {
+        "id": 202,
+        "price": 811.32
+      },
+      {
+        "id": 202,
+        "price": 858.48
+      },
+      {
+        "id": 202,
+        "price": 858.48
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "трикальційфосфату"
+  },
+  {
+    "categoryId": 3,
+    "id": 202,
+    "prices": [
+      {
+        "id": 203,
+        "mainPrice": 179.16,
+        "price": 115.8
+      },
+      {
+        "id": 203,
+        "mainPrice": 180.48,
+        "price": 122.4
+      },
+      {
+        "id": 203,
+        "mainPrice": 180.48,
+        "price": 122.4
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "магнію"
+  },
+  {
+    "categoryId": 3,
+    "id": 203,
+    "prices": [
+      {
+        "id": 204,
+        "mainPrice": 96.48,
+        "price": 86.76
+      },
+      {
+        "id": 204,
+        "mainPrice": 99.36,
+        "price": 91.8
+      },
+      {
+        "id": 204,
+        "mainPrice": 99.36,
+        "price": 91.8
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "свинцю"
+  },
+  {
+    "categoryId": 3,
+    "id": 204,
+    "prices": [
+      {
+        "id": 205,
+        "mainPrice": 96.48,
+        "price": 86.76
+      },
+      {
+        "id": 205,
+        "mainPrice": 99.48,
+        "price": 91.8
+      },
+      {
+        "id": 205,
+        "mainPrice": 99.48,
+        "price": 91.8
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "кадмію"
+  },
+  {
+    "categoryId": 3,
+    "id": 205,
+    "prices": [
+      {
+        "id": 206,
+        "mainPrice": 143.88,
+        "price": 130.44
+      },
+      {
+        "id": 206,
+        "mainPrice": 144.12,
+        "price": 143.48
+      },
+      {
+        "id": 206,
+        "mainPrice": 144.12,
+        "price": 143.48
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "бору"
+  },
+  {
+    "categoryId": 3,
+    "id": 206,
+    "prices": [
+      {
+        "id": 207,
+        "price": 578.16
+      },
+      {
+        "id": 207,
+        "price": 578.16
+      },
+      {
+        "id": 207,
+        "price": 578.16
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "бору фотометричним методом"
+  },
+  {
+    "categoryId": 3,
+    "id": 207,
+    "prices": [
+      {
+        "id": 208,
+        "mainPrice": 96.6,
+        "price": 88.08
+      },
+      {
+        "id": 208,
+        "mainPrice": 100.56,
+        "price": 93.48
+      },
+      {
+        "id": 208,
+        "mainPrice": 100.56,
+        "price": 93.48
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "марганцю"
+  },
+  {
+    "categoryId": 3,
+    "id": 208,
+    "prices": [
+      {
+        "id": 209,
+        "mainPrice": 96.6,
+        "price": 88.08
+      },
+      {
+        "id": 209,
+        "mainPrice": 100.44,
+        "price": 93.48
+      },
+      {
+        "id": 209,
+        "mainPrice": 100.44,
+        "price": 93.48
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "міді"
+  },
+  {
+    "categoryId": 3,
+    "id": 209,
+    "prices": [
+      {
+        "id": 210,
+        "mainPrice": 96.6,
+        "price": 88.08
+      },
+      {
+        "id": 210,
+        "mainPrice": 100.56,
+        "price": 93.48
+      },
+      {
+        "id": 210,
+        "mainPrice": 100.56,
+        "price": 93.48
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "цинку"
+  },
+  {
+    "categoryId": 3,
+    "id": 210,
+    "prices": [
+      {
+        "id": 211,
+        "mainPrice": 97.08,
+        "price": 88.08
+      },
+      {
+        "id": 211,
+        "mainPrice": 100.92,
+        "price": 93.48
+      },
+      {
+        "id": 211,
+        "mainPrice": 100.92,
+        "price": 93.48
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "кобальту"
+  },
+  {
+    "categoryId": 3,
+    "id": 211,
+    "prices": [
+      {
+        "id": 212,
+        "mainPrice": 96.6,
+        "price": 88.08
+      },
+      {
+        "id": 212,
+        "mainPrice": 100.56,
+        "price": 93.48
+      },
+      {
+        "id": 212,
+        "mainPrice": 100.56,
+        "price": 93.48
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "заліза"
+  },
+  {
+    "categoryId": 3,
+    "id": 212,
+    "prices": [
+      {
+        "id": 213,
+        "mainPrice": 114.36,
+        "price": 92.4
+      },
+      {
+        "id": 213,
+        "mainPrice": 129.6,
+        "price": 97.92
+      },
+      {
+        "id": 213,
+        "mainPrice": 129.6,
+        "price": 97.92
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "молібдену"
+  },
+  {
+    "categoryId": 3,
+    "id": 213,
+    "prices": [
+      {
+        "id": 214,
+        "mainPrice": 254.4,
+        "price": 135.48
+      },
+      {
+        "id": 214,
+        "mainPrice": 284.76,
+        "price": 143.52
+      },
+      {
+        "id": 214,
+        "mainPrice": 284.76,
+        "price": 143.52
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "сірки сульфатної"
+  },
+  {
+    "categoryId": 3,
+    "id": 214,
+    "prices": [
+      {
+        "id": 215,
+        "price": 156.24
+      },
+      {
+        "id": 215,
+        "price": 165.48
+      },
+      {
+        "id": 215,
+        "price": 165.48
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "натрію хлористого в калії хлористому"
+  },
+  {
+    "categoryId": 3,
+    "id": 215,
+    "prices": [
+      {
+        "id": 216,
+        "price": 105.36
+      },
+      {
+        "id": 216,
+        "price": 111.48
+      },
+      {
+        "id": 216,
+        "price": 111.48
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "статичної міцності гранул"
+  },
+  {
+    "categoryId": 3,
+    "id": 216,
+    "prices": [
+      {
+        "id": 217,
+        "price": 195.96
+      },
+      {
+        "id": 217,
+        "price": 207.48
+      },
+      {
+        "id": 217,
+        "price": 207.48
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "нерозчинного залишку"
+  },
+  {
+    "categoryId": 3,
+    "id": 217,
+    "prices": [
+      {
+        "id": 218,
+        "price": 50.52
+      },
+      {
+        "id": 218,
+        "price": 53.52
+      },
+      {
+        "id": 218,
+        "price": 53.52
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "розсипчатості"
+  },
+  {
+    "categoryId": 3,
+    "id": 218,
+    "prices": [
+      {
+        "id": 219,
+        "price": 430.56
+      },
+      {
+        "id": 219,
+        "price": 455.64
+      },
+      {
+        "id": 219,
+        "price": 455.64
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості аміачної селітри"
+  },
+  {
+    "categoryId": 3,
+    "id": 219,
+    "prices": [
+      {
+        "id": 220,
+        "price": 730.92
+      },
+      {
+        "id": 220,
+        "price": 773.76
+      },
+      {
+        "id": 220,
+        "price": 773.76
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості вапняково-аміачної селітри"
+  },
+  {
+    "categoryId": 3,
+    "id": 220,
+    "prices": [
+      {
+        "id": 221,
+        "price": 369.48
+      },
+      {
+        "id": 221,
+        "price": 391.08
+      },
+      {
+        "id": 221,
+        "price": 391.08
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості карбаміду"
+  },
+  {
+    "categoryId": 3,
+    "id": 221,
+    "prices": [
+      {
+        "id": 222,
+        "mainPrice": 542.76,
+        "price": 479.52
+      },
+      {
+        "id": 222,
+        "mainPrice": 575.88,
+        "price": 507.6
+      },
+      {
+        "id": 222,
+        "mainPrice": 575.88,
+        "price": 507.6
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості КАС (карбамід, аміачна селітра, лужність, щільність)"
+  },
+  {
+    "categoryId": 3,
+    "id": 222,
+    "prices": [
+      {
+        "id": 223,
+        "mainPrice": 333.96,
+        "price": 269.04
+      },
+      {
+        "id": 223,
+        "mainPrice": 341.16,
+        "price": 284.76
+      },
+      {
+        "id": 223,
+        "mainPrice": 341.16,
+        "price": 284.76
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості аміаку водного технічного"
+  },
+  {
+    "categoryId": 3,
+    "id": 223,
+    "prices": [
+      {
+        "id": 224,
+        "price": 349.2
+      },
+      {
+        "id": 224,
+        "price": 369.96
+      },
+      {
+        "id": 224,
+        "price": 369.96
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості сульфату амонію кристалічного"
+  },
+  {
+    "categoryId": 3,
+    "id": 224,
+    "prices": [
+      {
+        "id": 225,
+        "price": 402.6
+      },
+      {
+        "id": 225,
+        "price": 426.24
+      },
+      {
+        "id": 225,
+        "price": 426.24
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості сульфату амонію гранульованого"
+  },
+  {
+    "categoryId": 3,
+    "id": 225,
+    "prices": [
+      {
+        "id": 226,
+        "price": 400.92
+      },
+      {
+        "id": 226,
+        "price": 424.2
+      },
+      {
+        "id": 226,
+        "price": 424.2
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості сульфату магнію"
+  },
+  {
+    "categoryId": 3,
+    "id": 226,
+    "prices": [
+      {
+        "id": 227,
+        "price": 465
+      },
+      {
+        "id": 227,
+        "price": 492.12
+      },
+      {
+        "id": 227,
+        "price": 492.12
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості суперфосфату гранульованого"
+  },
+  {
+    "categoryId": 3,
+    "id": 227,
+    "prices": [
+      {
+        "id": 228,
+        "price": 458.64
+      },
+      {
+        "id": 228,
+        "price": 485.4
+      },
+      {
+        "id": 228,
+        "price": 485.4
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості суперфосфату подвійного порошковидного"
+  },
+  {
+    "categoryId": 3,
+    "id": 228,
+    "prices": [
+      {
+        "id": 229,
+        "price": 553.92
+      },
+      {
+        "id": 229,
+        "price": 586.08
+      },
+      {
+        "id": 229,
+        "price": 586.08
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості амофосу"
+  },
+  {
+    "categoryId": 3,
+    "id": 229,
+    "prices": [
+      {
+        "id": 230,
+        "price": 665.04
+      },
+      {
+        "id": 230,
+        "price": 703.92
+      },
+      {
+        "id": 230,
+        "price": 703.92
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості діамофоски"
+  },
+  {
+    "categoryId": 3,
+    "id": 230,
+    "prices": [
+      {
+        "id": 231,
+        "price": 715.56
+      },
+      {
+        "id": 231,
+        "price": 757.56
+      },
+      {
+        "id": 231,
+        "price": 757.56
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості нітроамофоски"
+  },
+  {
+    "categoryId": 3,
+    "id": 231,
+    "prices": [
+      {
+        "id": 232,
+        "price": 799.32
+      },
+      {
+        "id": 232,
+        "price": 845.88
+      },
+      {
+        "id": 232,
+        "price": 845.88
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості суперагро"
+  },
+  {
+    "categoryId": 3,
+    "id": 232,
+    "prices": [
+      {
+        "id": 233,
+        "price": 456.96
+      },
+      {
+        "id": 233,
+        "price": 483.84
+      },
+      {
+        "id": 233,
+        "price": 483.84
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості калімагнезії"
+  },
+  {
+    "categoryId": 3,
+    "id": 233,
+    "prices": [
+      {
+        "id": 234,
+        "price": 412.44
+      },
+      {
+        "id": 234,
+        "price": 436.32
+      },
+      {
+        "id": 234,
+        "price": 436.32
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості каїніту"
+  },
+  {
+    "categoryId": 3,
+    "id": 234,
+    "prices": [
+      {
+        "id": 235,
+        "price": 363.84
+      },
+      {
+        "id": 235,
+        "price": 384.84
+      },
+      {
+        "id": 235,
+        "price": 384.84
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості хлористого калію"
+  },
+  {
+    "categoryId": 3,
+    "id": 235,
+    "prices": [
+      {
+        "id": 236,
+        "price": 360
+      },
+      {
+        "id": 236,
+        "price": 380.64
+      },
+      {
+        "id": 236,
+        "price": 380.64
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості калійної солі"
+  },
+  {
+    "categoryId": 3,
+    "id": 236,
+    "prices": [
+      {
+        "id": 237,
+        "price": 456.96
+      },
+      {
+        "id": 237,
+        "price": 483.84
+      },
+      {
+        "id": 237,
+        "price": 483.84
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості калійно-магнієвого концентрату"
+  },
+  {
+    "categoryId": 3,
+    "id": 237,
+    "prices": [
+      {
+        "id": 238,
+        "price": 822.84
+      },
+      {
+        "id": 238,
+        "price": 870.96
+      },
+      {
+        "id": 238,
+        "price": 870.96
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості супрефосу"
+  },
+  {
+    "categoryId": 3,
+    "id": 238,
+    "prices": [
+      {
+        "id": 239,
+        "price": 583.92
+      },
+      {
+        "id": 239,
+        "price": 618
+      },
+      {
+        "id": 239,
+        "price": 618
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості нітрофоски"
+  },
+  {
+    "categoryId": 3,
+    "id": 239,
+    "prices": [
+      {
+        "id": 240,
+        "price": 663.6
+      },
+      {
+        "id": 240,
+        "price": 702.48
+      },
+      {
+        "id": 240,
+        "price": 702.48
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості нітрофосу"
+  },
+  {
+    "categoryId": 3,
+    "id": 240,
+    "prices": [
+      {
+        "id": 241,
+        "price": 386.76
+      },
+      {
+        "id": 241,
+        "price": 409.44
+      },
+      {
+        "id": 241,
+        "price": 409.44
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості борошна фосфоритного"
+  },
+  {
+    "categoryId": 3,
+    "id": 241,
+    "prices": [
+      {
+        "id": 242,
+        "price": 783.6
+      },
+      {
+        "id": 242,
+        "price": 829.44
+      },
+      {
+        "id": 242,
+        "price": 829.44
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості складних добрив"
+  },
+  {
+    "categoryId": 3,
+    "id": 242,
+    "prices": [
+      {
+        "id": 243,
+        "price": 434.64
+      },
+      {
+        "id": 243,
+        "price": 460.08
+      },
+      {
+        "id": 243,
+        "price": 460.08
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "якості РКД"
+  },
+  {
+    "categoryId": 3,
+    "id": 243,
+    "prices": [
+      {
+        "id": 244,
+        "mainPrice": 43.92,
+        "price": 32.64
+      },
+      {
+        "id": 244,
+        "mainPrice": 46.44,
+        "price": 34.44
+      },
+      {
+        "id": 244,
+        "mainPrice": 46.44,
+        "price": 34.44
+      }
+    ],
+    "subcategoryId": 6,
+    "title": "Обробка даних, видача висновків"
+  },
+  {
+    "categoryId": 3,
+    "id": 244,
+    "prices": [
+      {
+        "id": 245,
+        "mainPrice": 87.84,
+        "price": 66.6
+      },
+      {
+        "id": 245,
+        "mainPrice": 102.6,
+        "price": 70.2
+      },
+      {
+        "id": 245,
+        "mainPrice": 102.6,
+        "price": 70.2
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "Відбір зразків рідких органічних добрив"
+  },
+  {
+    "categoryId": 3,
+    "id": 245,
+    "prices": [
+      {
+        "id": 246,
+        "mainPrice": 157.44,
+        "price": 140.52
+      },
+      {
+        "id": 246,
+        "mainPrice": 183.72,
+        "price": 118.68
+      },
+      {
+        "id": 246,
+        "mainPrice": 183.72,
+        "price": 118.68
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "Відбір зразків твердих органічних добрив"
+  },
+  {
+    "categoryId": 3,
+    "id": 246,
+    "prices": [
+      {
+        "id": 247,
+        "mainPrice": 165.84,
+        "price": 140.52
+      },
+      {
+        "id": 247,
+        "mainPrice": 168.72,
+        "price": 148.92
+      },
+      {
+        "id": 247,
+        "mainPrice": 168.72,
+        "price": 148.92
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "Підготовчі роботи"
+  },
+  {
+    "categoryId": 3,
+    "id": 247,
+    "prices": [
+      {
+        "id": 248,
+        "mainPrice": 173.16,
+        "price": 106.44
+      },
+      {
+        "id": 248,
+        "mainPrice": 177.72,
+        "price": 112.68
+      },
+      {
+        "id": 248,
+        "mainPrice": 177.72,
+        "price": 112.68
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "вологості"
+  },
+  {
+    "categoryId": 3,
+    "id": 248,
+    "prices": [
+      {
+        "id": 249,
+        "mainPrice": 189.6,
+        "price": 106.8
+      },
+      {
+        "id": 249,
+        "mainPrice": 192.24,
+        "price": 113.04
+      },
+      {
+        "id": 249,
+        "mainPrice": 192.24,
+        "price": 113.04
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "гігроскопічної вологи"
+  },
+  {
+    "categoryId": 3,
+    "id": 249,
+    "prices": [
+      {
+        "id": 250,
+        "mainPrice": 177.36,
+        "price": 106.8
+      },
+      {
+        "id": 250,
+        "mainPrice": 179.28,
+        "price": 113.16
+      },
+      {
+        "id": 250,
+        "mainPrice": 179.28,
+        "price": 113.16
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "масової частки золи"
+  },
+  {
+    "categoryId": 3,
+    "id": 250,
+    "prices": [
+      {
+        "id": 251,
+        "price": 247.8
+      },
+      {
+        "id": 251,
+        "price": 262.32
+      },
+      {
+        "id": 251,
+        "price": 262.32
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "зольних елементів (в т.ч. Са)"
+  },
+  {
+    "categoryId": 3,
+    "id": 251,
+    "prices": [
+      {
+        "id": 252,
+        "mainPrice": 130.2,
+        "price": 100.32
+      },
+      {
+        "id": 252,
+        "mainPrice": 134.4,
+        "price": 106.08
+      },
+      {
+        "id": 252,
+        "mainPrice": 134.4,
+        "price": 106.08
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "рН сольового"
+  },
+  {
+    "categoryId": 3,
+    "id": 252,
+    "prices": [
+      {
+        "id": 253,
+        "mainPrice": 223.08,
+        "price": 205.8
+      },
+      {
+        "id": 253,
+        "mainPrice": 228.48,
+        "price": 217.68
+      },
+      {
+        "id": 253,
+        "mainPrice": 228.48,
+        "price": 217.68
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "азоту загального"
+  },
+  {
+    "categoryId": 3,
+    "id": 253,
+    "prices": [
+      {
+        "id": 254,
+        "mainPrice": 231.72,
+        "price": 212.88
+      },
+      {
+        "id": 254,
+        "mainPrice": 235.8,
+        "price": 225.48
+      },
+      {
+        "id": 254,
+        "mainPrice": 235.8,
+        "price": 225.48
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "азоту амонійного"
+  },
+  {
+    "categoryId": 3,
+    "id": 254,
+    "prices": [
+      {
+        "id": 255,
+        "mainPrice": 201.6,
+        "price": 195.24
+      },
+      {
+        "id": 255,
+        "mainPrice": 209.16,
+        "price": 206.28
+      },
+      {
+        "id": 255,
+        "mainPrice": 209.16,
+        "price": 206.28
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "азоту нітратного"
+  },
+  {
+    "categoryId": 3,
+    "id": 255,
+    "prices": [
+      {
+        "id": 256,
+        "mainPrice": 318.48,
+        "price": 299.04
+      },
+      {
+        "id": 256,
+        "mainPrice": 324.48,
+        "price": 316.44
+      },
+      {
+        "id": 256,
+        "mainPrice": 324.48,
+        "price": 316.44
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "фосфору загального"
+  },
+  {
+    "categoryId": 3,
+    "id": 256,
+    "prices": [
+      {
+        "id": 257,
+        "price": 214.8
+      },
+      {
+        "id": 257,
+        "price": 227.4
+      },
+      {
+        "id": 257,
+        "price": 227.4
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "фосфору рухомого"
+  },
+  {
+    "categoryId": 3,
+    "id": 257,
+    "prices": [
+      {
+        "id": 258,
+        "price": 293.28
+      },
+      {
+        "id": 258,
+        "price": 310.68
+      },
+      {
+        "id": 258,
+        "price": 310.68
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "фосфору водорозчинного"
+  },
+  {
+    "categoryId": 3,
+    "id": 258,
+    "prices": [
+      {
+        "id": 259,
+        "mainPrice": 355.44,
+        "price": 322.2
+      },
+      {
+        "id": 259,
+        "mainPrice": 357,
+        "price": 340.92
+      },
+      {
+        "id": 259,
+        "mainPrice": 357,
+        "price": 340.92
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "калію загального"
+  },
+  {
+    "categoryId": 3,
+    "id": 259,
+    "prices": [
+      {
+        "id": 260,
+        "price": 204.24
+      },
+      {
+        "id": 260,
+        "price": 216
+      },
+      {
+        "id": 260,
+        "price": 216
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "калію рухомого"
+  },
+  {
+    "categoryId": 3,
+    "id": 260,
+    "prices": [
+      {
+        "id": 261,
+        "price": 204.24
+      },
+      {
+        "id": 261,
+        "price": 216
+      },
+      {
+        "id": 261,
+        "price": 216
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "сірки сульфатної"
+  },
+  {
+    "categoryId": 3,
+    "id": 261,
+    "prices": [
+      {
+        "id": 262,
+        "mainPrice": 323.88,
+        "price": 246.96
+      },
+      {
+        "id": 262,
+        "mainPrice": 329.88,
+        "price": 261.72
+      },
+      {
+        "id": 262,
+        "mainPrice": 329.88,
+        "price": 261.72
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "сірки в органічних добривах"
+  },
+  {
+    "categoryId": 3,
+    "id": 262,
+    "prices": [
+      {
+        "id": 263,
+        "mainPrice": 212.52,
+        "price": 209.4
+      },
+      {
+        "id": 263,
+        "mainPrice": 225.96,
+        "price": 221.88
+      },
+      {
+        "id": 263,
+        "mainPrice": 225.96,
+        "price": 221.88
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "кобальту"
+  },
+  {
+    "categoryId": 3,
+    "id": 263,
+    "prices": [
+      {
+        "id": 264,
+        "mainPrice": 185.4,
+        "price": 182.76
+      },
+      {
+        "id": 264,
+        "mainPrice": 193.68,
+        "price": 193.56
+      },
+      {
+        "id": 264,
+        "mainPrice": 193.68,
+        "price": 193.56
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "цинку"
+  },
+  {
+    "categoryId": 3,
+    "id": 264,
+    "prices": [
+      {
+        "id": 265,
+        "mainPrice": 185.28,
+        "price": 182.76
+      },
+      {
+        "id": 265,
+        "mainPrice": 193.56,
+        "price": 193.56
+      },
+      {
+        "id": 265,
+        "mainPrice": 193.56,
+        "price": 193.56
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "міді"
+  },
+  {
+    "categoryId": 3,
+    "id": 265,
+    "prices": [
+      {
+        "id": 266,
+        "mainPrice": 177.84,
+        "price": 176.64
+      },
+      {
+        "id": 266,
+        "mainPrice": 192.84,
+        "price": 187.08
+      },
+      {
+        "id": 266,
+        "mainPrice": 192.84,
+        "price": 187.08
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "кальцію"
+  },
+  {
+    "categoryId": 3,
+    "id": 266,
+    "prices": [
+      {
+        "id": 267,
+        "mainPrice": 189.48,
+        "price": 189.12
+      },
+      {
+        "id": 267,
+        "mainPrice": 206.64,
+        "price": 200.28
+      },
+      {
+        "id": 267,
+        "mainPrice": 206.64,
+        "price": 200.28
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "магнію"
+  },
+  {
+    "categoryId": 3,
+    "id": 267,
+    "prices": [
+      {
+        "id": 268,
+        "mainPrice": 185.4,
+        "price": 184.56
+      },
+      {
+        "id": 268,
+        "mainPrice": 195.96,
+        "price": 195.48
+      },
+      {
+        "id": 268,
+        "mainPrice": 195.96,
+        "price": 195.48
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "заліза"
+  },
+  {
+    "categoryId": 3,
+    "id": 268,
+    "prices": [
+      {
+        "id": 269,
+        "mainPrice": 213.36,
+        "price": 209.88
+      },
+      {
+        "id": 269,
+        "mainPrice": 223.92,
+        "price": 222.24
+      },
+      {
+        "id": 269,
+        "mainPrice": 223.92,
+        "price": 222.24
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "бору"
+  },
+  {
+    "categoryId": 3,
+    "id": 269,
+    "prices": [
+      {
+        "id": 270,
+        "price": 626.76
+      },
+      {
+        "id": 270,
+        "price": 626.76
+      },
+      {
+        "id": 270,
+        "price": 626.76
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "бору фотометричним методом"
+  },
+  {
+    "categoryId": 3,
+    "id": 270,
+    "prices": [
+      {
+        "id": 271,
+        "mainPrice": 185.4,
+        "price": 185.4
+      },
+      {
+        "id": 271,
+        "mainPrice": 199.56,
+        "price": 196.44
+      },
+      {
+        "id": 271,
+        "mainPrice": 199.56,
+        "price": 196.44
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "марганцю"
+  },
+  {
+    "categoryId": 3,
+    "id": 271,
+    "prices": [
+      {
+        "id": 272,
+        "mainPrice": 217.44,
+        "price": 213.12
+      },
+      {
+        "id": 272,
+        "mainPrice": 226.92,
+        "price": 225.48
+      },
+      {
+        "id": 272,
+        "mainPrice": 226.92,
+        "price": 225.48
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "свинцю"
+  },
+  {
+    "categoryId": 3,
+    "id": 272,
+    "prices": [
+      {
+        "id": 273,
+        "mainPrice": 217.44,
+        "price": 213.12
+      },
+      {
+        "id": 273,
+        "mainPrice": 226.92,
+        "price": 225.48
+      },
+      {
+        "id": 273,
+        "mainPrice": 226.92,
+        "price": 225.48
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "кадмію"
+  },
+  {
+    "categoryId": 3,
+    "id": 273,
+    "prices": [
+      {
+        "id": 274,
+        "price": 187.32
+      },
+      {
+        "id": 274,
+        "price": 198.24
+      },
+      {
+        "id": 274,
+        "price": 198.24
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "миш’яку"
+  },
+  {
+    "categoryId": 3,
+    "id": 274,
+    "prices": [
+      {
+        "id": 275,
+        "price": 160.56
+      },
+      {
+        "id": 275,
+        "price": 169.68
+      },
+      {
+        "id": 275,
+        "price": 169.68
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "ртуті"
+  },
+  {
+    "categoryId": 3,
+    "id": 275,
+    "prices": [
+      {
+        "id": 276,
+        "price": 173.28
+      },
+      {
+        "id": 276,
+        "price": 183.24
+      },
+      {
+        "id": 276,
+        "price": 183.24
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "молібдену"
+  },
+  {
+    "categoryId": 3,
+    "id": 276,
+    "prices": [
+      {
+        "id": 277,
+        "mainPrice": 399.36,
+        "price": 238.2
+      },
+      {
+        "id": 277,
+        "mainPrice": 406.32,
+        "price": 252.36
+      },
+      {
+        "id": 277,
+        "mainPrice": 406.32,
+        "price": 252.36
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "гумінових речовин"
+  },
+  {
+    "categoryId": 3,
+    "id": 277,
+    "prices": [
+      {
+        "id": 278,
+        "mainPrice": 1110.84,
+        "price": 1100.16
+      },
+      {
+        "id": 278,
+        "mainPrice": 1166.88,
+        "price": 1164.6
+      },
+      {
+        "id": 278,
+        "mainPrice": 1166.88,
+        "price": 1164.6
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "групового складу (гумінових та фульвокислот)"
+  },
+  {
+    "categoryId": 3,
+    "id": 278,
+    "prices": [
+      {
+        "id": 279,
+        "price": 316.56
+      },
+      {
+        "id": 279,
+        "price": 335.04
+      },
+      {
+        "id": 279,
+        "price": 335.04
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "загальних форм сірки та заліза"
+  },
+  {
+    "categoryId": 3,
+    "id": 279,
+    "prices": [
+      {
+        "id": 280,
+        "price": 439.56
+      },
+      {
+        "id": 280,
+        "price": 465.24
+      },
+      {
+        "id": 280,
+        "price": 465.24
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "сим-триазинів"
+  },
+  {
+    "categoryId": 3,
+    "id": 280,
+    "prices": [
+      {
+        "id": 281,
+        "price": 416.52
+      },
+      {
+        "id": 281,
+        "price": 440.88
+      },
+      {
+        "id": 281,
+        "price": 440.88
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "хлорорганічних пестицидів"
+  },
+  {
+    "categoryId": 3,
+    "id": 281,
+    "prices": [
+      {
+        "id": 282,
+        "price": 474.12
+      },
+      {
+        "id": 282,
+        "price": 501.6
+      },
+      {
+        "id": 282,
+        "price": 501.6
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "загальних форм поживних елементі"
+  },
+  {
+    "categoryId": 3,
+    "id": 282,
+    "prices": [
+      {
+        "id": 283,
+        "price": 411.36
+      },
+      {
+        "id": 283,
+        "price": 435.48
+      },
+      {
+        "id": 283,
+        "price": 435.48
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "NPK одного мінералізата"
+  },
+  {
+    "categoryId": 3,
+    "id": 283,
+    "prices": [
+      {
+        "id": 284,
+        "price": 629.28
+      },
+      {
+        "id": 284,
+        "price": 666
+      },
+      {
+        "id": 284,
+        "price": 666
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "якості органічних добрив"
+  },
+  {
+    "categoryId": 3,
+    "id": 284,
+    "prices": [
+      {
+        "id": 285,
+        "price": 695.04
+      },
+      {
+        "id": 285,
+        "price": 735.72
+      },
+      {
+        "id": 285,
+        "price": 735.72
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "якості підстилкового гною та компост"
+  },
+  {
+    "categoryId": 3,
+    "id": 285,
+    "prices": [
+      {
+        "id": 286,
+        "price": 834.12
+      },
+      {
+        "id": 286,
+        "price": 882.84
+      },
+      {
+        "id": 286,
+        "price": 882.84
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "якості сапропелю"
+  },
+  {
+    "categoryId": 3,
+    "id": 286,
+    "prices": [
+      {
+        "id": 287,
+        "price": 813.72
+      },
+      {
+        "id": 287,
+        "price": 861.12
+      },
+      {
+        "id": 287,
+        "price": 861.12
+      }
+    ],
+    "subcategoryId": 7,
+    "title": "Комплексний аналіз органічних добрив"
+  },
+  {
+    "categoryId": 3,
+    "id": 287,
+    "prices": [
+      {
+        "id": 288,
+        "price": 82.68
+      },
+      {
+        "id": 288,
+        "price": 87.36
+      },
+      {
+        "id": 288,
+        "price": 87.36
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "Відбір зразків хімічних меліорантів"
+  },
+  {
+    "categoryId": 3,
+    "id": 288,
+    "prices": [
+      {
+        "id": 289,
+        "price": 471
+      },
+      {
+        "id": 289,
+        "price": 498.6
+      },
+      {
+        "id": 289,
+        "price": 498.6
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "якості  фосфогіпсу"
+  },
+  {
+    "categoryId": 3,
+    "id": 289,
+    "prices": [
+      {
+        "id": 290,
+        "mainPrice": 400.92,
+        "price": 377.04
+      },
+      {
+        "id": 290,
+        "mainPrice": 410.04,
+        "price": 398.52
+      },
+      {
+        "id": 290,
+        "mainPrice": 410.04,
+        "price": 398.52
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "якості вапнякового борошна"
+  },
+  {
+    "categoryId": 3,
+    "id": 290,
+    "prices": [
+      {
+        "id": 291,
+        "price": 856.2
+      },
+      {
+        "id": 291,
+        "price": 906.12
+      },
+      {
+        "id": 291,
+        "price": 906.12
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "якості вапнякового каміння"
+  },
+  {
+    "categoryId": 3,
+    "id": 291,
+    "prices": [
+      {
+        "id": 292,
+        "price": 365.28
+      },
+      {
+        "id": 292,
+        "price": 386.64
+      },
+      {
+        "id": 292,
+        "price": 386.64
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "якості крейди"
+  },
+  {
+    "categoryId": 3,
+    "id": 292,
+    "prices": [
+      {
+        "id": 293,
+        "mainPrice": 389.76,
+        "price": 365.28
+      },
+      {
+        "id": 293,
+        "mainPrice": 395.04,
+        "price": 386.64
+      },
+      {
+        "id": 293,
+        "mainPrice": 395.04,
+        "price": 386.64
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "якості дефекату, як хімеліоранту"
+  },
+  {
+    "categoryId": 3,
+    "id": 293,
+    "prices": [
+      {
+        "id": 294,
+        "mainPrice": 271.32,
+        "price": 243.96
+      },
+      {
+        "id": 294,
+        "mainPrice": 274.92,
+        "price": 258.48
+      },
+      {
+        "id": 294,
+        "mainPrice": 274.92,
+        "price": 258.48
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "азоту загального"
+  },
+  {
+    "categoryId": 3,
+    "id": 294,
+    "prices": [
+      {
+        "id": 295,
+        "mainPrice": 307.44,
+        "price": 254.4
+      },
+      {
+        "id": 295,
+        "mainPrice": 312.48,
+        "price": 269.4
+      },
+      {
+        "id": 295,
+        "mainPrice": 312.48,
+        "price": 269.4
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "фосфору загального"
+  },
+  {
+    "categoryId": 3,
+    "id": 295,
+    "prices": [
+      {
+        "id": 296,
+        "mainPrice": 257.64,
+        "price": 245.4
+      },
+      {
+        "id": 296,
+        "mainPrice": 261.24,
+        "price": 259.8
+      },
+      {
+        "id": 296,
+        "mainPrice": 261.24,
+        "price": 259.8
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "калію загального"
+  },
+  {
+    "categoryId": 3,
+    "id": 296,
+    "prices": [
+      {
+        "id": 297,
+        "mainPrice": 251.52,
+        "price": 232.56
+      },
+      {
+        "id": 297,
+        "mainPrice": 254.64,
+        "price": 246.12
+      },
+      {
+        "id": 297,
+        "mainPrice": 254.64,
+        "price": 246.12
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "вологи"
+  },
+  {
+    "categoryId": 3,
+    "id": 297,
+    "prices": [
+      {
+        "id": 298,
+        "price": 185.16
+      },
+      {
+        "id": 298,
+        "price": 195.96
+      },
+      {
+        "id": 298,
+        "price": 195.96
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "сірки"
+  },
+  {
+    "categoryId": 3,
+    "id": 298,
+    "prices": [
+      {
+        "id": 299,
+        "mainPrice": 287.64,
+        "price": 266.16
+      },
+      {
+        "id": 299,
+        "mainPrice": 292.32,
+        "price": 281.76
+      },
+      {
+        "id": 299,
+        "mainPrice": 292.32,
+        "price": 281.76
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "суми кальцію та магнію"
+  },
+  {
+    "categoryId": 3,
+    "id": 299,
+    "prices": [
+      {
+        "id": 300,
+        "price": 314.64
+      },
+      {
+        "id": 300,
+        "price": 333
+      },
+      {
+        "id": 300,
+        "price": 333
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "карбонату кальцію у вапнякових матеріалах"
+  },
+  {
+    "categoryId": 3,
+    "id": 300,
+    "prices": [
+      {
+        "id": 301,
+        "price": 322.08
+      },
+      {
+        "id": 301,
+        "price": 340.92
+      },
+      {
+        "id": 301,
+        "price": 340.92
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "карбонату магнію у вапнякових матеріалах"
+  },
+  {
+    "categoryId": 3,
+    "id": 301,
+    "prices": [
+      {
+        "id": 302,
+        "price": 402.24
+      },
+      {
+        "id": 302,
+        "price": 425.88
+      },
+      {
+        "id": 302,
+        "price": 425.88
+      }
+    ],
+    "subcategoryId": 8,
+    "title": "NPK одного мінералізата"
+  },
+  {
+    "categoryId": 4,
+    "id": 302,
+    "prices": [
+      {
+        "id": 303,
+        "price": 127.32
+      },
+      {
+        "id": 303,
+        "price": 134.28
+      },
+      {
+        "id": 303,
+        "price": 134.28
+      }
+    ],
+    "title": "Відбір торфу і торфопродукції"
+  },
+  {
+    "categoryId": 4,
+    "id": 303,
+    "prices": [
+      {
+        "id": 304,
+        "mainPrice": 88.2,
+        "price": 73.08
+      },
+      {
+        "id": 304,
+        "mainPrice": 93.48,
+        "price": 77.4
+      },
+      {
+        "id": 304,
+        "mainPrice": 93.48,
+        "price": 77.4
+      }
+    ],
+    "title": "Підготовка до аналізу"
+  },
+  {
+    "categoryId": 4,
+    "id": 304,
+    "prices": [
+      {
+        "id": 305,
+        "mainPrice": 218.76,
+        "price": 137.64
+      },
+      {
+        "id": 305,
+        "mainPrice": 218.76,
+        "price": 145.56
+      },
+      {
+        "id": 305,
+        "mainPrice": 218.76,
+        "price": 145.56
+      }
+    ],
+    "title": "гігроскопічної вологи"
+  },
+  {
+    "categoryId": 4,
+    "id": 305,
+    "prices": [
+      {
+        "id": 306,
+        "mainPrice": 140.76,
+        "price": 99.96
+      },
+      {
+        "id": 306,
+        "mainPrice": 146.28,
+        "price": 105.72
+      },
+      {
+        "id": 306,
+        "mainPrice": 146.28,
+        "price": 105.72
+      }
+    ],
+    "title": "рН сольового"
+  },
+  {
+    "categoryId": 4,
+    "id": 306,
+    "prices": [
+      {
+        "id": 307,
+        "mainPrice": 140.28,
+        "price": 99.96
+      },
+      {
+        "id": 307,
+        "mainPrice": 145.8,
+        "price": 105.72
+      },
+      {
+        "id": 307,
+        "mainPrice": 145.8,
+        "price": 105.72
+      }
+    ],
+    "title": "рН водного"
+  },
+  {
+    "categoryId": 4,
+    "id": 307,
+    "prices": [
+      {
+        "id": 308,
+        "mainPrice": 222.72,
+        "price": 156.72
+      },
+      {
+        "id": 308,
+        "mainPrice": 235.92,
+        "price": 165.84
+      },
+      {
+        "id": 308,
+        "mainPrice": 235.92,
+        "price": 165.84
+      }
+    ],
+    "title": "ступеня розкладу"
+  },
+  {
+    "categoryId": 4,
+    "id": 308,
+    "prices": [
+      {
+        "id": 309,
+        "mainPrice": 202.68,
+        "price": 151.8
+      },
+      {
+        "id": 309,
+        "mainPrice": 214.68,
+        "price": 160.8
+      },
+      {
+        "id": 309,
+        "mainPrice": 214.68,
+        "price": 160.8
+      }
+    ],
+    "title": "азоту амонійного"
+  },
+  {
+    "categoryId": 4,
+    "id": 309,
+    "prices": [
+      {
+        "id": 310,
+        "mainPrice": 127.08,
+        "price": 99.48
+      },
+      {
+        "id": 310,
+        "mainPrice": 132.48,
+        "price": 105.36
+      },
+      {
+        "id": 310,
+        "mainPrice": 132.48,
+        "price": 105.36
+      }
+    ],
+    "title": "азоту нітратного"
+  },
+  {
+    "categoryId": 4,
+    "id": 310,
+    "prices": [
+      {
+        "id": 311,
+        "mainPrice": 137.28,
+        "price": 99.48
+      },
+      {
+        "id": 311,
+        "mainPrice": 141,
+        "price": 105.36
+      },
+      {
+        "id": 311,
+        "mainPrice": 141,
+        "price": 105.36
+      }
+    ],
+    "title": "азоту загального"
+  },
+  {
+    "categoryId": 4,
+    "id": 311,
+    "prices": [
+      {
+        "id": 312,
+        "mainPrice": 139.32,
+        "price": 95.76
+      },
+      {
+        "id": 312,
+        "mainPrice": 144.72,
+        "price": 101.52
+      },
+      {
+        "id": 312,
+        "mainPrice": 144.72,
+        "price": 101.52
+      }
+    ],
+    "title": "фосфору рухомого"
+  },
+  {
+    "categoryId": 4,
+    "id": 312,
+    "prices": [
+      {
+        "id": 313,
+        "mainPrice": 383.88,
+        "price": 260.88
+      },
+      {
+        "id": 313,
+        "mainPrice": 398.04,
+        "price": 276.12
+      },
+      {
+        "id": 313,
+        "mainPrice": 398.04,
+        "price": 276.12
+      }
+    ],
+    "title": "фосфору загального"
+  },
+  {
+    "categoryId": 4,
+    "id": 313,
+    "prices": [
+      {
+        "id": 314,
+        "mainPrice": 186.96,
+        "price": 111.12
+      },
+      {
+        "id": 314,
+        "mainPrice": 198.12,
+        "price": 117.36
+      },
+      {
+        "id": 314,
+        "mainPrice": 198.12,
+        "price": 117.36
+      }
+    ],
+    "title": "калію рухомого"
+  },
+  {
+    "categoryId": 4,
+    "id": 314,
+    "prices": [
+      {
+        "id": 315,
+        "mainPrice": 203.88,
+        "price": 114.84
+      },
+      {
+        "id": 315,
+        "mainPrice": 215.88,
+        "price": 121.56
+      },
+      {
+        "id": 315,
+        "mainPrice": 215.88,
+        "price": 121.56
+      }
+    ],
+    "title": "калію загального"
+  },
+  {
+    "categoryId": 4,
+    "id": 315,
+    "prices": [
+      {
+        "id": 316,
+        "mainPrice": 392.88,
+        "price": 185.88
+      },
+      {
+        "id": 316,
+        "mainPrice": 402.6,
+        "price": 196.56
+      },
+      {
+        "id": 316,
+        "mainPrice": 402.6,
+        "price": 196.56
+      }
+    ],
+    "title": "рухомого заліза"
+  },
+  {
+    "categoryId": 4,
+    "id": 316,
+    "prices": [
+      {
+        "id": 317,
+        "mainPrice": 134.76,
+        "price": 104.88
+      },
+      {
+        "id": 317,
+        "mainPrice": 140.04,
+        "price": 110.88
+      },
+      {
+        "id": 317,
+        "mainPrice": 140.04,
+        "price": 110.88
+      }
+    ],
+    "title": "обмінного кальцію"
+  },
+  {
+    "categoryId": 4,
+    "id": 317,
+    "prices": [
+      {
+        "id": 318,
+        "mainPrice": 134.64,
+        "price": 104.88
+      },
+      {
+        "id": 318,
+        "mainPrice": 140.04,
+        "price": 110.88
+      },
+      {
+        "id": 318,
+        "mainPrice": 140.04,
+        "price": 110.88
+      }
+    ],
+    "title": "обмінного магнію"
+  },
+  {
+    "categoryId": 4,
+    "id": 318,
+    "prices": [
+      {
+        "id": 319,
+        "price": 90.48
+      },
+      {
+        "id": 319,
+        "price": 95.88
+      },
+      {
+        "id": 319,
+        "price": 95.88
+      }
+    ],
+    "title": "засміченості"
+  },
+  {
+    "categoryId": 4,
+    "id": 319,
+    "prices": [
+      {
+        "id": 320,
+        "mainPrice": 132.36,
+        "price": 88.08
+      },
+      {
+        "id": 320,
+        "mainPrice": 140.88,
+        "price": 93.24
+      },
+      {
+        "id": 320,
+        "mainPrice": 140.88,
+        "price": 93.24
+      }
+    ],
+    "title": "об’ємної ваги"
+  },
+  {
+    "categoryId": 4,
+    "id": 320,
+    "prices": [
+      {
+        "id": 321,
+        "mainPrice": 152.76,
+        "price": 86.76
+      },
+      {
+        "id": 321,
+        "mainPrice": 161.76,
+        "price": 91.92
+      },
+      {
+        "id": 321,
+        "mainPrice": 161.76,
+        "price": 91.92
+      }
+    ],
+    "title": "масової частки золи"
+  },
+  {
+    "categoryId": 4,
+    "id": 321,
+    "prices": [
+      {
+        "id": 322,
+        "price": 566.76
+      },
+      {
+        "id": 322,
+        "price": 600
+      },
+      {
+        "id": 322,
+        "price": 600
+      }
+    ],
+    "title": "загальної форми поживних елементів"
+  },
+  {
+    "categoryId": 4,
+    "id": 322,
+    "prices": [
+      {
+        "id": 323,
+        "price": 351.36
+      },
+      {
+        "id": 323,
+        "price": 372
+      },
+      {
+        "id": 323,
+        "price": 372
+      }
+    ],
+    "title": "рухомих форм поживних елементів"
+  },
+  {
+    "categoryId": 4,
+    "id": 323,
+    "prices": [
+      {
+        "id": 324,
+        "price": 941.52
+      },
+      {
+        "id": 324,
+        "price": 996.84
+      },
+      {
+        "id": 324,
+        "price": 996.84
+      }
+    ],
+    "title": "якості ґрунтосуміші"
+  },
+  {
+    "categoryId": 4,
+    "id": 324,
+    "prices": [
+      {
+        "id": 325,
+        "mainPrice": 328.2,
+        "price": 233.52
+      },
+      {
+        "id": 325,
+        "mainPrice": 341.52,
+        "price": 247.2
+      },
+      {
+        "id": 325,
+        "mainPrice": 341.52,
+        "price": 247.2
+      }
+    ],
+    "title": "вологоємності у торфі"
+  },
+  {
+    "categoryId": 4,
+    "id": 325,
+    "prices": [
+      {
+        "id": 326,
+        "mainPrice": 37.08,
+        "price": 34.44
+      },
+      {
+        "id": 326,
+        "mainPrice": 39.24,
+        "price": 36.36
+      },
+      {
+        "id": 326,
+        "mainPrice": 39.24,
+        "price": 36.36
+      }
+    ],
+    "title": "Обробка даних, видача висновків"
+  },
+  {
+    "categoryId": 5,
+    "id": 326,
+    "prices": [
+      {
+        "id": 327,
+        "mainPrice": 159.36,
+        "price": 101.64
+      },
+      {
+        "id": 327,
+        "mainPrice": 187.68,
+        "price": 107.64
+      },
+      {
+        "id": 327,
+        "mainPrice": 187.68,
+        "price": 107.64
+      }
+    ],
+    "title": "Відбір ґрунтових проб"
+  },
+  {
+    "categoryId": 5,
+    "id": 327,
+    "prices": [
+      {
+        "id": 328,
+        "mainPrice": 151.44,
+        "price": 132.72
+      },
+      {
+        "id": 328,
+        "mainPrice": 163.32,
+        "price": 140.16
+      },
+      {
+        "id": 328,
+        "mainPrice": 163.32,
+        "price": 140.16
+      }
+    ],
+    "title": "Ґрунтова"
+  },
+  {
+    "categoryId": 5,
+    "id": 328,
+    "prices": [
+      {
+        "id": 329,
+        "mainPrice": 164.76,
+        "price": 148.56
+      },
+      {
+        "id": 329,
+        "mainPrice": 177.72,
+        "price": 157.44
+      },
+      {
+        "id": 329,
+        "mainPrice": 177.72,
+        "price": 157.44
+      }
+    ],
+    "title": "Рослинна (тканинна)"
+  },
+  {
+    "categoryId": 5,
+    "id": 329,
+    "prices": [
+      {
+        "id": 330,
+        "mainPrice": 261.6,
+        "price": 244.08
+      },
+      {
+        "id": 330,
+        "mainPrice": 282.24,
+        "price": 258.48
+      },
+      {
+        "id": 330,
+        "mainPrice": 282.24,
+        "price": 258.48
+      }
+    ],
+    "title": "Рослинна (листова)"
+  },
+  {
+    "categoryId": 6,
+    "id": 330,
+    "prices": [
+      {
+        "id": 331,
+        "mainPrice": 73.68,
+        "price": 63.96
+      },
+      {
+        "id": 331,
+        "mainPrice": 80.04,
+        "price": 67.68
+      },
+      {
+        "id": 331,
+        "mainPrice": 80.04,
+        "price": 67.68
+      }
+    ],
+    "title": "органолептичних показників (запах, колір, смак)"
+  },
+  {
+    "categoryId": 6,
+    "id": 331,
+    "prices": [
+      {
+        "id": 332,
+        "mainPrice": 36.48,
+        "price": 30.72
+      },
+      {
+        "id": 332,
+        "mainPrice": 42.48,
+        "price": 32.64
+      },
+      {
+        "id": 332,
+        "mainPrice": 42.48,
+        "price": 32.64
+      }
+    ],
+    "title": "гранульованого складу"
+  },
+  {
+    "categoryId": 6,
+    "id": 332,
+    "prices": [
+      {
+        "id": 333,
+        "mainPrice": 89.4,
+        "price": 77.88
+      },
+      {
+        "id": 333,
+        "mainPrice": 93.48,
+        "price": 82.44
+      },
+      {
+        "id": 333,
+        "mainPrice": 93.48,
+        "price": 82.44
+      }
+    ],
+    "title": "вологи в рослинній продукції"
+  },
+  {
+    "categoryId": 6,
+    "id": 333,
+    "prices": [
+      {
+        "id": 334,
+        "mainPrice": 105.24,
+        "price": 103.32
+      },
+      {
+        "id": 334,
+        "mainPrice": 109.92,
+        "price": 109.68
+      },
+      {
+        "id": 334,
+        "mainPrice": 109.92,
+        "price": 109.68
+      }
+    ],
+    "title": "початкова волога в рослинній продукції"
+  },
+  {
+    "categoryId": 6,
+    "id": 334,
+    "prices": [
+      {
+        "id": 335,
+        "mainPrice": 186.6,
+        "price": 181.92
+      },
+      {
+        "id": 335,
+        "mainPrice": 200.4,
+        "price": 192.6
+      },
+      {
+        "id": 335,
+        "mainPrice": 200.4,
+        "price": 192.6
+      }
+    ],
+    "title": "білка в зерні (протеїн)"
+  },
+  {
+    "categoryId": 6,
+    "id": 335,
+    "prices": [
+      {
+        "id": 336,
+        "mainPrice": 222.36,
+        "price": 197.64
+      },
+      {
+        "id": 336,
+        "mainPrice": 231.84,
+        "price": 209.16
+      },
+      {
+        "id": 336,
+        "mainPrice": 231.84,
+        "price": 209.16
+      }
+    ],
+    "title": "клейковини та ВДК"
+  },
+  {
+    "categoryId": 6,
+    "id": 336,
+    "prices": [
+      {
+        "id": 337,
+        "mainPrice": 298.56,
+        "price": 153.48
+      },
+      {
+        "id": 337,
+        "mainPrice": 321.12,
+        "price": 162.36
+      },
+      {
+        "id": 337,
+        "mainPrice": 321.12,
+        "price": 162.36
+      }
+    ],
+    "title": "жирів (олійності)"
+  },
+  {
+    "categoryId": 6,
+    "id": 337,
+    "prices": [
+      {
+        "id": 338,
+        "price": 94.08
+      },
+      {
+        "id": 338,
+        "price": 99.6
+      },
+      {
+        "id": 338,
+        "price": 99.6
+      }
+    ],
+    "title": "олійної (зернової) домішки"
+  },
+  {
+    "categoryId": 6,
+    "id": 338,
+    "prices": [
+      {
+        "id": 339,
+        "price": 289.2
+      },
+      {
+        "id": 339,
+        "price": 306.12
+      },
+      {
+        "id": 339,
+        "price": 306.12
+      }
+    ],
+    "title": "вуглеводів"
+  },
+  {
+    "categoryId": 6,
+    "id": 339,
+    "prices": [
+      {
+        "id": 340,
+        "mainPrice": 124.8,
+        "price": 123.36
+      },
+      {
+        "id": 340,
+        "mainPrice": 133.8,
+        "price": 130.8
+      },
+      {
+        "id": 340,
+        "mainPrice": 133.8,
+        "price": 130.8
+      }
+    ],
+    "title": "золи"
+  },
+  {
+    "categoryId": 6,
+    "id": 340,
+    "prices": [
+      {
+        "id": 341,
+        "price": 108.12
+      },
+      {
+        "id": 341,
+        "price": 114.36
+      },
+      {
+        "id": 341,
+        "price": 114.36
+      }
+    ],
+    "title": "золи нерозчинної 10 % HCL"
+  },
+  {
+    "categoryId": 6,
+    "id": 341,
+    "prices": [
+      {
+        "id": 342,
+        "price": 176.76
+      },
+      {
+        "id": 342,
+        "price": 176.88
+      },
+      {
+        "id": 342,
+        "price": 176.88
+      }
+    ],
+    "title": "зольних елементів (в т.ч. Са)"
+  },
+  {
+    "categoryId": 6,
+    "id": 342,
+    "prices": [
+      {
+        "id": 343,
+        "mainPrice": 73.44,
+        "price": 70.08
+      },
+      {
+        "id": 343,
+        "mainPrice": 77.64,
+        "price": 74.04
+      },
+      {
+        "id": 343,
+        "mainPrice": 77.64,
+        "price": 74.04
+      }
+    ],
+    "title": "натури зерна"
+  },
+  {
+    "categoryId": 6,
+    "id": 343,
+    "prices": [
+      {
+        "id": 344,
+        "price": 108.84
+      },
+      {
+        "id": 344,
+        "price": 115.2
+      },
+      {
+        "id": 344,
+        "price": 115.2
+      }
+    ],
+    "title": "перекисного числа"
+  },
+  {
+    "categoryId": 6,
+    "id": 344,
+    "prices": [
+      {
+        "id": 345,
+        "mainPrice": 298.56,
+        "price": 153.48
+      },
+      {
+        "id": 345,
+        "mainPrice": 321.12,
+        "price": 162.36
+      },
+      {
+        "id": 345,
+        "mainPrice": 321.12,
+        "price": 162.36
+      }
+    ],
+    "title": "олійності в зерні"
+  },
+  {
+    "categoryId": 6,
+    "id": 345,
+    "prices": [
+      {
+        "id": 346,
+        "price": 213.72
+      },
+      {
+        "id": 346,
+        "price": 226.56
+      },
+      {
+        "id": 346,
+        "price": 226.56
+      }
+    ],
+    "title": "кислотного числа в насінні"
+  },
+  {
+    "categoryId": 6,
+    "id": 346,
+    "prices": [
+      {
+        "id": 347,
+        "price": 99.96
+      },
+      {
+        "id": 347,
+        "price": 99.96
+      },
+      {
+        "id": 347,
+        "price": 99.96
+      }
+    ],
+    "title": "кислотного числа в олії"
+  },
+  {
+    "categoryId": 6,
+    "id": 347,
+    "prices": [
+      {
+        "id": 348,
+        "price": 496.8
+      },
+      {
+        "id": 348,
+        "price": 525.96
+      },
+      {
+        "id": 348,
+        "price": 525.96
+      }
+    ],
+    "title": "ерукова кислота + глюкозинолати в ріпаку"
+  },
+  {
+    "categoryId": 6,
+    "id": 348,
+    "prices": [
+      {
+        "id": 349,
+        "price": 214.2
+      },
+      {
+        "id": 349,
+        "price": 226.68
+      },
+      {
+        "id": 349,
+        "price": 226.68
+      }
+    ],
+    "title": "алкалоїдів"
+  },
+  {
+    "categoryId": 6,
+    "id": 349,
+    "prices": [
+      {
+        "id": 350,
+        "price": 438.12
+      },
+      {
+        "id": 350,
+        "price": 463.56
+      },
+      {
+        "id": 350,
+        "price": 463.56
+      }
+    ],
+    "title": "ерукової кислоти"
+  },
+  {
+    "categoryId": 6,
+    "id": 350,
+    "prices": [
+      {
+        "id": 351,
+        "mainPrice": 111.48,
+        "price": 109.08
+      },
+      {
+        "id": 351,
+        "mainPrice": 119.76,
+        "price": 115.56
+      },
+      {
+        "id": 351,
+        "mainPrice": 119.76,
+        "price": 115.56
+      }
+    ],
+    "title": "гігроскопічної вологи"
+  },
+  {
+    "categoryId": 6,
+    "id": 351,
+    "prices": [
+      {
+        "id": 352,
+        "price": 292.68
+      },
+      {
+        "id": 352,
+        "price": 309.6
+      },
+      {
+        "id": 352,
+        "price": 309.6
+      }
+    ],
+    "title": "глюкозинолатів"
+  },
+  {
+    "categoryId": 6,
+    "id": 352,
+    "prices": [
+      {
+        "id": 353,
+        "price": 164.88
+      },
+      {
+        "id": 353,
+        "price": 174.6
+      },
+      {
+        "id": 353,
+        "price": 174.6
+      }
+    ],
+    "title": "глюкозинолатів експрес методом"
+  },
+  {
+    "categoryId": 6,
+    "id": 353,
+    "prices": [
+      {
+        "id": 354,
+        "mainPrice": 213.24,
+        "price": 196.92
+      },
+      {
+        "id": 354,
+        "mainPrice": 220.92,
+        "price": 208.32
+      },
+      {
+        "id": 354,
+        "mainPrice": 220.92,
+        "price": 208.32
+      }
+    ],
+    "title": "цукристості"
+  },
+  {
+    "categoryId": 6,
+    "id": 354,
+    "prices": [
+      {
+        "id": 355,
+        "price": 126.12
+      },
+      {
+        "id": 355,
+        "price": 133.56
+      },
+      {
+        "id": 355,
+        "price": 133.56
+      }
+    ],
+    "title": "каротину"
+  },
+  {
+    "categoryId": 6,
+    "id": 355,
+    "prices": [
+      {
+        "id": 356,
+        "mainPrice": 188.88,
+        "price": 173.76
+      },
+      {
+        "id": 356,
+        "mainPrice": 196.32,
+        "price": 183.96
+      },
+      {
+        "id": 356,
+        "mainPrice": 196.32,
+        "price": 183.96
+      }
+    ],
+    "title": "клітковини"
+  },
+  {
+    "categoryId": 6,
+    "id": 356,
+    "prices": [
+      {
+        "id": 357,
+        "price": 200.4
+      },
+      {
+        "id": 357,
+        "price": 212.16
+      },
+      {
+        "id": 357,
+        "price": 212.16
+      }
+    ],
+    "title": "визначення нижчих жирних кислот"
+  },
+  {
+    "categoryId": 6,
+    "id": 357,
+    "prices": [
+      {
+        "id": 358,
+        "price": 85.44
+      },
+      {
+        "id": 358,
+        "price": 90.36
+      },
+      {
+        "id": 358,
+        "price": 90.36
+      }
+    ],
+    "title": "активність уреази"
+  },
+  {
+    "categoryId": 6,
+    "id": 358,
+    "prices": [
+      {
+        "id": 359,
+        "mainPrice": 213.36,
+        "price": 196.92
+      },
+      {
+        "id": 359,
+        "mainPrice": 236.52,
+        "price": 208.32
+      },
+      {
+        "id": 359,
+        "mainPrice": 236.52,
+        "price": 208.32
+      }
+    ],
+    "title": "крохмалю"
+  },
+  {
+    "categoryId": 6,
+    "id": 359,
+    "prices": [
+      {
+        "id": 360,
+        "mainPrice": 147.84,
+        "price": 144.48
+      },
+      {
+        "id": 360,
+        "mainPrice": 154.2,
+        "price": 152.88
+      },
+      {
+        "id": 360,
+        "mainPrice": 154.2,
+        "price": 152.88
+      }
+    ],
+    "title": "калію"
+  },
+  {
+    "categoryId": 6,
+    "id": 360,
+    "prices": [
+      {
+        "id": 361,
+        "mainPrice": 150.12,
+        "price": 146.76
+      },
+      {
+        "id": 361,
+        "mainPrice": 156.6,
+        "price": 155.4
+      },
+      {
+        "id": 361,
+        "mainPrice": 156.6,
+        "price": 155.4
+      }
+    ],
+    "title": "натрію"
+  },
+  {
+    "categoryId": 6,
+    "id": 361,
+    "prices": [
+      {
+        "id": 362,
+        "mainPrice": 142.68,
+        "price": 140.16
+      },
+      {
+        "id": 362,
+        "mainPrice": 148.92,
+        "price": 148.32
+      },
+      {
+        "id": 362,
+        "mainPrice": 148.92,
+        "price": 148.32
+      }
+    ],
+    "title": "фосфору"
+  },
+  {
+    "categoryId": 6,
+    "id": 362,
+    "prices": [
+      {
+        "id": 363,
+        "price": 107.16
+      },
+      {
+        "id": 363,
+        "price": 113.4
+      },
+      {
+        "id": 363,
+        "price": 113.4
+      }
+    ],
+    "title": "кальцію і калію"
+  },
+  {
+    "categoryId": 6,
+    "id": 363,
+    "prices": [
+      {
+        "id": 364,
+        "mainPrice": 147.96,
+        "price": 137.16
+      },
+      {
+        "id": 364,
+        "mainPrice": 153.84,
+        "price": 145.08
+      },
+      {
+        "id": 364,
+        "mainPrice": 153.84,
+        "price": 145.08
+      }
+    ],
+    "title": "кальцію"
+  },
+  {
+    "categoryId": 6,
+    "id": 364,
+    "prices": [
+      {
+        "id": 365,
+        "mainPrice": 114.48,
+        "price": 111.72
+      },
+      {
+        "id": 365,
+        "mainPrice": 119.16,
+        "price": 118.08
+      },
+      {
+        "id": 365,
+        "mainPrice": 119.16,
+        "price": 118.08
+      }
+    ],
+    "title": "магнію"
+  },
+  {
+    "categoryId": 6,
+    "id": 365,
+    "prices": [
+      {
+        "id": 366,
+        "mainPrice": 83.4,
+        "price": 77.88
+      },
+      {
+        "id": 366,
+        "mainPrice": 85.56,
+        "price": 82.44
+      },
+      {
+        "id": 366,
+        "mainPrice": 85.56,
+        "price": 82.44
+      }
+    ],
+    "title": "скловидність"
+  },
+  {
+    "categoryId": 6,
+    "id": 366,
+    "prices": [
+      {
+        "id": 367,
+        "mainPrice": 95.76,
+        "price": 88.32
+      },
+      {
+        "id": 367,
+        "mainPrice": 96.12,
+        "price": 93.48
+      },
+      {
+        "id": 367,
+        "mainPrice": 96.12,
+        "price": 93.48
+      }
+    ],
+    "title": "засміченість"
+  },
+  {
+    "categoryId": 6,
+    "id": 367,
+    "prices": [
+      {
+        "id": 368,
+        "price": 104.04
+      },
+      {
+        "id": 368,
+        "price": 110.04
+      },
+      {
+        "id": 368,
+        "price": 110.04
+      }
+    ],
+    "title": "металомагнітних домішок"
+  },
+  {
+    "categoryId": 6,
+    "id": 368,
+    "prices": [
+      {
+        "id": 369,
+        "mainPrice": 63.6,
+        "price": 57.84
+      },
+      {
+        "id": 369,
+        "mainPrice": 71.28,
+        "price": 61.08
+      },
+      {
+        "id": 369,
+        "mainPrice": 71.28,
+        "price": 61.08
+      }
+    ],
+    "title": "маси 1000 зерен"
+  },
+  {
+    "categoryId": 6,
+    "id": 369,
+    "prices": [
+      {
+        "id": 370,
+        "price": 162.72
+      },
+      {
+        "id": 370,
+        "price": 171.96
+      },
+      {
+        "id": 370,
+        "price": 171.96
+      }
+    ],
+    "title": "йодного числа"
+  },
+  {
+    "categoryId": 6,
+    "id": 370,
+    "prices": [
+      {
+        "id": 371,
+        "price": 49.08
+      },
+      {
+        "id": 371,
+        "price": 52.08
+      },
+      {
+        "id": 371,
+        "price": 52.08
+      }
+    ],
+    "title": "вмісту мила (якісна проба)"
+  },
+  {
+    "categoryId": 6,
+    "id": 371,
+    "prices": [
+      {
+        "id": 372,
+        "price": 165.6
+      },
+      {
+        "id": 372,
+        "price": 175.32
+      },
+      {
+        "id": 372,
+        "price": 175.32
+      }
+    ],
+    "title": "число омилення"
+  },
+  {
+    "categoryId": 6,
+    "id": 372,
+    "prices": [
+      {
+        "id": 373,
+        "price": 169.92
+      },
+      {
+        "id": 373,
+        "price": 173.28
+      },
+      {
+        "id": 373,
+        "price": 173.28
+      }
+    ],
+    "title": "неомилених речовин"
+  },
+  {
+    "categoryId": 6,
+    "id": 373,
+    "prices": [
+      {
+        "id": 374,
+        "price": 149.4
+      },
+      {
+        "id": 374,
+        "price": 158.28
+      },
+      {
+        "id": 374,
+        "price": 158.28
+      }
+    ],
+    "title": "азоту амінного"
+  },
+  {
+    "categoryId": 6,
+    "id": 374,
+    "prices": [
+      {
+        "id": 375,
+        "mainPrice": 268.32,
+        "price": 252.48
+      },
+      {
+        "id": 375,
+        "mainPrice": 292.92,
+        "price": 267.6
+      },
+      {
+        "id": 375,
+        "mainPrice": 292.92,
+        "price": 267.6
+      }
+    ],
+    "title": "азоту загального"
+  },
+  {
+    "categoryId": 6,
+    "id": 375,
+    "prices": [
+      {
+        "id": 376,
+        "price": 428.16
+      },
+      {
+        "id": 376,
+        "price": 453.12
+      },
+      {
+        "id": 376,
+        "price": 453.12
+      }
+    ],
+    "title": "алілової олії в гірчичному порошку"
+  },
+  {
+    "categoryId": 6,
+    "id": 376,
+    "prices": [
+      {
+        "id": 377,
+        "price": 188.4
+      },
+      {
+        "id": 377,
+        "price": 199.56
+      },
+      {
+        "id": 377,
+        "price": 199.56
+      }
+    ],
+    "title": "білку спіруліни"
+  },
+  {
+    "categoryId": 6,
+    "id": 377,
+    "prices": [
+      {
+        "id": 378,
+        "price": 131.88
+      },
+      {
+        "id": 378,
+        "price": 139.44
+      },
+      {
+        "id": 378,
+        "price": 139.44
+      }
+    ],
+    "title": "числа падіння"
+  },
+  {
+    "categoryId": 6,
+    "id": 378,
+    "prices": [
+      {
+        "id": 379,
+        "price": 98.4
+      },
+      {
+        "id": 379,
+        "price": 104.04
+      },
+      {
+        "id": 379,
+        "price": 104.04
+      }
+    ],
+    "title": "нежирових домішок олії"
+  },
+  {
+    "categoryId": 6,
+    "id": 379,
+    "prices": [
+      {
+        "id": 380,
+        "price": 151.44
+      },
+      {
+        "id": 380,
+        "price": 160.32
+      },
+      {
+        "id": 380,
+        "price": 160.32
+      }
+    ],
+    "title": "плівчатості круп’яних культур"
+  },
+  {
+    "categoryId": 6,
+    "id": 380,
+    "prices": [
+      {
+        "id": 381,
+        "price": 137.16
+      },
+      {
+        "id": 381,
+        "price": 145.2
+      },
+      {
+        "id": 381,
+        "price": 145.2
+      }
+    ],
+    "title": "загальної токсичності"
+  },
+  {
+    "categoryId": 6,
+    "id": 381,
+    "prices": [
+      {
+        "id": 382,
+        "mainPrice": 93.12,
+        "price": 74.64
+      },
+      {
+        "id": 382,
+        "mainPrice": 98.04,
+        "price": 79.08
+      },
+      {
+        "id": 382,
+        "mainPrice": 98.04,
+        "price": 79.08
+      }
+    ],
+    "title": "забрудненості шкідниками"
+  },
+  {
+    "categoryId": 6,
+    "id": 382,
+    "prices": [
+      {
+        "id": 383,
+        "mainPrice": 104.76,
+        "price": 92.16
+      },
+      {
+        "id": 383,
+        "mainPrice": 130.08,
+        "price": 97.56
+      },
+      {
+        "id": 383,
+        "mainPrice": 130.08,
+        "price": 97.56
+      }
+    ],
+    "title": "зараженості шкідниками"
+  },
+  {
+    "categoryId": 6,
+    "id": 383,
+    "prices": [
+      {
+        "id": 384,
+        "price": 273.72
+      },
+      {
+        "id": 384,
+        "price": 289.8
+      },
+      {
+        "id": 384,
+        "price": 289.8
+      }
+    ],
+    "title": "азоту по Барнштейну у с/г продукції"
+  },
+  {
+    "categoryId": 6,
+    "id": 384,
+    "prices": [
+      {
+        "id": 385,
+        "price": 410.88
+      },
+      {
+        "id": 385,
+        "price": 435.12
+      },
+      {
+        "id": 385,
+        "price": 435.12
+      }
+    ],
+    "title": "залишку фосфіда у зерні"
+  },
+  {
+    "categoryId": 6,
+    "id": 385,
+    "prices": [
+      {
+        "id": 386,
+        "price": 58.68
+      },
+      {
+        "id": 386,
+        "price": 62.28
+      },
+      {
+        "id": 386,
+        "price": 62.28
+      }
+    ],
+    "title": "пророслих зерен та шкідників у зерні"
+  },
+  {
+    "categoryId": 6,
+    "id": 386,
+    "prices": [
+      {
+        "id": 387,
+        "mainPrice": 102.72,
+        "price": 98.28
+      },
+      {
+        "id": 387,
+        "mainPrice": 106.2,
+        "price": 104.04
+      },
+      {
+        "id": 387,
+        "mainPrice": 106.2,
+        "price": 104.04
+      }
+    ],
+    "title": "енергії проростання та схожості зерна, насіння"
+  },
+  {
+    "categoryId": 6,
+    "id": 387,
+    "prices": [
+      {
+        "id": 388,
+        "price": 503.04
+      },
+      {
+        "id": 388,
+        "price": 522.6
+      },
+      {
+        "id": 388,
+        "price": 522.6
+      }
+    ],
+    "title": "у борошні мікотоксинів (4  показники)"
+  },
+  {
+    "categoryId": 6,
+    "id": 388,
+    "prices": [
+      {
+        "id": 389,
+        "price": 382.68
+      },
+      {
+        "id": 389,
+        "price": 405.12
+      },
+      {
+        "id": 389,
+        "price": 405.12
+      }
+    ],
+    "title": "у хлібобулочних виробах мікотоксинів (3 показники)"
+  },
+  {
+    "categoryId": 6,
+    "id": 389,
+    "prices": [
+      {
+        "id": 390,
+        "price": 255.96
+      },
+      {
+        "id": 390,
+        "price": 271.08
+      },
+      {
+        "id": 390,
+        "price": 271.08
+      }
+    ],
+    "title": "афлотоксину В1"
+  },
+  {
+    "categoryId": 6,
+    "id": 390,
+    "prices": [
+      {
+        "id": 391,
+        "price": 255.96
+      },
+      {
+        "id": 391,
+        "price": 271.08
+      },
+      {
+        "id": 391,
+        "price": 271.08
+      }
+    ],
+    "title": "афлотоксину В2"
+  },
+  {
+    "categoryId": 6,
+    "id": 391,
+    "prices": [
+      {
+        "id": 392,
+        "price": 255.96
+      },
+      {
+        "id": 392,
+        "price": 271.08
+      },
+      {
+        "id": 392,
+        "price": 271.08
+      }
+    ],
+    "title": "афлотоксину G1"
+  },
+  {
+    "categoryId": 6,
+    "id": 392,
+    "prices": [
+      {
+        "id": 393,
+        "price": 255.96
+      },
+      {
+        "id": 393,
+        "price": 271.08
+      },
+      {
+        "id": 393,
+        "price": 271.08
+      }
+    ],
+    "title": "афлотоксину G2"
+  },
+  {
+    "categoryId": 6,
+    "id": 393,
+    "prices": [
+      {
+        "id": 394,
+        "price": 255.96
+      },
+      {
+        "id": 394,
+        "price": 271.08
+      },
+      {
+        "id": 394,
+        "price": 271.08
+      }
+    ],
+    "title": "суми афлатоксинів B1, B2, G1, G2"
+  },
+  {
+    "categoryId": 6,
+    "id": 394,
+    "prices": [
+      {
+        "id": 395,
+        "price": 255.96
+      },
+      {
+        "id": 395,
+        "price": 271.08
+      },
+      {
+        "id": 395,
+        "price": 271.08
+      }
+    ],
+    "title": "зеараленону"
+  },
+  {
+    "categoryId": 6,
+    "id": 395,
+    "prices": [
+      {
+        "id": 396,
+        "price": 255.96
+      },
+      {
+        "id": 396,
+        "price": 271.08
+      },
+      {
+        "id": 396,
+        "price": 271.08
+      }
+    ],
+    "title": "вомітоксину (дезоксіваленол)"
+  },
+  {
+    "categoryId": 6,
+    "id": 396,
+    "prices": [
+      {
+        "id": 397,
+        "price": 255.96
+      },
+      {
+        "id": 397,
+        "price": 271.08
+      },
+      {
+        "id": 397,
+        "price": 271.08
+      }
+    ],
+    "title": "патуліну"
+  },
+  {
+    "categoryId": 6,
+    "id": 397,
+    "prices": [
+      {
+        "id": 398,
+        "price": 255.96
+      },
+      {
+        "id": 398,
+        "price": 271.08
+      },
+      {
+        "id": 398,
+        "price": 271.08
+      }
+    ],
+    "title": "охратоксину"
+  },
+  {
+    "categoryId": 6,
+    "id": 398,
+    "prices": [
+      {
+        "id": 399,
+        "price": 255.96
+      },
+      {
+        "id": 399,
+        "price": 271.08
+      },
+      {
+        "id": 399,
+        "price": 271.08
+      }
+    ],
+    "title": "Т 2 токсину"
+  },
+  {
+    "categoryId": 6,
+    "id": 399,
+    "prices": [
+      {
+        "id": 400,
+        "price": 255.96
+      },
+      {
+        "id": 400,
+        "price": 253.32
+      },
+      {
+        "id": 400,
+        "price": 253.32
+      }
+    ],
+    "title": "N, P, K"
+  },
+  {
+    "categoryId": 6,
+    "id": 400,
+    "prices": [
+      {
+        "id": 401,
+        "price": 412.08
+      },
+      {
+        "id": 401,
+        "price": 436.32
+      },
+      {
+        "id": 401,
+        "price": 436.32
+      }
+    ],
+    "title": "концетрації танінів у сорго"
+  },
+  {
+    "categoryId": 6,
+    "id": 401,
+    "prices": [
+      {
+        "id": 402,
+        "mainPrice": 440.16,
+        "price": 429.96
+      },
+      {
+        "id": 402,
+        "mainPrice": 481.32,
+        "price": 454.92
+      },
+      {
+        "id": 402,
+        "mainPrice": 481.32,
+        "price": 454.92
+      }
+    ],
+    "title": "енергії проростання та одноростковості протруєного насіння"
+  },
+  {
+    "categoryId": 6,
+    "id": 402,
+    "prices": [
+      {
+        "id": 403,
+        "price": 288.6
+      },
+      {
+        "id": 403,
+        "price": 305.64
+      },
+      {
+        "id": 403,
+        "price": 305.64
+      }
+    ],
+    "title": "енергії проростання та одноростковості непротруєного насіння"
+  },
+  {
+    "categoryId": 6,
+    "id": 403,
+    "prices": [
+      {
+        "id": 404,
+        "price": 660.36
+      },
+      {
+        "id": 404,
+        "price": 699.12
+      },
+      {
+        "id": 404,
+        "price": 699.12
+      }
+    ],
+    "title": "комплексний аналіз ріпаку"
+  },
+  {
+    "categoryId": 6,
+    "id": 404,
+    "prices": [
+      {
+        "id": 405,
+        "price": 694.32
+      },
+      {
+        "id": 405,
+        "price": 735
+      },
+      {
+        "id": 405,
+        "price": 735
+      }
+    ],
+    "title": "генетичної однорідності насіннєвого матеріалу"
+  },
+  {
+    "categoryId": 6,
+    "id": 405,
+    "prices": [
+      {
+        "id": 406,
+        "price": 267.96
+      },
+      {
+        "id": 406,
+        "price": 267.96
+      },
+      {
+        "id": 406,
+        "price": 267.96
+      }
+    ],
+    "title": "комплексний аналіз соняшника"
+  },
+  {
+    "categoryId": 6,
+    "id": 406,
+    "prices": [
+      {
+        "id": 407,
+        "price": 216.96
+      },
+      {
+        "id": 407,
+        "price": 229.8
+      },
+      {
+        "id": 407,
+        "price": 229.8
+      }
+    ],
+    "title": "фізико-хімічний аналіз борошна"
+  },
+  {
+    "categoryId": 6,
+    "id": 407,
+    "prices": [
+      {
+        "id": 408,
+        "price": 163.8
+      },
+      {
+        "id": 408,
+        "price": 173.4
+      },
+      {
+        "id": 408,
+        "price": 173.4
+      }
+    ],
+    "title": "фізико-хімічний аналіз  хлібобулочних, круп’яних виробів"
+  },
+  {
+    "categoryId": 6,
+    "id": 408,
+    "prices": [
+      {
+        "id": 409,
+        "price": 177
+      },
+      {
+        "id": 409,
+        "price": 187.44
+      },
+      {
+        "id": 409,
+        "price": 187.44
+      }
+    ],
+    "title": "якісні показники меду"
+  },
+  {
+    "categoryId": 6,
+    "id": 409,
+    "prices": [
+      {
+        "id": 410,
+        "price": 727.32
+      },
+      {
+        "id": 410,
+        "price": 769.92
+      },
+      {
+        "id": 410,
+        "price": 769.92
+      }
+    ],
+    "title": "кукурудза на гібридність"
+  },
+  {
+    "categoryId": 6,
+    "id": 410,
+    "prices": [
+      {
+        "id": 411,
+        "price": 781.32
+      },
+      {
+        "id": 411,
+        "price": 826.92
+      },
+      {
+        "id": 411,
+        "price": 826.92
+      }
+    ],
+    "title": "соняшник на гібридність"
+  },
+  {
+    "categoryId": 6,
+    "id": 411,
+    "prices": [
+      {
+        "id": 412,
+        "price": 833.52
+      },
+      {
+        "id": 412,
+        "price": 882.24
+      },
+      {
+        "id": 412,
+        "price": 882.24
+      }
+    ],
+    "title": "комплексний аналіз винограду технічного"
+  },
+  {
+    "categoryId": 6,
+    "id": 412,
+    "prices": [
+      {
+        "id": 413,
+        "price": 94.92
+      },
+      {
+        "id": 413,
+        "price": 100.56
+      },
+      {
+        "id": 413,
+        "price": 100.56
+      }
+    ],
+    "title": "вологості в кормах"
+  },
+  {
+    "categoryId": 6,
+    "id": 413,
+    "prices": [
+      {
+        "id": 414,
+        "price": 390.12
+      },
+      {
+        "id": 414,
+        "price": 413.04
+      },
+      {
+        "id": 414,
+        "price": 413.04
+      }
+    ],
+    "title": "ПЗА концентрованих кормі"
+  },
+  {
+    "categoryId": 6,
+    "id": 414,
+    "prices": [
+      {
+        "id": 415,
+        "price": 137.04
+      },
+      {
+        "id": 415,
+        "price": 145.2
+      },
+      {
+        "id": 415,
+        "price": 145.2
+      }
+    ],
+    "title": "якості кормів"
+  },
+  {
+    "categoryId": 6,
+    "id": 415,
+    "prices": [
+      {
+        "id": 416,
+        "price": 434.76
+      },
+      {
+        "id": 416,
+        "price": 460.32
+      },
+      {
+        "id": 416,
+        "price": 460.32
+      }
+    ],
+    "title": "ПЗА грубих кормів"
+  },
+  {
+    "categoryId": 6,
+    "id": 416,
+    "prices": [
+      {
+        "id": 417,
+        "price": 495.96
+      },
+      {
+        "id": 417,
+        "price": 524.88
+      },
+      {
+        "id": 417,
+        "price": 524.88
+      }
+    ],
+    "title": "ПЗА силос,сінаж, зеленої маси"
+  },
+  {
+    "categoryId": 6,
+    "id": 417,
+    "prices": [
+      {
+        "id": 418,
+        "price": 97.2
+      },
+      {
+        "id": 418,
+        "price": 102.84
+      },
+      {
+        "id": 418,
+        "price": 102.84
+      }
+    ],
+    "title": "рН в кормах"
+  },
+  {
+    "categoryId": 6,
+    "id": 418,
+    "prices": [
+      {
+        "id": 419,
+        "price": 147.96
+      },
+      {
+        "id": 419,
+        "price": 156.48
+      },
+      {
+        "id": 419,
+        "price": 156.48
+      }
+    ],
+    "title": "рН + органічні кислоти"
+  },
+  {
+    "categoryId": 6,
+    "id": 419,
+    "prices": [
+      {
+        "id": 420,
+        "price": 493.8
+      },
+      {
+        "id": 420,
+        "price": 522.72
+      },
+      {
+        "id": 420,
+        "price": 522.72
+      }
+    ],
+    "title": "ПЗА коренеплодів"
+  },
+  {
+    "categoryId": 6,
+    "id": 420,
+    "prices": [
+      {
+        "id": 421,
+        "price": 196.2
+      },
+      {
+        "id": 421,
+        "price": 207.6
+      },
+      {
+        "id": 421,
+        "price": 207.6
+      }
+    ],
+    "title": "загальної кислотності"
+  },
+  {
+    "categoryId": 6,
+    "id": 421,
+    "prices": [
+      {
+        "id": 422,
+        "price": 153.12
+      },
+      {
+        "id": 422,
+        "price": 162
+      },
+      {
+        "id": 422,
+        "price": 162
+      }
+    ],
+    "title": "сирого жиру"
+  },
+  {
+    "categoryId": 6,
+    "id": 422,
+    "prices": [
+      {
+        "id": 423,
+        "price": 73.68
+      },
+      {
+        "id": 423,
+        "price": 77.88
+      },
+      {
+        "id": 423,
+        "price": 77.88
+      }
+    ],
+    "title": "нітрати у кормах"
+  },
+  {
+    "categoryId": 6,
+    "id": 423,
+    "prices": [
+      {
+        "id": 424,
+        "price": 60.6
+      },
+      {
+        "id": 424,
+        "price": 63
+      },
+      {
+        "id": 424,
+        "price": 63
+      }
+    ],
+    "title": "кормової цінності"
+  },
+  {
+    "categoryId": 6,
+    "id": 424,
+    "prices": [
+      {
+        "id": 425,
+        "price": 1138.2
+      },
+      {
+        "id": 425,
+        "price": 1180.2
+      },
+      {
+        "id": 425,
+        "price": 1180.2
+      }
+    ],
+    "title": "показників безпечності   сільськогосподарської продукції"
+  },
+  {
+    "categoryId": 6,
+    "id": 425,
+    "prices": [
+      {
+        "id": 426,
+        "price": 399.12
+      },
+      {
+        "id": 426,
+        "price": 399.12
+      },
+      {
+        "id": 426,
+        "price": 399.12
+      }
+    ],
+    "title": "жирнокислотного складу в рослинних оліях методом хроматографії"
+  },
+  {
+    "categoryId": 6,
+    "id": 426,
+    "prices": [
+      {
+        "id": 427,
+        "price": 383.64
+      },
+      {
+        "id": 427,
+        "price": 383.64
+      },
+      {
+        "id": 427,
+        "price": 383.64
+      }
+    ],
+    "title": "цукру по Бертрану в соках та витяжках"
+  },
+  {
+    "categoryId": 6,
+    "id": 427,
+    "prices": [
+      {
+        "id": 428,
+        "price": 552.6
+      },
+      {
+        "id": 428,
+        "price": 584.88
+      },
+      {
+        "id": 428,
+        "price": 584.88
+      }
+    ],
+    "title": "Фізико-хімічний аналіз крупи"
+  },
+  {
+    "categoryId": 6,
+    "id": 428,
+    "prices": [
+      {
+        "id": 429,
+        "mainPrice": 34.92,
+        "price": 29.04
+      },
+      {
+        "id": 429,
+        "mainPrice": 36.12,
+        "price": 30.84
+      },
+      {
+        "id": 429,
+        "mainPrice": 36.12,
+        "price": 30.84
+      }
+    ],
+    "title": "Підготовка висновку, виписка протоколу досліджень"
+  },
+  {
+    "categoryId": 7,
+    "id": 429,
+    "prices": [
+      {
+        "id": 436,
+        "price": 6.6
+      },
+      {
+        "id": 436,
+        "price": 8.28
+      },
+      {
+        "id": 436,
+        "price": 8.28
+      }
+    ],
+    "title": "Складання та виготовлення агрохімічної картограми"
+  },
+  {
+    "categoryId": 7,
+    "id": 430,
+    "prices": [
+      {
+        "id": 437,
+        "mainPrice": 4.08,
+        "price": 2.8
+      },
+      {
+        "id": 437,
+        "mainPrice": 4.32,
+        "price": 3.6
+      },
+      {
+        "id": 437,
+        "mainPrice": 4.32,
+        "price": 3.6
+      }
+    ],
+    "title": "Відновлення матеріалів паспортизації"
+  },
+  {
+    "categoryId": 7,
+    "id": 431,
+    "prices": [
+      {
+        "id": 438,
+        "mainPrice": 96.72,
+        "price": 48
+      },
+      {
+        "id": 438,
+        "mainPrice": 108.48,
+        "price": 60.84
+      },
+      {
+        "id": 438,
+        "mainPrice": 108.48,
+        "price": 60.84
+      }
+    ],
+    "title": "Виготовлення копій паспортів"
+  },
+  {
+    "categoryId": 7,
+    "id": 432,
+    "prices": [
+      {
+        "id": 439,
+        "mainPrice": 526.92,
+        "price": 412.3
+      },
+      {
+        "id": 439,
+        "mainPrice": 559.8,
+        "price": 495.6
+      },
+      {
+        "id": 439,
+        "mainPrice": 559.8,
+        "price": 495.6
+      }
+    ],
+    "title": "Складання та виготовлення картосхеми «Основні агрохімічні показники»"
+  },
+  {
+    "categoryId": 7,
+    "id": 433,
+    "prices": [
+      {
+        "id": 440,
+        "mainPrice": 69.48,
+        "price": 43.7
+      },
+      {
+        "id": 440,
+        "mainPrice": 73.68,
+        "price": 52.44
+      },
+      {
+        "id": 440,
+        "mainPrice": 73.68,
+        "price": 52.44
+      }
+    ],
+    "title": "Виготовлення копій агрохімічних карт"
+  },
+  {
+    "categoryId": 7,
+    "id": 434,
+    "prices": [
+      {
+        "id": 441,
+        "price": 369.1
+      },
+      {
+        "id": 441,
+        "price": 490.08
+      },
+      {
+        "id": 441,
+        "price": 490.08
+      }
+    ],
+    "title": "Виготовлення картограми агровиробничих груп"
+  },
+  {
+    "categoryId": 7,
+    "id": 435,
+    "prices": [
+      {
+        "id": 442,
+        "mainPrice": 786.6,
+        "price": 647.2
+      },
+      {
+        "id": 442,
+        "mainPrice": 882.36,
+        "price": 822
+      },
+      {
+        "id": 442,
+        "mainPrice": 882.36,
+        "price": 822
+      }
+    ],
+    "title": "Узагальнення матеріалів агрохімічної паспортизації"
+  },
+  {
+    "categoryId": 7,
+    "id": 436,
+    "prices": [
+      {
+        "id": 443,
+        "mainPrice": 1577.88,
+        "price": 1000.9
+      },
+      {
+        "id": 443,
+        "mainPrice": 1785.6,
+        "price": 1271.4
+      },
+      {
+        "id": 443,
+        "mainPrice": 1785.6,
+        "price": 1271.4
+      }
+    ],
+    "title": "Підготовка та надання довідки про стан родючості ґрунтів земельної ділянки, які підлягають консервації"
+  },
+  {
+    "categoryId": 7,
+    "id": 437,
+    "prices": [
+      {
+        "id": 444,
+        "price": 608.2
+      },
+      {
+        "id": 444,
+        "price": 731.16
+      },
+      {
+        "id": 444,
+        "price": 731.16
+      }
+    ],
+    "title": "Складання звіту про ґрунтове обстеження"
+  },
+  {
+    "categoryId": 7,
+    "id": 438,
+    "prices": [
+      {
+        "id": 445,
+        "mainPrice": 90.36,
+        "price": 59.5
+      },
+      {
+        "id": 445,
+        "mainPrice": 100.8,
+        "price": 75.6
+      },
+      {
+        "id": 445,
+        "mainPrice": 100.8,
+        "price": 75.6
+      }
+    ],
+    "title": "Надання фахових консультацій"
+  },
+  {
+    "categoryId": 7,
+    "id": 439,
+    "prices": [
+      {
+        "id": 446,
+        "mainPrice": 948,
+        "price": 761.16
+      },
+      {
+        "id": 446,
+        "mainPrice": 948.68,
+        "price": 659.23
+      },
+      {
+        "id": 446,
+        "mainPrice": 948.68,
+        "price": 659.23
+      }
+    ],
+    "title": "Підготовка та надання довідки/паспорта про стан родючості  ґрунтів за матеріалами попереднього обстеження"
+  },
+  {
+    "categoryId": 7,
+    "id": 440,
+    "prices": [
+      {
+        "id": 447,
+        "price": 17
+      },
+      {
+        "id": 447,
+        "price": 21.36
+      },
+      {
+        "id": 447,
+        "price": 21.36
+      }
+    ],
+    "title": "Друкування довідки про характеристику грунтового покриву земельної ділянки"
+  },
+  {
+    "categoryId": 7,
+    "id": 441,
+    "prices": [
+      {
+        "id": 448,
+        "price": 1600
+      },
+      {
+        "id": 448,
+        "price": 2032.44
+      },
+      {
+        "id": 448,
+        "price": 2032.44
+      }
+    ],
+    "title": "Складання проектно-технологічної документації придатності ґрунтів для закладання багаторічних насаджень"
+  },
+  {
+    "categoryId": 7,
+    "id": 442,
+    "prices": [
+      {
+        "id": 449,
+        "mainPrice": 4.32,
+        "price": 2.8
+      },
+      {
+        "id": 449,
+        "mainPrice": 4.68,
+        "price": 3.72
+      },
+      {
+        "id": 449,
+        "mainPrice": 4.68,
+        "price": 3.72
+      }
+    ],
+    "title": "Складання плану застосування добрив"
+  },
+  {
+    "categoryId": 7,
+    "id": 443,
+    "prices": [
+      {
+        "id": 450,
+        "mainPrice": 5.4,
+        "price": 4
+      },
+      {
+        "id": 450,
+        "mainPrice": 6,
+        "price": 5.4
+      },
+      {
+        "id": 450,
+        "mainPrice": 6,
+        "price": 5.4
+      }
+    ],
+    "title": "Складання системи удобрення під запланований врожай"
+  },
+  {
+    "categoryId": 7,
+    "id": 444,
+    "prices": [
+      {
+        "id": 451,
+        "mainPrice": 2.16,
+        "price": 1.7
+      },
+      {
+        "id": 451,
+        "mainPrice": 2.4,
+        "price": 2.04
+      },
+      {
+        "id": 451,
+        "mainPrice": 2.4,
+        "price": 2.04
+      }
+    ],
+    "title": "Розрахунок доз органічних добрив для бездефіцитного балансу гумусу в ґрунті"
+  },
+  {
+    "categoryId": 7,
+    "id": 445,
+    "prices": [
+      {
+        "id": 452,
+        "mainPrice": 3.48,
+        "price": 2.5
+      },
+      {
+        "id": 452,
+        "mainPrice": 3.72,
+        "price": 3.12
+      },
+      {
+        "id": 452,
+        "mainPrice": 3.72,
+        "price": 3.12
+      }
+    ],
+    "title": "Розрахунок потреби добрив під запланований урожай"
+  },
+  {
+    "categoryId": 7,
+    "id": 446,
+    "prices": [
+      {
+        "id": 453,
+        "mainPrice": 361.44,
+        "price": 247.9
+      },
+      {
+        "id": 453,
+        "mainPrice": 389.88,
+        "price": 315
+      },
+      {
+        "id": 453,
+        "mainPrice": 389.88,
+        "price": 315
+      }
+    ],
+    "title": "Складання проекту застосування мінеральних добрив"
+  },
+  {
+    "categoryId": 7,
+    "id": 447,
+    "prices": [
+      {
+        "id": 454,
+        "mainPrice": 20.64,
+        "price": 17.52
+      },
+      {
+        "id": 454,
+        "mainPrice": 22.04,
+        "price": 15.51
+      },
+      {
+        "id": 454,
+        "mainPrice": 22.04,
+        "price": 15.51
+      }
+    ],
+    "title": "Виготовлення матеріалів до агрохімічної характеристики ґрунтів господарства та рекомендацій по ефективному використанню добрив в розрахунку на 1 га"
+  },
+  {
+    "categoryId": 7,
+    "id": 448,
+    "prices": [
+      {
+        "id": 458,
+        "mainPrice": 18.84,
+        "price": 12.3
+      },
+      {
+        "id": 458,
+        "mainPrice": 20.64,
+        "price": 15.72
+      },
+      {
+        "id": 458,
+        "mainPrice": 20.64,
+        "price": 15.72
+      }
+    ],
+    "title": "Складання проектно-кошторисної документації  по сидератах"
+  },
+  {
+    "categoryId": 7,
+    "id": 449,
+    "prices": [
+      {
+        "id": 459,
+        "price": 2453
+      },
+      {
+        "id": 459,
+        "price": 3087.84
+      },
+      {
+        "id": 459,
+        "price": 3087.84
+      }
+    ],
+    "title": "Погодження технічних умов на виробництво агрохімікатів або змін до них"
+  },
+  {
+    "categoryId": 7,
+    "id": 450,
+    "prices": [
+      {
+        "id": 460,
+        "price": 16860.1
+      },
+      {
+        "id": 460,
+        "price": 21225.36
+      },
+      {
+        "id": 460,
+        "price": 21225.36
+      }
+    ],
+    "title": "Розробка  технічних умов на виробництво агрохімікатів"
+  },
+  {
+    "categoryId": 7,
+    "id": 451,
+    "prices": [
+      {
+        "id": 461,
+        "price": 277.8
+      },
+      {
+        "id": 461,
+        "price": 352.92
+      },
+      {
+        "id": 461,
+        "price": 352.92
+      }
+    ],
+    "title": "Визначення нафтопродуктів у ґрунті"
+  },
+  {
+    "categoryId": 7,
+    "id": 452,
+    "prices": [
+      {
+        "id": 435,
+        "mainPrice": 60.12,
+        "price": 60
+      },
+      {
+        "id": 435,
+        "mainPrice": 71.28,
+        "price": 63
+      },
+      {
+        "id": 435,
+        "mainPrice": 71.28,
+        "price": 63
+      }
+    ],
+    "title": "Проведення моніторингу земельної ділянки понад 50 га з видачею агрохімічного паспорта"
+  },
+  {
+    "id": 453,
+    "prices": [
+      {
+        "id": 999,
+        "price": 21
+      },
+      {
+        "id": 999,
+        "price": 21
+      },
+      {
+        "id": 999,
+        "price": 21
+      }
+    ],
+    "title": "ДДТ (розрах. метод)"
+  },
+  {
+    "id": 454,
+    "prices": [
+      {
+        "id": 999,
+        "price": 21
+      },
+      {
+        "id": 999,
+        "price": 21
+      },
+      {
+        "id": 999,
+        "price": 21
+      }
+    ],
+    "title": "гексахлоран (розрах. метод)"
+  },
+  {
+    "id": 455,
+    "prices": [
+      {
+        "id": 999,
+        "price": 21
+      },
+      {
+        "id": 999,
+        "price": 21
+      },
+      {
+        "id": 999,
+        "price": 21
+      }
+    ],
+    "title": "стронцій  (розрах. метод)"
+  },
+  {
+    "id": 456,
+    "prices": [
+      {
+        "id": 999,
+        "price": 21
+      },
+      {
+        "id": 999,
+        "price": 21
+      },
+      {
+        "id": 999,
+        "price": 21
+      }
+    ],
+    "title": "цезій (розрах. метод)"
+  },
+  {
+    "id": 457,
+    "prices": [
+      {
+        "id": 999,
+        "price": 4.44
+      },
+      {
+        "id": 999,
+        "price": 4.44
+      },
+      {
+        "id": 999,
+        "price": 4.44
+      }
+    ],
+    "title": "складання агрохімічних характеристик грунтів"
+  },
+  {
+    "id": 458,
+    "prices": [
+      {
+        "id": 999,
+        "price": 197.16
+      },
+      {
+        "id": 999,
+        "price": 197.16
+      },
+      {
+        "id": 999,
+        "price": 197.16
+      }
+    ],
+    "title": "складання агрохімпаспортів"
+  },
+  {
+    "id": 459,
+    "prices": [
+      {
+        "id": 999,
+        "price": 620.88
+      },
+      {
+        "id": 999,
+        "price": 620.88
+      },
+      {
+        "id": 999,
+        "price": 620.88
+      }
+    ],
+    "title": "виготовлення паспортів"
+  }
+]
