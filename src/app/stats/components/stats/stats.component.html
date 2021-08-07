@@ -37,18 +37,21 @@
       </mat-expansion-panel-header>
       <ng-container *ngIf="invoice.serviceIds">
         <h4>Аналізи</h4>
-        <div class="service service-head">
-          <span class="id"> #з/п </span>
-          <span class="title"> Назва послуги </span>
-          <span class="count"> Кількість </span>
-          <span class="price"> Ціна </span>
-        </div>
-        <div *ngFor="let service of getServicesList(invoice)" class="service">
-          <span class="id"> {{service.id}} </span>
-          <span class="title"> {{service.title}} </span>
-          <span class="count"> {{service.count}} </span>
-          <span class="price"> {{service.price}} </span>
-        </div>
+        <table class="table">
+          <tr class="service service-head">
+            <th class="id"> #з/п </th>
+            <th class="title"> Назва послуги </th>
+            <th class="price"> Ціна </th>
+            <th class="count"> Кількість </th>
+          </tr>
+          <tr *ngFor="let service of getServicesList(invoice)" class="service">
+            <td class="id"> {{service.id}} </td>
+            <td class="title"> {{service.title}} </td>
+            <td class="price"> {{service.price}} </td>
+            <td class="count"> {{service.count}} </td>
+          </tr>
+        </table>
+
 
       </ng-container>
     </mat-expansion-panel>

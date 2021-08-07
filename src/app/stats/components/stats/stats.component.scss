@@ -35,6 +35,11 @@
   background: #19a05e;
 }
 
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
 .service {
   display: flex;
   padding: 0 10px;
